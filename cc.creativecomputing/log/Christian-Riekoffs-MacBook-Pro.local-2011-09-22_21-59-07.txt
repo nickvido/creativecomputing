@@ -1,0 +1,5 @@
+[Thu Sep 22 21:59:07 CEST 2011] [CCLog Line:177:initialize] [INFO] logging to file: log/Christian-Riekoffs-MacBook-Pro.local-2011-09-22_21-59-07.txt
+[Thu Sep 22 21:59:07 CEST 2011] [CCImageIOFormat Line:94:createTextureData] [INFO] TextureIO.newTextureData(): BufferedImage type for stream = 5
+[Thu Sep 22 21:59:07 CEST 2011] [CCTextureUtil Line:303:toTextureData] [INFO] TYPE_3BYTE_BGR
+[Thu Sep 22 21:59:07 CEST 2011] [CCTextureUtil Line:400:toTextureData] [INFO] CCAppCapabilities.GL_EXT_abgr:true
+[Thu Sep 22 21:59:07 CEST 2011] [CCTextureUtil Line:401:toTextureData] [INFO] CCAppCapabilities.GL_VERSION_1_2:true

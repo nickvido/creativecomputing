@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<ui>
+  <globalsettings label="global" numberofpresets="0" selectedpreset="0">
+    <presetnames/>
+  </globalsettings>
+  <CCControlPresetTab numberofpresets="1" label="hair" selectedpreset="0">
+    <uielements>
+      <CCUIPresetControl label="presets">
+        <uielements/>
+      </CCUIPresetControl>
+      <CCUIComponent label="hair">
+        <uielements>
+          <CCUISlider label="gravity">
+            <preset value="0.82666665"/>
+          </CCUISlider>
+          <CCUISlider label="force field">
+            <preset value="0.8"/>
+          </CCUISlider>
+          <CCUISlider label="life time">
+            <preset value="5.4666667"/>
+          </CCUISlider>
+          <CCUISlider label="resolution">
+            <preset value="2.5"/>
+          </CCUISlider>
+          <CCUISlider label="strokeWeight">
+            <preset value="3.0"/>
+          </CCUISlider>
+        </uielements>
+      </CCUIComponent>
+    </uielements>
+    <presetnames>
+      <presetname name="Preset:0"/>
+    </presetnames>
+  </CCControlPresetTab>
+</ui>

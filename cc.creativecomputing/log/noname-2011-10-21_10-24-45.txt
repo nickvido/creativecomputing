@@ -1,0 +1,2 @@
+[Fri Oct 21 10:24:45 CEST 2011] [CCLog Line:177:initialize] [INFO] logging to file: log/noname-2011-10-21_10-24-45.txt
+[Fri Oct 21 10:24:45 CEST 2011] [CCGraphics Line:301:checkError] [SEVERE] # INVALID OPERATION REPORTED. check for function calls that are invalid in the current graphics state.

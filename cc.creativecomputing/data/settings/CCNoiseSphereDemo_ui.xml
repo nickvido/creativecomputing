@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<ui>
+  <CCControlPresetTab numberofpresets="1" label="control" selectedpreset="0">
+    <uielements>
+      <CCUIPresetControl label="presets">
+        <uielements/>
+      </CCUIPresetControl>
+      <CCUIComponent label="controls">
+        <uielements>
+          <CCUISlider label="base radius">
+            <preset value="1.0"/>
+          </CCUISlider>
+          <CCUISlider label="noise scale">
+            <preset value="1.6612666"/>
+          </CCUISlider>
+          <CCUISlider label="sharpness">
+            <preset value="1.1453334"/>
+          </CCUISlider>
+          <CCUISlider label="displacement">
+            <preset value="1.7866666"/>
+          </CCUISlider>
+          <CCUISlider label="speed">
+            <preset value="0.1948"/>
+          </CCUISlider>
+        </uielements>
+      </CCUIComponent>
+    </uielements>
+    <presetnames>
+      <presetname name="Preset:0"/>
+    </presetnames>
+  </CCControlPresetTab>
+  <globalsettings label="global" numberofpresets="0" selectedpreset="0">
+    <presetnames/>
+  </globalsettings>
+  <CCControlPresetTab numberofpresets="1" label="light" selectedpreset="0">
+    <uielements>
+      <CCUIPresetControl label="presets">
+        <uielements/>
+      </CCUIPresetControl>
+      <CCUIComponent label="light">
+        <uielements>
+          <CCUISlider label="diffuse red">
+            <preset value="0.8066667"/>
+          </CCUISlider>
+          <CCUISlider label="diffuse green">
+            <preset value="0.79333335"/>
+          </CCUISlider>
+          <CCUISlider label="diffuse blue">
+            <preset value="0.79333335"/>
+          </CCUISlider>
+          <CCUISlider label="specular red">
+            <preset value="0.9533333"/>
+          </CCUISlider>
+          <CCUISlider label="specular green">
+            <preset value="0.93333334"/>
+          </CCUISlider>
+          <CCUISlider label="specular blue">
+            <preset value="0.9866667"/>
+          </CCUISlider>
+          <CCUISlider label="constant fall off">
+            <preset value="0.93333334"/>
+          </CCUISlider>
+          <CCUISlider label="linear fall off">
+            <preset value="9.3333336E-4"/>
+          </CCUISlider>
+          <CCUISlider label="quadratic fall off">
+            <preset value="9.266667E-4"/>
+          </CCUISlider>
+        </uielements>
+      </CCUIComponent>
+    </uielements>
+    <presetnames>
+      <presetname name="Preset:0"/>
+    </presetnames>
+  </CCControlPresetTab>
+  <CCControlPresetTab numberofpresets="1" label="material" selectedpreset="0">
+    <uielements>
+      <CCUIPresetControl label="presets">
+        <uielements/>
+      </CCUIPresetControl>
+      <CCUIComponent label="material">
+        <uielements>
+          <CCUISlider label="ambient red">
+            <preset value="0.8066667"/>
+          </CCUISlider>
+          <CCUISlider label="ambient green">
+            <preset value="0.0"/>
+          </CCUISlider>
+          <CCUISlider label="ambient blue">
+            <preset value="0.0"/>
+          </CCUISlider>
+          <CCUISlider label="diffuse red">
+            <preset value="0.8333333"/>
+          </CCUISlider>
+          <CCUISlider label="diffuse green">
+            <preset value="0.86"/>
+          </CCUISlider>
+          <CCUISlider label="diffuse blue">
+            <preset value="0.0"/>
+          </CCUISlider>
+          <CCUISlider label="specular red">
+            <preset value="1.0"/>
+          </CCUISlider>
+          <CCUISlider label="specular green">
+            <preset value="1.0"/>
+          </CCUISlider>
+          <CCUISlider label="specular blue">
+            <preset value="1.0"/>
+          </CCUISlider>
+          <CCUISlider label="shininess">
+            <preset value="0.6333333"/>
+          </CCUISlider>
+        </uielements>
+      </CCUIComponent>
+    </uielements>
+    <presetnames>
+      <presetname name="Preset:0"/>
+    </presetnames>
+  </CCControlPresetTab>
+</ui>

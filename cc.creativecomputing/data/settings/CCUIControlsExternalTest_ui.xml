@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<ui>
+  <CCUIPresetTab numberofpresets="1" label="test" selectedpreset="0">
+    <uielements>
+      <CCUIPresetControl label="presets">
+        <uielements/>
+      </CCUIPresetControl>
+      <CCUIComponent label="CCControls">
+        <uielements>
+          <CCUIField valueX="0.0" label="vec" valueY="0.0">
+            <preset y="0.0" x="0.0"/>
+          </CCUIField>
+          <CCUIDropDown label="enum">
+            <preset value="null"/>
+          </CCUIDropDown>
+          <CCUISlider label="number">
+            <preset value="0.0"/>
+          </CCUISlider>
+        </uielements>
+      </CCUIComponent>
+    </uielements>
+    <presetnames>
+      <presetname name="Preset:0"/>
+    </presetnames>
+  </CCUIPresetTab>
+  <globalsettings label="global" numberofpresets="0" selectedpreset="0">
+    <presetnames/>
+  </globalsettings>
+</ui>

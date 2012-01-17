@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<ui>
+  <CCControlPresetTab numberofpresets="1" label="color" selectedpreset="0">
+    <uielements>
+      <CCUIPresetControl label="presets">
+        <uielements/>
+      </CCUIPresetControl>
+      <CCUIComponent label="color">
+        <uielements>
+          <CCUISlider label="red">
+            <preset value="1.0"/>
+          </CCUISlider>
+          <CCUISlider label="green">
+            <preset value="1.0"/>
+          </CCUISlider>
+          <CCUISlider label="blue">
+            <preset value="1.0"/>
+          </CCUISlider>
+          <CCUISlider label="blend red">
+            <preset value="0.0"/>
+          </CCUISlider>
+          <CCUISlider label="blend green">
+            <preset value="0.0"/>
+          </CCUISlider>
+          <CCUISlider label="blend blue">
+            <preset value="0.0"/>
+          </CCUISlider>
+          <CCUIDropDown label="env mode 2">
+            <preset value="DECAL"/>
+          </CCUIDropDown>
+          <CCUIDropDown label="env mode 1">
+            <preset value="MODULATE"/>
+          </CCUIDropDown>
+        </uielements>
+      </CCUIComponent>
+    </uielements>
+    <presetnames>
+      <presetname name="Preset:0"/>
+    </presetnames>
+  </CCControlPresetTab>
+  <globalsettings label="global" numberofpresets="0" selectedpreset="0">
+    <presetnames/>
+  </globalsettings>
+</ui>

@@ -1,0 +1,27 @@
+[Sat May 07 00:45:51 CEST 2011] [CCLog Line:177:initialize] [INFO] logging to file: log/Christian-Riekoffs-MacBook-Pro.local-2011-05-07_24-45-51.txt
+[Sat May 07 00:45:51 CEST 2011] [CCTextureUtil Line:377:toTextureData] [INFO] DEFAULT
+[Sat May 07 00:45:51 CEST 2011] [CCTextureUtil Line:398:toTextureData] [INFO] CCAppCapabilities.GL_EXT_abgr:true
+[Sat May 07 00:45:51 CEST 2011] [CCTextureUtil Line:399:toTextureData] [INFO] CCAppCapabilities.GL_VERSION_1_2:true
+[Sat May 07 00:45:52 CEST 2011] [CCTextureUtil Line:377:toTextureData] [INFO] DEFAULT
+[Sat May 07 00:45:52 CEST 2011] [CCTextureUtil Line:398:toTextureData] [INFO] CCAppCapabilities.GL_EXT_abgr:true
+[Sat May 07 00:45:52 CEST 2011] [CCTextureUtil Line:399:toTextureData] [INFO] CCAppCapabilities.GL_VERSION_1_2:true
+[Sat May 07 00:45:52 CEST 2011] [CCImageIOFormat Line:94:createTextureData] [INFO] TextureIO.newTextureData(): BufferedImage type for stream = 6
+[Sat May 07 00:45:52 CEST 2011] [CCTextureUtil Line:377:toTextureData] [INFO] DEFAULT
+[Sat May 07 00:45:52 CEST 2011] [CCTextureUtil Line:398:toTextureData] [INFO] CCAppCapabilities.GL_EXT_abgr:true
+[Sat May 07 00:45:52 CEST 2011] [CCTextureUtil Line:399:toTextureData] [INFO] CCAppCapabilities.GL_VERSION_1_2:true
+[Sat May 07 00:45:52 CEST 2011] [CCImageIOFormat Line:94:createTextureData] [INFO] TextureIO.newTextureData(): BufferedImage type for stream = 6
+[Sat May 07 00:45:52 CEST 2011] [CCTextureUtil Line:377:toTextureData] [INFO] DEFAULT
+[Sat May 07 00:45:52 CEST 2011] [CCTextureUtil Line:398:toTextureData] [INFO] CCAppCapabilities.GL_EXT_abgr:true
+[Sat May 07 00:45:52 CEST 2011] [CCTextureUtil Line:399:toTextureData] [INFO] CCAppCapabilities.GL_VERSION_1_2:true
+[Sat May 07 00:45:52 CEST 2011] [CCImageIOFormat Line:94:createTextureData] [INFO] TextureIO.newTextureData(): BufferedImage type for stream = 6
+[Sat May 07 00:45:52 CEST 2011] [CCTextureUtil Line:377:toTextureData] [INFO] DEFAULT
+[Sat May 07 00:45:52 CEST 2011] [CCTextureUtil Line:398:toTextureData] [INFO] CCAppCapabilities.GL_EXT_abgr:true
+[Sat May 07 00:45:52 CEST 2011] [CCTextureUtil Line:399:toTextureData] [INFO] CCAppCapabilities.GL_VERSION_1_2:true
+[Sat May 07 00:45:52 CEST 2011] [CCImageIOFormat Line:94:createTextureData] [INFO] TextureIO.newTextureData(): BufferedImage type for stream = 6
+[Sat May 07 00:45:52 CEST 2011] [CCTextureUtil Line:377:toTextureData] [INFO] DEFAULT
+[Sat May 07 00:45:52 CEST 2011] [CCTextureUtil Line:398:toTextureData] [INFO] CCAppCapabilities.GL_EXT_abgr:true
+[Sat May 07 00:45:52 CEST 2011] [CCTextureUtil Line:399:toTextureData] [INFO] CCAppCapabilities.GL_VERSION_1_2:true
+[Sat May 07 00:45:52 CEST 2011] [CCImageIOFormat Line:94:createTextureData] [INFO] TextureIO.newTextureData(): BufferedImage type for stream = 6
+[Sat May 07 00:45:52 CEST 2011] [CCTextureUtil Line:377:toTextureData] [INFO] DEFAULT
+[Sat May 07 00:45:52 CEST 2011] [CCTextureUtil Line:398:toTextureData] [INFO] CCAppCapabilities.GL_EXT_abgr:true
+[Sat May 07 00:45:52 CEST 2011] [CCTextureUtil Line:399:toTextureData] [INFO] CCAppCapabilities.GL_VERSION_1_2:true

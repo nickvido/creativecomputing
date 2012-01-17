@@ -1,0 +1,38 @@
+uniform samplerRECT depthMap : TEXUNIT0;
+uniform float4x4 mvp : state.matrix.mvp;
+
+float rawDepthToMeters(float depthValue) {
+	if (depthValue < 1f)	{
+		return (float)(1.0 / (depthValue * -0.0030711016 * 2047 + 3.3309495161));
+	}
+	return 0.0f;
+}
+
+float3 depthToWorld(float x, float y, float depthValue) {
+
+	float fx_d = 1.0 / 5.9421434211923247e+02;
+	float fy_d = 1.0 / 5.9104053696870778e+02;
+	float cx_d = 3.3930780975300314e+02;
+	float cy_d = 2.4273913761751615e+02;
+
+	float3 result = float3(0,0,0);
+	float depth =  rawDepthToMeters(depthValue);
+	result.x = (x - cx_d) * depth * fx_d;
+	result.y = (y - cy_d) * depth * fy_d;
+	result.z = depth * 200;
+	return result;
+}
+
+void main(
+	in float4 iVertex : POSITION,
+	in float2 iTexCoord : TEXCOORD0,
+	out float4 oVertex : POSITION,
+	out float2 oTexCoord : TEXCOORD0
+){
+	float4 vertex = iVertex;
+	float depth = texRECT(depthMap, iTexCoord).r;
+	vertex.xyz += depthToWorld(iVertex.x,iVertex.y,depth);
+	oVertex = mul(mvp,vertex);
+	
+	oTexCoord = iTexCoord;
+}

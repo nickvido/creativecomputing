@@ -1,0 +1,40 @@
+[Tue May 31 10:26:53 CEST 2011] [CCLog Line:177:initialize] [INFO] logging to file: log/Christian-Riekoffs-MacBook-Pro.local-2011-05-31_10-26-53.txt
+[Tue May 31 10:26:53 CEST 2011] [CCApp:display] [SEVERE] com.jogamp.opencl.CLException$CLBuildProgramFailureException: 
+CLDevice [id: 16918016 name: GeForce 8600M GT type: GPU profile: FULL_PROFILE] build log:
+<program source>:298:21:{298:21-298:67}: error: incompatible type initializing '__float4', expected 'float'
+     float myValue = celular((float4)(mySample,0,0), 4, &delta, id);
+                     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+<program source>:302:4: error: expected '}'
+    
+    ^
+CLDevice [id: 16909312 name: Intel(R) Core(TM)2 Duo CPU     T8300  @ 2.40GHz type: CPU profile: FULL_PROFILE] build log:
+<program source>:298:21:{298:21-298:67}: error: incompatible type initializing '__float4', expected 'float'
+     float myValue = celular((float4)(mySample,0,0), 4, &delta, id);
+                     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+<program source>:302:4: error: expected '}'
+    
+    ^ [error: CL_BUILD_PROGRAM_FAILURE]
+	at com.jogamp.opencl.CLException.newException(CLException.java:78)
+	at com.jogamp.opencl.CLProgram.build(CLProgram.java:381)
+	at cc.creativecomputing.opencl.CCCLProgram.build(CCCLProgram.java:187)
+	at cc.creativecomputing.opencl.demos.noise.CCCLCelularImageDemo.setup(CCCLCelularImageDemo.java:115)
+	at cc.creativecomputing.CCApp.display(CCApp.java:562)
+	at jogamp.opengl.GLDrawableHelper.display(GLDrawableHelper.java:191)
+	at javax.media.opengl.awt.GLCanvas$DisplayAction.run(GLCanvas.java:873)
+	at jogamp.opengl.GLDrawableHelper.invokeGL(GLDrawableHelper.java:363)
+	at javax.media.opengl.awt.GLCanvas.maybeDoSingleThreadedWorkaround(GLCanvas.java:769)
+	at javax.media.opengl.awt.GLCanvas.display(GLCanvas.java:388)
+	at javax.media.opengl.awt.GLCanvas.paint(GLCanvas.java:487)
+	at sun.awt.RepaintArea.paintComponent(RepaintArea.java:276)
+	at sun.awt.RepaintArea.paint(RepaintArea.java:241)
+	at apple.awt.ComponentModel.handleEvent(ComponentModel.java:263)
+	at java.awt.Component.dispatchEventImpl(Component.java:4790)
+	at java.awt.Component.dispatchEvent(Component.java:4544)
+	at java.awt.EventQueue.dispatchEvent(EventQueue.java:635)
+	at java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:296)
+	at java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:211)
+	at java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:201)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:196)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:188)
+	at java.awt.EventDispatchThread.run(EventDispatchThread.java:122)
+

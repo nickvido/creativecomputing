@@ -1,0 +1,772 @@
+[Fri May 20 10:07:45 CEST 2011] [CCLog Line:177:initialize] [INFO] logging to file: log/noname-2011-05-20_10-07-45.txt
+[Fri May 20 10:07:45 CEST 2011] [CCApp:display] [SEVERE] com.jogamp.opencl.CLException$CLBuildProgramFailureException: 
+CLDevice [id: 16918016 name: GeForce 8600M GT type: GPU profile: FULL_PROFILE] build log:
+<program source>:16:9:{16:9-16:14}: error: more than one matching function found in __builtin_overload
+         return floor(mod(((x*34.0)+1.0)*x, 289.0));
+                ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/System/Library/Frameworks/OpenCL.framework/Resources/cl_kernel.h:2000:21: note: instantiated from:
+ #define floor(X)    __CLFN_F1_MODD(X,floor)
+                     ^
+/System/Library/Frameworks/OpenCL.framework/Resources/cl_kernel.h:10:29: note: instantiated from:
+ #define __CLFN_F1_MODD(x,R) __builtin_overload(1, x, __##R##f, __##R##f2, __##R##f3, __##R##f4, __##R##f8, __##R##f16, __##R##d, __##R##d2, __##R##d3, __##R##d4, __##R##d8, __##R##d16 )
+                             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+<program source>:20:44:{20:46-20:47}{20:28-20:43}: error: can't convert between vector values of different size ('__float4' and 'double')
+         return 1.79284291400159 - 0.8537347209531 * r;
+                                   ~~~~~~~~~~~~~~~ ^ ~
+<program source>:31:39: error: too few arguments provided to function-like macro invocation
+         p = floor( fract (float4(j) * ip.xyzw) * 7.0) * ip.z - 1.0;
+                                              ^
+<program source>:31:6:{31:6-31:11}{31:6-31:11}: error: invalid operands to binary expression ('double (*)(double, double *)' and 'double')
+         p = floor( fract (float4(j) * ip.xyzw) * 7.0) * ip.z - 1.0;
+             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/System/Library/Frameworks/OpenCL.framework/Resources/cl_kernel.h:2000:21: note: instantiated from:
+ #define floor(X)    __CLFN_F1_MODD(X,floor)
+                     ^
+<program source>:31:6: note: instantiated from:
+         p = floor( fract (float4(j) * ip.xyzw) * 7.0) * ip.z - 1.0;
+             ^      ~~~~~                         ~~~
+<program source>:31:41: note: instantiated from:
+         p = floor( fract (float4(j) * ip.xyzw) * 7.0) * ip.z - 1.0;
+                    ~~~~~                       ^ ~~~
+<program source>:32:14:{32:14-32:17}: error: more than one matching function found in __builtin_overload
+         p.w = 1.5 - dot(abs(p.xyz), ones.xyz);
+                     ^~~~~~~~~~~~~~~~~~~~~~~~~
+<program source>:32:18: note: instantiated from:
+         p.w = 1.5 - dot(abs(p.xyz), ones.xyz);
+                         ^~~~~~~~~~
+/System/Library/Frameworks/OpenCL.framework/Resources/cl_kernel.h:2164:25: note: instantiated from:
+ #define abs(X)          __builtin_overload(1, X,    __abs_1i8,     __abs_2i8,     __abs_3i8,     __abs_4i8,     __abs_8i8,     __abs_16i8,      \
+                         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+<program source>:33:6: error: unexpected type name '__float4': expected expression
+         s = float4(lessThan(p, float4(0.0)));
+             ^
+/System/Library/Frameworks/OpenCL.framework/Resources/cl_kernel.h:172:18: note: instantiated from:
+ #define float4                  __float4
+                                 ^
+<program source>:33:25: error: unexpected type name '__float4': expected expression
+         s = float4(lessThan(p, float4(0.0)));
+                                ^
+/System/Library/Frameworks/OpenCL.framework/Resources/cl_kernel.h:172:18: note: instantiated from:
+ #define float4                  __float4
+                                 ^
+<program source>:52:30: error: unexpected type name '__float2': expected expression
+         float2 i1 = (x0.x > x0.y) ? float2(1.0, 0.0) : float2(0.0, 1.0);
+                                     ^
+/System/Library/Frameworks/OpenCL.framework/Resources/cl_kernel.h:170:18: note: instantiated from:
+ #define float2                  __float2
+                                 ^
+<program source>:58:39: error: unexpected type name '__float4': expected expression
+         float4 p = permute( permute( i.y + float4(0.0, i1.y, 1.0,0 )) + i.x + float4(0.0, i1.x, 1.0, 0));
+                                            ^
+/System/Library/Frameworks/OpenCL.framework/Resources/cl_kernel.h:172:18: note: instantiated from:
+ #define float4                  __float4
+                                 ^
+<program source>:60:88: error: too many arguments provided to function-like macro invocation
+         float4 m = max(0.5 - float4(dot(x0,x0), dot(x12.xy,x12.xy), dot(x12.zw,x12.zw)), 0.0, 0.0);
+                                                                                               ^
+<program source>:60:13:{60:13-60:16}: error: incompatible type initializing 'double (double, double)', expected '__float4'
+         float4 m = max(0.5 - float4(dot(x0,x0), dot(x12.xy,x12.xy), dot(x12.zw,x12.zw)), 0.0, 0.0);
+                    ^~~
+<program source>:67:35: error: too few arguments provided to function-like macro invocation
+         float4 x = 2.0 * fract(p * C.wwww) - 1.0;
+                                          ^
+<program source>:67:17:{67:13-67:16}{67:19-67:24}: error: invalid operands to binary expression ('double' and 'double (*)(double, double *)')
+         float4 x = 2.0 * fract(p * C.wwww) - 1.0;
+                    ~~~ ^ ~~~~~
+<program source>:68:13:{68:13-68:16}: error: more than one matching function found in __builtin_overload
+         float4 h = abs(x) - 0.5;
+                    ^~~~~~
+/System/Library/Frameworks/OpenCL.framework/Resources/cl_kernel.h:2164:25: note: instantiated from:
+ #define abs(X)          __builtin_overload(1, X,    __abs_1i8,     __abs_2i8,     __abs_3i8,     __abs_4i8,     __abs_8i8,     __abs_16i8,      \
+                         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+<program source>:84:7: error: conflicting types for 'snoise'
+ float snoise(float theX, float theY, float theZ){ 
+       ^
+<program source>:39:7: note: previous definition is here
+ float snoise(float2 v){
+       ^
+<program source>:85:13: error: unexpected type name '__float4': expected expression
+         float4 v = float4(theX, theY, theZ, 0);
+                    ^
+/System/Library/Frameworks/OpenCL.framework/Resources/cl_kernel.h:172:18: note: instantiated from:
+ #define float4                  __float4
+                                 ^
+<program source>:87:22: error: unexpected type name '__float4': expected expression
+         const float4  D = float4(0.0, 0.5, 1.0, 2.0);
+                           ^
+/System/Library/Frameworks/OpenCL.framework/Resources/cl_kernel.h:172:18: note: instantiated from:
+ #define float4                  __float4
+                                 ^
+<program source>:90:2: error: use of undeclared identifier 'vec3'
+         vec3 i  = floor(v + dot(v, C.yyy) );
+         ^
+<program source>:91:2: error: use of undeclared identifier 'vec3'
+         vec3 x0 =   v - i + dot(i, C.xxx) ;
+         ^
+<program source>:94:2: error: use of undeclared identifier 'vec3'
+         vec3 g = step(x0.yzx, x0.xyz);
+         ^
+<program source>:95:2: error: use of undeclared identifier 'vec3'
+         vec3 l = 1.0 - g;
+         ^
+<program source>:96:2: error: use of undeclared identifier 'vec3'
+         vec3 i1 = min( g.xyz, l.zxy );
+         ^
+<program source>:97:2: error: use of undeclared identifier 'vec3'
+         vec3 i2 = max( g.xyz, l.zxy );
+         ^
+<program source>:103:2: error: use of undeclared identifier 'vec3'
+         vec3 x1 = x0 - i1 + C.xxx;
+         ^
+<program source>:104:2: error: use of undeclared identifier 'vec3'
+         vec3 x2 = x0 - i2 + C.yyy; // 2.0*C.x = 1/3 = C.y
+         ^
+<program source>:105:2: error: use of undeclared identifier 'vec3'
+         vec3 x3 = x0 - D.yyy;      // -1.0+3.0*C.x = -0.5 = -D.y
+         ^
+<program source>:108:2: error: use of undeclared identifier 'i'
+         i = mod(i, 289.0 ); 
+         ^
+<program source>:110:3: error: use of undeclared identifier 'i'
+                 i.z + float4(0.0, i1.z, i2.z, 1.0 )) + 
+                 ^
+<program source>:118:2: error: use of undeclared identifier 'vec3'
+         vec3  ns = n_ * D.wyz - D.xzx;
+         ^
+<program source>:120:24: error: use of undeclared identifier 'ns'
+         float4 j = p - 49.0 * floor(p * ns.z * ns.z);  //  mod(p,7*7)
+                               ^
+/System/Library/Frameworks/OpenCL.framework/Resources/cl_kernel.h:2000:21: note: instantiated from:
+ #define floor(X)    __CLFN_F1_MODD(X,floor)
+                     ^
+<program source>:120:24: note: instantiated from:
+         float4 j = p - 49.0 * floor(p * ns.z * ns.z);  //  mod(p,7*7)
+                               ^
+<program source>:120:34: note: instantiated from:
+         float4 j = p - 49.0 * floor(p * ns.z * ns.z);  //  mod(p,7*7)
+                                         ^
+<program source>:122:14: error: use of undeclared identifier 'ns'
+         float4 x_ = floor(j * ns.z);
+                     ^
+/System/Library/Frameworks/OpenCL.framework/Resources/cl_kernel.h:2000:21: note: instantiated from:
+ #define floor(X)    __CLFN_F1_MODD(X,floor)
+                     ^
+<program source>:122:14: note: instantiated from:
+         float4 x_ = floor(j * ns.z);
+                     ^
+<program source>:122:24: note: instantiated from:
+         float4 x_ = floor(j * ns.z);
+                               ^
+<program source>:123:14:{123:14-123:19}{123:14-123:19}: error: can't convert between vector values of different size ('__float4' and 'double')
+         float4 y_ = floor(j - 7.0 * x_ );    // mod(j,N)
+                     ^~~~~~~~~~~~~~~~~~~~
+/System/Library/Frameworks/OpenCL.framework/Resources/cl_kernel.h:2000:21: note: instantiated from:
+ #define floor(X)    __CLFN_F1_MODD(X,floor)
+                     ^
+<program source>:123:14: note: instantiated from:
+         float4 y_ = floor(j - 7.0 * x_ );    // mod(j,N)
+                     ^         ~~~   ~~
+<program source>:123:28: note: instantiated from:
+         float4 y_ = floor(j - 7.0 * x_ );    // mod(j,N)
+                               ~~~ ^ ~~
+<program source>:125:17: error: use of undeclared identifier 'ns'
+         float4 x = x_ *ns.x + ns.yyyy;
+                        ^
+<program source>:126:17: error: use of undeclared identifier 'ns'
+         float4 y = y_ *ns.x + ns.yyyy;
+                        ^
+<program source>:127:19:{127:19-127:22}: error: more than one matching function found in __builtin_overload
+         float4 h = 1.0 - abs(x) - abs(y);
+                          ^~~~~~
+/System/Library/Frameworks/OpenCL.framework/Resources/cl_kernel.h:2164:25: note: instantiated from:
+ #define abs(X)          __builtin_overload(1, X,    __abs_1i8,     __abs_2i8,     __abs_3i8,     __abs_4i8,     __abs_8i8,     __abs_16i8,      \
+                         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+<program source>:129:14: error: unexpected type name '__float4': expected expression
+         float4 b0 = float4( x.xy, y.xy );
+                     ^
+/System/Library/Frameworks/OpenCL.framework/Resources/cl_kernel.h:172:18: note: instantiated from:
+ #define float4                  __float4
+                                 ^
+<program source>:130:14: error: unexpected type name '__float4': expected expression
+         float4 b1 = float4( x.zw, y.zw );
+                     ^
+/System/Library/Frameworks/OpenCL.framework/Resources/cl_kernel.h:172:18: note: instantiated from:
+ #define float4                  __float4
+                                 ^
+<program source>:136:15: error: unexpected type name '__float4': expected expression
+         float4 sh = -step(h, float4(0.0));
+                      ^
+<program source>:136:23: note: instantiated from:
+         float4 sh = -step(h, float4(0.0));
+                              ^
+/System/Library/Frameworks/OpenCL.framework/Resources/cl_kernel.h:172:18: note: instantiated from:
+ #define float4                  __float4
+                                 ^
+<program source>:141:2: error: use of undeclared identifier 'vec3'
+         vec3 p0 = vec3(a0.xy,h.x);
+         ^
+<program source>:142:2: error: use of undeclared identifier 'vec3'
+         vec3 p1 = vec3(a0.zw,h.y);
+         ^
+<program source>:143:2: error: use of undeclared identifier 'vec3'
+         vec3 p2 = vec3(a1.xy,h.z);
+         ^
+<program source>:144:2: error: use of undeclared identifier 'vec3'
+         vec3 p3 = vec3(a1.zw,h.w);
+         ^
+<program source>:147:30: error: unexpected type name '__float4': expected expression
+         float4 norm = taylorInvSqrt(float4(dot(p0,p0), dot(p1,p1), dot(p2, p2), dot(p3,p3)));
+                                     ^
+/System/Library/Frameworks/OpenCL.framework/Resources/cl_kernel.h:172:18: note: instantiated from:
+ #define float4                  __float4
+                                 ^
+<program source>:147:37: error: use of undeclared identifier 'p0'
+         float4 norm = taylorInvSqrt(float4(dot(p0,p0), dot(p1,p1), dot(p2, p2), dot(p3,p3)));
+                                            ^
+<program source>:147:41: note: instantiated from:
+         float4 norm = taylorInvSqrt(float4(dot(p0,p0), dot(p1,p1), dot(p2, p2), dot(p3,p3)));
+                                                ^
+<program source>:148:2: error: use of undeclared identifier 'p0'
+         p0 *= norm.x;
+         ^
+<program source>:149:2: error: use of undeclared identifier 'p1'
+         p1 *= norm.y;
+         ^
+<program source>:150:2: error: use of undeclared identifier 'p2'
+         p2 *= norm.z;
+         ^
+<program source>:151:2: error: use of undeclared identifier 'p3'
+         p3 *= norm.w;
+         ^
+<program source>:154:13: error: unexpected type name '__float4': expected expression
+         float4 m = max(0.6 - float4(dot(x0,x0), dot(x1,x1), dot(x2,x2), dot(x3,x3)), 0.0);
+                    ^
+/System/Library/Frameworks/OpenCL.framework/Resources/cl_kernel.h:2190:29: note: instantiated from:
+ #define max(X,Y)            __CLFN_ALL2_plus(X,Y,max)
+                             ^
+<program source>:154:13: note: instantiated from:
+         float4 m = max(0.6 - float4(dot(x0,x0), dot(x1,x1), dot(x2,x2), dot(x3,x3)), 0.0);
+                    ^
+<program source>:154:23: note: instantiated from:
+         float4 m = max(0.6 - float4(dot(x0,x0), dot(x1,x1), dot(x2,x2), dot(x3,x3)), 0.0);
+                              ^
+/System/Library/Frameworks/OpenCL.framework/Resources/cl_kernel.h:172:18: note: instantiated from:
+ #define float4                  __float4
+                                 ^
+<program source>:154:13: error: use of undeclared identifier 'x0'
+         float4 m = max(0.6 - float4(dot(x0,x0), dot(x1,x1), dot(x2,x2), dot(x3,x3)), 0.0);
+                    ^
+/System/Library/Frameworks/OpenCL.framework/Resources/cl_kernel.h:2190:29: note: instantiated from:
+ #define max(X,Y)            __CLFN_ALL2_plus(X,Y,max)
+                             ^
+<program source>:154:13: note: instantiated from:
+         float4 m = max(0.6 - float4(dot(x0,x0), dot(x1,x1), dot(x2,x2), dot(x3,x3)), 0.0);
+                    ^
+<program source>:154:30: note: instantiated from:
+         float4 m = max(0.6 - float4(dot(x0,x0), dot(x1,x1), dot(x2,x2), dot(x3,x3)), 0.0);
+                                     ^
+<program source>:154:34: note: instantiated from:
+         float4 m = max(0.6 - float4(dot(x0,x0), dot(x1,x1), dot(x2,x2), dot(x3,x3)), 0.0);
+                                         ^
+<program source>:156:16: error: unexpected type name '__float4': expected expression
+         return 42.0 * dot( m*m, float4( dot(p0,x0), dot(p1,x1), dot(p2,x2), dot(p3,x3) ) );
+                       ^
+<program source>:156:26: note: instantiated from:
+         return 42.0 * dot( m*m, float4( dot(p0,x0), dot(p1,x1), dot(p2,x2), dot(p3,x3) ) );
+                                 ^
+/System/Library/Frameworks/OpenCL.framework/Resources/cl_kernel.h:172:18: note: instantiated from:
+ #define float4                  __float4
+                                 ^
+<program source>:156:16: error: use of undeclared identifier 'p0'
+         return 42.0 * dot( m*m, float4( dot(p0,x0), dot(p1,x1), dot(p2,x2), dot(p3,x3) ) );
+                       ^
+<program source>:156:34: note: instantiated from:
+         return 42.0 * dot( m*m, float4( dot(p0,x0), dot(p1,x1), dot(p2,x2), dot(p3,x3) ) );
+                                         ^
+<program source>:156:38: note: instantiated from:
+         return 42.0 * dot( m*m, float4( dot(p0,x0), dot(p1,x1), dot(p2,x2), dot(p3,x3) ) );
+                                             ^
+<program source>:159:7: error: conflicting types for 'snoise'
+ float snoise(float theX, float theY, float theZ, float theW){
+       ^
+<program source>:39:7: note: previous definition is here
+ float snoise(float2 v){
+       ^
+<program source>:172:14: error: unexpected type name '__float4': expected expression
+         float4 i  = floor(v + dot(v, float4(F4)) );
+                     ^
+/System/Library/Frameworks/OpenCL.framework/Resources/cl_kernel.h:2000:21: note: instantiated from:
+ #define floor(X)    __CLFN_F1_MODD(X,floor)
+                     ^
+<program source>:172:14: note: instantiated from:
+         float4 i  = floor(v + dot(v, float4(F4)) );
+                     ^
+<program source>:172:24: note: instantiated from:
+         float4 i  = floor(v + dot(v, float4(F4)) );
+                               ^
+<program source>:172:31: note: instantiated from:
+         float4 i  = floor(v + dot(v, float4(F4)) );
+                                      ^
+/System/Library/Frameworks/OpenCL.framework/Resources/cl_kernel.h:172:18: note: instantiated from:
+ #define float4                  __float4
+                                 ^
+<program source>:183:15:{183:17-183:20}{183:11-183:14}: error: can't convert between vector values of different size ('__float4' and 'double')
+         i0.yzw = 1.0 - isX;
+                  ~~~ ^ ~~~
+<program source>:185:15:{185:17-185:24}{185:11-185:14}: error: can't convert between vector values of different size ('__float2' and 'double')
+         i0.zw += 1.0 - isYZ.xy;
+                  ~~~ ^ ~~~~~~~
+<program source>:190:14:{190:14-190:19}: error: more than one matching function found in __builtin_overload
+         float4 i3 = clamp( i0, 0.0, 1.0 );
+                     ^~~~~~~~~~~~~~~~~~~~~
+/System/Library/Frameworks/OpenCL.framework/Resources/cl_kernel.h:2202:25: note: instantiated from:
+ #define clamp(X,Y,Z)    __builtin_overload(3,X,Y,Z, __clampf, __clampf2, __clampf3, __clampf4, __clampf8, __clampf16,      \
+                         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+<program source>:191:14:{191:14-191:19}: error: more than one matching function found in __builtin_overload
+         float4 i2 = clamp( i0-1.0, 0.0, 1.0 );
+                     ^~~~~~~~~~~~~~~~~~~~~~~~~
+/System/Library/Frameworks/OpenCL.framework/Resources/cl_kernel.h:2202:25: note: instantiated from:
+ #define clamp(X,Y,Z)    __builtin_overload(3,X,Y,Z, __clampf, __clampf2, __clampf3, __clampf4, __clampf8, __clampf16,      \
+                         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+<program source>:192:14:{192:14-192:19}: error: more than one matching function found in __builtin_overload
+         float4 i1 = clamp( i0-2.0, 0.0, 1.0 );
+                     ^~~~~~~~~~~~~~~~~~~~~~~~~
+/System/Library/Frameworks/OpenCL.framework/Resources/cl_kernel.h:2202:25: note: instantiated from:
+ #define clamp(X,Y,Z)    __builtin_overload(3,X,Y,Z, __clampf, __clampf2, __clampf3, __clampf4, __clampf8, __clampf16,      \
+                         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+<program source>:208:9: error: unexpected type name '__float4': expected expression
+                 i.w + float4(i1.w, i2.w, i3.w, 1.0 )) + 
+                       ^
+/System/Library/Frameworks/OpenCL.framework/Resources/cl_kernel.h:172:18: note: instantiated from:
+ #define float4                  __float4
+                                 ^
+<program source>:215:14: error: unexpected type name '__float4': expected expression
+         float4 ip = float4(1.0/294.0, 1.0/49.0, 1.0/7.0, 0.0) ;
+                     ^
+/System/Library/Frameworks/OpenCL.framework/Resources/cl_kernel.h:172:18: note: instantiated from:
+ #define float4                  __float4
+                                 ^
+<program source>:224:30: error: unexpected type name '__float4': expected expression
+         float4 norm = taylorInvSqrt(float4(dot(p0,p0), dot(p1,p1), dot(p2, p2), dot(p3,p3)));
+                                     ^
+/System/Library/Frameworks/OpenCL.framework/Resources/cl_kernel.h:172:18: note: instantiated from:
+ #define float4                  __float4
+                                 ^
+<program source>:229:5:{229:2-229:4}{229:8-229:33}: error: can't convert between vector values of different size ('__float4' and 'int')
+         p4 *= taylorInvSqrt(dot(p4,p4));
+         ~~ ^  ~~~~~~~~~~~~~~~~~~~~~~~~~
+<program source>:232:14:{232:14-232:17}{232:14-232:17}: error: can't convert between vector values of different size ('__float4' and 'double')
+         float4 m0 = max(0.6 - (float4)(dot(x0,x0), dot(x1,x1), dot(x2,x2),0), 0.0);
+                     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/System/Library/Frameworks/OpenCL.framework/Resources/cl_kernel.h:2190:29: note: instantiated from:
+ #define max(X,Y)            __CLFN_ALL2_plus(X,Y,max)
+                             ^
+<program source>:232:14: note: instantiated from:
+         float4 m0 = max(0.6 - (float4)(dot(x0,x0), dot(x1,x1), dot(x2,x2),0), 0.0);
+                     ^   ~~~   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+<program source>:232:22: note: instantiated from:
+         float4 m0 = max(0.6 - (float4)(dot(x0,x0), dot(x1,x1), dot(x2,x2),0), 0.0);
+                         ~~~ ^ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+<program source>:233:56: error: too few arguments provided to function-like macro invocation
+         float2 m1 = max(0.6 - (float2)(dot(x3,x3), dot(x4,x4)));
+                                                               ^
+<program source>:233:14:{233:14-233:17}: error: incompatible type initializing 'double (double, double)', expected '__float2'
+         float2 m1 = max(0.6 - (float2)(dot(x3,x3), dot(x4,x4)));
+                     ^~~
+CLDevice [id: 16909312 name: Intel(R) Core(TM)2 Duo CPU     T8300  @ 2.40GHz type: CPU profile: FULL_PROFILE] build log:
+<program source>:16:9:{16:9-16:14}: error: more than one matching function found in __builtin_overload
+         return floor(mod(((x*34.0)+1.0)*x, 289.0));
+                ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/System/Library/Frameworks/OpenCL.framework/Resources/cl_kernel.h:2000:21: note: instantiated from:
+ #define floor(X)    __CLFN_F1_MODD(X,floor)
+                     ^
+/System/Library/Frameworks/OpenCL.framework/Resources/cl_kernel.h:10:29: note: instantiated from:
+ #define __CLFN_F1_MODD(x,R) __builtin_overload(1, x, __##R##f, __##R##f2, __##R##f3, __##R##f4, __##R##f8, __##R##f16, __##R##d, __##R##d2, __##R##d3, __##R##d4, __##R##d8, __##R##d16 )
+                             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+<program source>:20:44:{20:46-20:47}{20:28-20:43}: error: can't convert between vector values of different size ('__float4' and 'double')
+         return 1.79284291400159 - 0.8537347209531 * r;
+                                   ~~~~~~~~~~~~~~~ ^ ~
+<program source>:31:39: error: too few arguments provided to function-like macro invocation
+         p = floor( fract (float4(j) * ip.xyzw) * 7.0) * ip.z - 1.0;
+                                              ^
+<program source>:31:6:{31:6-31:11}{31:6-31:11}: error: invalid operands to binary expression ('double (*)(double, double *)' and 'double')
+         p = floor( fract (float4(j) * ip.xyzw) * 7.0) * ip.z - 1.0;
+             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/System/Library/Frameworks/OpenCL.framework/Resources/cl_kernel.h:2000:21: note: instantiated from:
+ #define floor(X)    __CLFN_F1_MODD(X,floor)
+                     ^
+<program source>:31:6: note: instantiated from:
+         p = floor( fract (float4(j) * ip.xyzw) * 7.0) * ip.z - 1.0;
+             ^      ~~~~~                         ~~~
+<program source>:31:41: note: instantiated from:
+         p = floor( fract (float4(j) * ip.xyzw) * 7.0) * ip.z - 1.0;
+                    ~~~~~                       ^ ~~~
+<program source>:32:14:{32:14-32:17}: error: more than one matching function found in __builtin_overload
+         p.w = 1.5 - dot(abs(p.xyz), ones.xyz);
+                     ^~~~~~~~~~~~~~~~~~~~~~~~~
+<program source>:32:18: note: instantiated from:
+         p.w = 1.5 - dot(abs(p.xyz), ones.xyz);
+                         ^~~~~~~~~~
+/System/Library/Frameworks/OpenCL.framework/Resources/cl_kernel.h:2164:25: note: instantiated from:
+ #define abs(X)          __builtin_overload(1, X,    __abs_1i8,     __abs_2i8,     __abs_3i8,     __abs_4i8,     __abs_8i8,     __abs_16i8,      \
+                         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+<program source>:33:6: error: unexpected type name '__float4': expected expression
+         s = float4(lessThan(p, float4(0.0)));
+             ^
+/System/Library/Frameworks/OpenCL.framework/Resources/cl_kernel.h:172:18: note: instantiated from:
+ #define float4                  __float4
+                                 ^
+<program source>:33:25: error: unexpected type name '__float4': expected expression
+         s = float4(lessThan(p, float4(0.0)));
+                                ^
+/System/Library/Frameworks/OpenCL.framework/Resources/cl_kernel.h:172:18: note: instantiated from:
+ #define float4                  __float4
+                                 ^
+<program source>:52:30: error: unexpected type name '__float2': expected expression
+         float2 i1 = (x0.x > x0.y) ? float2(1.0, 0.0) : float2(0.0, 1.0);
+                                     ^
+/System/Library/Frameworks/OpenCL.framework/Resources/cl_kernel.h:170:18: note: instantiated from:
+ #define float2                  __float2
+                                 ^
+<program source>:58:39: error: unexpected type name '__float4': expected expression
+         float4 p = permute( permute( i.y + float4(0.0, i1.y, 1.0,0 )) + i.x + float4(0.0, i1.x, 1.0, 0));
+                                            ^
+/System/Library/Frameworks/OpenCL.framework/Resources/cl_kernel.h:172:18: note: instantiated from:
+ #define float4                  __float4
+                                 ^
+<program source>:60:88: error: too many arguments provided to function-like macro invocation
+         float4 m = max(0.5 - float4(dot(x0,x0), dot(x12.xy,x12.xy), dot(x12.zw,x12.zw)), 0.0, 0.0);
+                                                                                               ^
+<program source>:60:13:{60:13-60:16}: error: incompatible type initializing 'double (double, double)', expected '__float4'
+         float4 m = max(0.5 - float4(dot(x0,x0), dot(x12.xy,x12.xy), dot(x12.zw,x12.zw)), 0.0, 0.0);
+                    ^~~
+<program source>:67:35: error: too few arguments provided to function-like macro invocation
+         float4 x = 2.0 * fract(p * C.wwww) - 1.0;
+                                          ^
+<program source>:67:17:{67:13-67:16}{67:19-67:24}: error: invalid operands to binary expression ('double' and 'double (*)(double, double *)')
+         float4 x = 2.0 * fract(p * C.wwww) - 1.0;
+                    ~~~ ^ ~~~~~
+<program source>:68:13:{68:13-68:16}: error: more than one matching function found in __builtin_overload
+         float4 h = abs(x) - 0.5;
+                    ^~~~~~
+/System/Library/Frameworks/OpenCL.framework/Resources/cl_kernel.h:2164:25: note: instantiated from:
+ #define abs(X)          __builtin_overload(1, X,    __abs_1i8,     __abs_2i8,     __abs_3i8,     __abs_4i8,     __abs_8i8,     __abs_16i8,      \
+                         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+<program source>:84:7: error: conflicting types for 'snoise'
+ float snoise(float theX, float theY, float theZ){ 
+       ^
+<program source>:39:7: note: previous definition is here
+ float snoise(float2 v){
+       ^
+<program source>:85:13: error: unexpected type name '__float4': expected expression
+         float4 v = float4(theX, theY, theZ, 0);
+                    ^
+/System/Library/Frameworks/OpenCL.framework/Resources/cl_kernel.h:172:18: note: instantiated from:
+ #define float4                  __float4
+                                 ^
+<program source>:87:22: error: unexpected type name '__float4': expected expression
+         const float4  D = float4(0.0, 0.5, 1.0, 2.0);
+                           ^
+/System/Library/Frameworks/OpenCL.framework/Resources/cl_kernel.h:172:18: note: instantiated from:
+ #define float4                  __float4
+                                 ^
+<program source>:90:2: error: use of undeclared identifier 'vec3'
+         vec3 i  = floor(v + dot(v, C.yyy) );
+         ^
+<program source>:91:2: error: use of undeclared identifier 'vec3'
+         vec3 x0 =   v - i + dot(i, C.xxx) ;
+         ^
+<program source>:94:2: error: use of undeclared identifier 'vec3'
+         vec3 g = step(x0.yzx, x0.xyz);
+         ^
+<program source>:95:2: error: use of undeclared identifier 'vec3'
+         vec3 l = 1.0 - g;
+         ^
+<program source>:96:2: error: use of undeclared identifier 'vec3'
+         vec3 i1 = min( g.xyz, l.zxy );
+         ^
+<program source>:97:2: error: use of undeclared identifier 'vec3'
+         vec3 i2 = max( g.xyz, l.zxy );
+         ^
+<program source>:103:2: error: use of undeclared identifier 'vec3'
+         vec3 x1 = x0 - i1 + C.xxx;
+         ^
+<program source>:104:2: error: use of undeclared identifier 'vec3'
+         vec3 x2 = x0 - i2 + C.yyy; // 2.0*C.x = 1/3 = C.y
+         ^
+<program source>:105:2: error: use of undeclared identifier 'vec3'
+         vec3 x3 = x0 - D.yyy;      // -1.0+3.0*C.x = -0.5 = -D.y
+         ^
+<program source>:108:2: error: use of undeclared identifier 'i'
+         i = mod(i, 289.0 ); 
+         ^
+<program source>:110:3: error: use of undeclared identifier 'i'
+                 i.z + float4(0.0, i1.z, i2.z, 1.0 )) + 
+                 ^
+<program source>:118:2: error: use of undeclared identifier 'vec3'
+         vec3  ns = n_ * D.wyz - D.xzx;
+         ^
+<program source>:120:24: error: use of undeclared identifier 'ns'
+         float4 j = p - 49.0 * floor(p * ns.z * ns.z);  //  mod(p,7*7)
+                               ^
+/System/Library/Frameworks/OpenCL.framework/Resources/cl_kernel.h:2000:21: note: instantiated from:
+ #define floor(X)    __CLFN_F1_MODD(X,floor)
+                     ^
+<program source>:120:24: note: instantiated from:
+         float4 j = p - 49.0 * floor(p * ns.z * ns.z);  //  mod(p,7*7)
+                               ^
+<program source>:120:34: note: instantiated from:
+         float4 j = p - 49.0 * floor(p * ns.z * ns.z);  //  mod(p,7*7)
+                                         ^
+<program source>:122:14: error: use of undeclared identifier 'ns'
+         float4 x_ = floor(j * ns.z);
+                     ^
+/System/Library/Frameworks/OpenCL.framework/Resources/cl_kernel.h:2000:21: note: instantiated from:
+ #define floor(X)    __CLFN_F1_MODD(X,floor)
+                     ^
+<program source>:122:14: note: instantiated from:
+         float4 x_ = floor(j * ns.z);
+                     ^
+<program source>:122:24: note: instantiated from:
+         float4 x_ = floor(j * ns.z);
+                               ^
+<program source>:123:14:{123:14-123:19}{123:14-123:19}: error: can't convert between vector values of different size ('__float4' and 'double')
+         float4 y_ = floor(j - 7.0 * x_ );    // mod(j,N)
+                     ^~~~~~~~~~~~~~~~~~~~
+/System/Library/Frameworks/OpenCL.framework/Resources/cl_kernel.h:2000:21: note: instantiated from:
+ #define floor(X)    __CLFN_F1_MODD(X,floor)
+                     ^
+<program source>:123:14: note: instantiated from:
+         float4 y_ = floor(j - 7.0 * x_ );    // mod(j,N)
+                     ^         ~~~   ~~
+<program source>:123:28: note: instantiated from:
+         float4 y_ = floor(j - 7.0 * x_ );    // mod(j,N)
+                               ~~~ ^ ~~
+<program source>:125:17: error: use of undeclared identifier 'ns'
+         float4 x = x_ *ns.x + ns.yyyy;
+                        ^
+<program source>:126:17: error: use of undeclared identifier 'ns'
+         float4 y = y_ *ns.x + ns.yyyy;
+                        ^
+<program source>:127:19:{127:19-127:22}: error: more than one matching function found in __builtin_overload
+         float4 h = 1.0 - abs(x) - abs(y);
+                          ^~~~~~
+/System/Library/Frameworks/OpenCL.framework/Resources/cl_kernel.h:2164:25: note: instantiated from:
+ #define abs(X)          __builtin_overload(1, X,    __abs_1i8,     __abs_2i8,     __abs_3i8,     __abs_4i8,     __abs_8i8,     __abs_16i8,      \
+                         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+<program source>:129:14: error: unexpected type name '__float4': expected expression
+         float4 b0 = float4( x.xy, y.xy );
+                     ^
+/System/Library/Frameworks/OpenCL.framework/Resources/cl_kernel.h:172:18: note: instantiated from:
+ #define float4                  __float4
+                                 ^
+<program source>:130:14: error: unexpected type name '__float4': expected expression
+         float4 b1 = float4( x.zw, y.zw );
+                     ^
+/System/Library/Frameworks/OpenCL.framework/Resources/cl_kernel.h:172:18: note: instantiated from:
+ #define float4                  __float4
+                                 ^
+<program source>:136:15: error: unexpected type name '__float4': expected expression
+         float4 sh = -step(h, float4(0.0));
+                      ^
+<program source>:136:23: note: instantiated from:
+         float4 sh = -step(h, float4(0.0));
+                              ^
+/System/Library/Frameworks/OpenCL.framework/Resources/cl_kernel.h:172:18: note: instantiated from:
+ #define float4                  __float4
+                                 ^
+<program source>:141:2: error: use of undeclared identifier 'vec3'
+         vec3 p0 = vec3(a0.xy,h.x);
+         ^
+<program source>:142:2: error: use of undeclared identifier 'vec3'
+         vec3 p1 = vec3(a0.zw,h.y);
+         ^
+<program source>:143:2: error: use of undeclared identifier 'vec3'
+         vec3 p2 = vec3(a1.xy,h.z);
+         ^
+<program source>:144:2: error: use of undeclared identifier 'vec3'
+         vec3 p3 = vec3(a1.zw,h.w);
+         ^
+<program source>:147:30: error: unexpected type name '__float4': expected expression
+         float4 norm = taylorInvSqrt(float4(dot(p0,p0), dot(p1,p1), dot(p2, p2), dot(p3,p3)));
+                                     ^
+/System/Library/Frameworks/OpenCL.framework/Resources/cl_kernel.h:172:18: note: instantiated from:
+ #define float4                  __float4
+                                 ^
+<program source>:147:37: error: use of undeclared identifier 'p0'
+         float4 norm = taylorInvSqrt(float4(dot(p0,p0), dot(p1,p1), dot(p2, p2), dot(p3,p3)));
+                                            ^
+<program source>:147:41: note: instantiated from:
+         float4 norm = taylorInvSqrt(float4(dot(p0,p0), dot(p1,p1), dot(p2, p2), dot(p3,p3)));
+                                                ^
+<program source>:148:2: error: use of undeclared identifier 'p0'
+         p0 *= norm.x;
+         ^
+<program source>:149:2: error: use of undeclared identifier 'p1'
+         p1 *= norm.y;
+         ^
+<program source>:150:2: error: use of undeclared identifier 'p2'
+         p2 *= norm.z;
+         ^
+<program source>:151:2: error: use of undeclared identifier 'p3'
+         p3 *= norm.w;
+         ^
+<program source>:154:13: error: unexpected type name '__float4': expected expression
+         float4 m = max(0.6 - float4(dot(x0,x0), dot(x1,x1), dot(x2,x2), dot(x3,x3)), 0.0);
+                    ^
+/System/Library/Frameworks/OpenCL.framework/Resources/cl_kernel.h:2190:29: note: instantiated from:
+ #define max(X,Y)            __CLFN_ALL2_plus(X,Y,max)
+                             ^
+<program source>:154:13: note: instantiated from:
+         float4 m = max(0.6 - float4(dot(x0,x0), dot(x1,x1), dot(x2,x2), dot(x3,x3)), 0.0);
+                    ^
+<program source>:154:23: note: instantiated from:
+         float4 m = max(0.6 - float4(dot(x0,x0), dot(x1,x1), dot(x2,x2), dot(x3,x3)), 0.0);
+                              ^
+/System/Library/Frameworks/OpenCL.framework/Resources/cl_kernel.h:172:18: note: instantiated from:
+ #define float4                  __float4
+                                 ^
+<program source>:154:13: error: use of undeclared identifier 'x0'
+         float4 m = max(0.6 - float4(dot(x0,x0), dot(x1,x1), dot(x2,x2), dot(x3,x3)), 0.0);
+                    ^
+/System/Library/Frameworks/OpenCL.framework/Resources/cl_kernel.h:2190:29: note: instantiated from:
+ #define max(X,Y)            __CLFN_ALL2_plus(X,Y,max)
+                             ^
+<program source>:154:13: note: instantiated from:
+         float4 m = max(0.6 - float4(dot(x0,x0), dot(x1,x1), dot(x2,x2), dot(x3,x3)), 0.0);
+                    ^
+<program source>:154:30: note: instantiated from:
+         float4 m = max(0.6 - float4(dot(x0,x0), dot(x1,x1), dot(x2,x2), dot(x3,x3)), 0.0);
+                                     ^
+<program source>:154:34: note: instantiated from:
+         float4 m = max(0.6 - float4(dot(x0,x0), dot(x1,x1), dot(x2,x2), dot(x3,x3)), 0.0);
+                                         ^
+<program source>:156:16: error: unexpected type name '__float4': expected expression
+         return 42.0 * dot( m*m, float4( dot(p0,x0), dot(p1,x1), dot(p2,x2), dot(p3,x3) ) );
+                       ^
+<program source>:156:26: note: instantiated from:
+         return 42.0 * dot( m*m, float4( dot(p0,x0), dot(p1,x1), dot(p2,x2), dot(p3,x3) ) );
+                                 ^
+/System/Library/Frameworks/OpenCL.framework/Resources/cl_kernel.h:172:18: note: instantiated from:
+ #define float4                  __float4
+                                 ^
+<program source>:156:16: error: use of undeclared identifier 'p0'
+         return 42.0 * dot( m*m, float4( dot(p0,x0), dot(p1,x1), dot(p2,x2), dot(p3,x3) ) );
+                       ^
+<program source>:156:34: note: instantiated from:
+         return 42.0 * dot( m*m, float4( dot(p0,x0), dot(p1,x1), dot(p2,x2), dot(p3,x3) ) );
+                                         ^
+<program source>:156:38: note: instantiated from:
+         return 42.0 * dot( m*m, float4( dot(p0,x0), dot(p1,x1), dot(p2,x2), dot(p3,x3) ) );
+                                             ^
+<program source>:159:7: error: conflicting types for 'snoise'
+ float snoise(float theX, float theY, float theZ, float theW){
+       ^
+<program source>:39:7: note: previous definition is here
+ float snoise(float2 v){
+       ^
+<program source>:172:14: error: unexpected type name '__float4': expected expression
+         float4 i  = floor(v + dot(v, float4(F4)) );
+                     ^
+/System/Library/Frameworks/OpenCL.framework/Resources/cl_kernel.h:2000:21: note: instantiated from:
+ #define floor(X)    __CLFN_F1_MODD(X,floor)
+                     ^
+<program source>:172:14: note: instantiated from:
+         float4 i  = floor(v + dot(v, float4(F4)) );
+                     ^
+<program source>:172:24: note: instantiated from:
+         float4 i  = floor(v + dot(v, float4(F4)) );
+                               ^
+<program source>:172:31: note: instantiated from:
+         float4 i  = floor(v + dot(v, float4(F4)) );
+                                      ^
+/System/Library/Frameworks/OpenCL.framework/Resources/cl_kernel.h:172:18: note: instantiated from:
+ #define float4                  __float4
+                                 ^
+<program source>:183:15:{183:17-183:20}{183:11-183:14}: error: can't convert between vector values of different size ('__float4' and 'double')
+         i0.yzw = 1.0 - isX;
+                  ~~~ ^ ~~~
+<program source>:185:15:{185:17-185:24}{185:11-185:14}: error: can't convert between vector values of different size ('__float2' and 'double')
+         i0.zw += 1.0 - isYZ.xy;
+                  ~~~ ^ ~~~~~~~
+<program source>:190:14:{190:14-190:19}: error: more than one matching function found in __builtin_overload
+         float4 i3 = clamp( i0, 0.0, 1.0 );
+                     ^~~~~~~~~~~~~~~~~~~~~
+/System/Library/Frameworks/OpenCL.framework/Resources/cl_kernel.h:2202:25: note: instantiated from:
+ #define clamp(X,Y,Z)    __builtin_overload(3,X,Y,Z, __clampf, __clampf2, __clampf3, __clampf4, __clampf8, __clampf16,      \
+                         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+<program source>:191:14:{191:14-191:19}: error: more than one matching function found in __builtin_overload
+         float4 i2 = clamp( i0-1.0, 0.0, 1.0 );
+                     ^~~~~~~~~~~~~~~~~~~~~~~~~
+/System/Library/Frameworks/OpenCL.framework/Resources/cl_kernel.h:2202:25: note: instantiated from:
+ #define clamp(X,Y,Z)    __builtin_overload(3,X,Y,Z, __clampf, __clampf2, __clampf3, __clampf4, __clampf8, __clampf16,      \
+                         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+<program source>:192:14:{192:14-192:19}: error: more than one matching function found in __builtin_overload
+         float4 i1 = clamp( i0-2.0, 0.0, 1.0 );
+                     ^~~~~~~~~~~~~~~~~~~~~~~~~
+/System/Library/Frameworks/OpenCL.framework/Resources/cl_kernel.h:2202:25: note: instantiated from:
+ #define clamp(X,Y,Z)    __builtin_overload(3,X,Y,Z, __clampf, __clampf2, __clampf3, __clampf4, __clampf8, __clampf16,      \
+                         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+<program source>:208:9: error: unexpected type name '__float4': expected expression
+                 i.w + float4(i1.w, i2.w, i3.w, 1.0 )) + 
+                       ^
+/System/Library/Frameworks/OpenCL.framework/Resources/cl_kernel.h:172:18: note: instantiated from:
+ #define float4                  __float4
+                                 ^
+<program source>:215:14: error: unexpected type name '__float4': expected expression
+         float4 ip = float4(1.0/294.0, 1.0/49.0, 1.0/7.0, 0.0) ;
+                     ^
+/System/Library/Frameworks/OpenCL.framework/Resources/cl_kernel.h:172:18: note: instantiated from:
+ #define float4                  __float4
+                                 ^
+<program source>:224:30: error: unexpected type name '__float4': expected expression
+         float4 norm = taylorInvSqrt(float4(dot(p0,p0), dot(p1,p1), dot(p2, p2), dot(p3,p3)));
+                                     ^
+/System/Library/Frameworks/OpenCL.framework/Resources/cl_kernel.h:172:18: note: instantiated from:
+ #define float4                  __float4
+                                 ^
+<program source>:229:5:{229:2-229:4}{229:8-229:33}: error: can't convert between vector values of different size ('__float4' and 'int')
+         p4 *= taylorInvSqrt(dot(p4,p4));
+         ~~ ^  ~~~~~~~~~~~~~~~~~~~~~~~~~
+<program source>:232:14:{232:14-232:17}{232:14-232:17}: error: can't convert between vector values of different size ('__float4' and 'double')
+         float4 m0 = max(0.6 - (float4)(dot(x0,x0), dot(x1,x1), dot(x2,x2),0), 0.0);
+                     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/System/Library/Frameworks/OpenCL.framework/Resources/cl_kernel.h:2190:29: note: instantiated from:
+ #define max(X,Y)            __CLFN_ALL2_plus(X,Y,max)
+                             ^
+<program source>:232:14: note: instantiated from:
+         float4 m0 = max(0.6 - (float4)(dot(x0,x0), dot(x1,x1), dot(x2,x2),0), 0.0);
+                     ^   ~~~   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+<program source>:232:22: note: instantiated from:
+         float4 m0 = max(0.6 - (float4)(dot(x0,x0), dot(x1,x1), dot(x2,x2),0), 0.0);
+                         ~~~ ^ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+<program source>:233:56: error: too few arguments provided to function-like macro invocation
+         float2 m1 = max(0.6 - (float2)(dot(x3,x3), dot(x4,x4)));
+                                                               ^
+<program source>:233:14:{233:14-233:17}: error: incompatible type initializing 'double (double, double)', expected '__float2'
+         float2 m1 = max(0.6 - (float2)(dot(x3,x3), dot(x4,x4)));
+                     ^~~ [error: CL_BUILD_PROGRAM_FAILURE]
+	at com.jogamp.opencl.CLException.newException(CLException.java:78)
+	at com.jogamp.opencl.CLProgram.build(CLProgram.java:381)
+	at com.jogamp.opencl.CLProgram.build(CLProgram.java:262)
+	at cc.creativecomputing.opencl.demos.CCCLSimplexNoiseDemo.setup(CCCLSimplexNoiseDemo.java:90)
+	at cc.creativecomputing.CCApp.display(CCApp.java:562)
+	at jogamp.opengl.GLDrawableHelper.display(GLDrawableHelper.java:191)
+	at javax.media.opengl.awt.GLCanvas$DisplayAction.run(GLCanvas.java:873)
+	at jogamp.opengl.GLDrawableHelper.invokeGL(GLDrawableHelper.java:363)
+	at javax.media.opengl.awt.GLCanvas.maybeDoSingleThreadedWorkaround(GLCanvas.java:769)
+	at javax.media.opengl.awt.GLCanvas.display(GLCanvas.java:388)
+	at javax.media.opengl.awt.GLCanvas.paint(GLCanvas.java:487)
+	at sun.awt.RepaintArea.paintComponent(RepaintArea.java:276)
+	at sun.awt.RepaintArea.paint(RepaintArea.java:241)
+	at apple.awt.ComponentModel.handleEvent(ComponentModel.java:263)
+	at java.awt.Component.dispatchEventImpl(Component.java:4790)
+	at java.awt.Component.dispatchEvent(Component.java:4544)
+	at java.awt.EventQueue.dispatchEvent(EventQueue.java:635)
+	at java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:296)
+	at java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:211)
+	at java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:201)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:196)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:188)
+	at java.awt.EventDispatchThread.run(EventDispatchThread.java:122)
+

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<ui>
+	<globalsettings label="global" numberofpresets="0" selectedpreset="0">
+		<presetnames/>
+	</globalsettings>
+	<CCControlPresetTab numberofpresets="1" label="forces" selectedpreset="0">
+		<uielements>
+			<CCUIPresetControl label="presets">
+				<uielements/>
+			</CCUIPresetControl>
+			<CCUIComponent label="gravity">
+				<uielements>
+					<CCUISlider label="x">
+						<preset value="0.0"/>
+					</CCUISlider>
+					<CCUISlider label="y">
+						<preset value="-18.666664"/>
+					</CCUISlider>
+					<CCUISlider label="z">
+						<preset value="1.0"/>
+					</CCUISlider>
+					<CCUISlider label="strength">
+						<preset value="1.0"/>
+					</CCUISlider>
+				</uielements>
+			</CCUIComponent>
+			<CCUIComponent label="viscousDrag">
+				<uielements>
+					<CCUISlider label="coefficient">
+						<preset value="0.22"/>
+					</CCUISlider>
+					<CCUISlider label="strength">
+						<preset value="0.0"/>
+					</CCUISlider>
+				</uielements>
+			</CCUIComponent>
+			<CCUIComponent label="field">
+				<uielements>
+					<CCUISlider label="scale x">
+						<preset value="0.5133333"/>
+					</CCUISlider>
+					<CCUISlider label="scale y">
+						<preset value="0.20666666"/>
+					</CCUISlider>
+					<CCUISlider label="scale z">
+						<preset value="0.50666666"/>
+					</CCUISlider>
+					<CCUISlider label="offset x">
+						<preset value="430.66663"/>
+					</CCUISlider>
+					<CCUISlider label="offset y">
+						<preset value="586.66675"/>
+					</CCUISlider>
+					<CCUISlider label="offset z">
+						<preset value="720.0"/>
+					</CCUISlider>
+					<CCUISlider label="strength">
+						<preset value="100.0"/>
+					</CCUISlider>
+				</uielements>
+			</CCUIComponent>
+		</uielements>
+		<presetnames>
+			<presetname name="Preset:0"/>
+		</presetnames>
+	</CCControlPresetTab>
+</ui>

@@ -1,0 +1,23 @@
+
+uniform float4x4 modelViewProjection : state.matrix.mvp;
+uniform float4x4 modelView : state.matrix.modelview[0];
+
+void main(
+	in 	float4 	iPosition	: POSITION,
+	in 	float4 	iNormal 	: NORMAL,
+	in 	float4 	iColor		: COLOR,
+	
+	out float4 	oPosition	: POSITION,
+	out float4 	oNormal		: TEXCOORD1,
+	out float4 	oColor		: COLOR,
+	out float 	depth		: TEXCOORD0
+){
+	// Output the clip space position
+  	oPosition = mul(modelViewProjection, iPosition);
+  	
+  	float4 positionModelView = mul(modelView, iPosition);
+  	oNormal = iNormal;//mul(inverseModelView, iNormal);
+  	oColor = iColor;
+  	
+  	depth = oPosition.z;
+}

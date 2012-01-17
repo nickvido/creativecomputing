@@ -1,0 +1,5 @@
+[Sun May 22 23:20:09 CEST 2011] [CCLog Line:177:initialize] [INFO] logging to file: log/noname-2011-05-22_23-20-09.txt
+[Sun May 22 23:20:09 CEST 2011] [CCImageIOFormat Line:95:createTextureData] [INFO] TextureIO.newTextureData(): BufferedImage type for stream = 5
+[Sun May 22 23:20:09 CEST 2011] [CCTextureUtil Line:303:toTextureData] [INFO] TYPE_3BYTE_BGR
+[Sun May 22 23:20:09 CEST 2011] [CCTextureUtil Line:400:toTextureData] [INFO] CCAppCapabilities.GL_EXT_abgr:true
+[Sun May 22 23:20:09 CEST 2011] [CCTextureUtil Line:401:toTextureData] [INFO] CCAppCapabilities.GL_VERSION_1_2:true

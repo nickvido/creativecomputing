@@ -1,0 +1,8 @@
+/* $Id: vertexpassthrough.glshader,v 1.1 2007/03/08 21:23:34 dyken Exp $ */
+
+void main()
+{
+	gl_TexCoord[0] = 0.5*gl_Vertex+vec4(0.5);
+	gl_Position = gl_Vertex;
+	gl_FrontColor = gl_Color;
+}

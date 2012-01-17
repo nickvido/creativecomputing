@@ -1,0 +1,25 @@
+[Sat Jun 25 21:43:21 CEST 2011] [CCLog Line:177:initialize] [INFO] logging to file: log/noname-2011-06-25_21-43-20.txt
+[Sat Jun 25 21:43:21 CEST 2011] [CCGraphics Line:304:checkError] [SEVERE] # STACK OVERFLOW REPORTED. check for errors in matrix operations
+[Sat Jun 25 21:43:22 CEST 2011] [CCGraphics Line:304:checkError] [SEVERE] # STACK OVERFLOW REPORTED. check for errors in matrix operations
+[Sat Jun 25 21:43:22 CEST 2011] [CCGraphics Line:304:checkError] [SEVERE] # STACK OVERFLOW REPORTED. check for errors in matrix operations
+[Sat Jun 25 21:43:22 CEST 2011] [CCGraphics Line:304:checkError] [SEVERE] # STACK OVERFLOW REPORTED. check for errors in matrix operations
+[Sat Jun 25 21:43:22 CEST 2011] [CCGraphics Line:304:checkError] [SEVERE] # STACK OVERFLOW REPORTED. check for errors in matrix operations
+[Sat Jun 25 21:43:22 CEST 2011] [CCGraphics Line:304:checkError] [SEVERE] # STACK OVERFLOW REPORTED. check for errors in matrix operations
+[Sat Jun 25 21:43:22 CEST 2011] [CCGraphics Line:304:checkError] [SEVERE] # STACK OVERFLOW REPORTED. check for errors in matrix operations
+[Sat Jun 25 21:43:22 CEST 2011] [CCGraphics Line:304:checkError] [SEVERE] # STACK OVERFLOW REPORTED. check for errors in matrix operations
+[Sat Jun 25 21:43:22 CEST 2011] [CCGraphics Line:304:checkError] [SEVERE] # STACK OVERFLOW REPORTED. check for errors in matrix operations
+[Sat Jun 25 21:43:22 CEST 2011] [CCGraphics Line:304:checkError] [SEVERE] # STACK OVERFLOW REPORTED. check for errors in matrix operations
+[Sat Jun 25 21:43:22 CEST 2011] [CCGraphics Line:304:checkError] [SEVERE] # STACK OVERFLOW REPORTED. check for errors in matrix operations
+[Sat Jun 25 21:43:22 CEST 2011] [CCGraphics Line:304:checkError] [SEVERE] # STACK OVERFLOW REPORTED. check for errors in matrix operations
+[Sat Jun 25 21:43:23 CEST 2011] [CCGraphics Line:304:checkError] [SEVERE] # STACK OVERFLOW REPORTED. check for errors in matrix operations
+[Sat Jun 25 21:43:23 CEST 2011] [CCGraphics Line:304:checkError] [SEVERE] # STACK OVERFLOW REPORTED. check for errors in matrix operations
+[Sat Jun 25 21:43:23 CEST 2011] [CCGraphics Line:304:checkError] [SEVERE] # STACK OVERFLOW REPORTED. check for errors in matrix operations
+[Sat Jun 25 21:43:23 CEST 2011] [CCGraphics Line:304:checkError] [SEVERE] # STACK OVERFLOW REPORTED. check for errors in matrix operations
+[Sat Jun 25 21:43:23 CEST 2011] [CCGraphics Line:304:checkError] [SEVERE] # STACK OVERFLOW REPORTED. check for errors in matrix operations
+[Sat Jun 25 21:43:23 CEST 2011] [CCGraphics Line:304:checkError] [SEVERE] # STACK OVERFLOW REPORTED. check for errors in matrix operations
+[Sat Jun 25 21:43:23 CEST 2011] [CCGraphics Line:304:checkError] [SEVERE] # STACK OVERFLOW REPORTED. check for errors in matrix operations
+[Sat Jun 25 21:43:23 CEST 2011] [CCGraphics Line:304:checkError] [SEVERE] # STACK OVERFLOW REPORTED. check for errors in matrix operations
+[Sat Jun 25 21:43:23 CEST 2011] [CCGraphics Line:304:checkError] [SEVERE] # STACK OVERFLOW REPORTED. check for errors in matrix operations
+[Sat Jun 25 21:43:23 CEST 2011] [CCGraphics Line:304:checkError] [SEVERE] # STACK OVERFLOW REPORTED. check for errors in matrix operations
+[Sat Jun 25 21:43:24 CEST 2011] [CCGraphics Line:304:checkError] [SEVERE] # STACK OVERFLOW REPORTED. check for errors in matrix operations
+[Sat Jun 25 21:43:24 CEST 2011] [CCGraphics Line:304:checkError] [SEVERE] # STACK OVERFLOW REPORTED. check for errors in matrix operations

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<ui>
+  <CCControlPresetTab numberofpresets="1" label="tex gen" selectedpreset="0">
+    <uielements>
+      <CCUIPresetControl label="presets">
+        <uielements/>
+      </CCUIPresetControl>
+      <CCUIComponent label="tex gen">
+        <uielements>
+          <CCUISlider label="p1">
+            <preset value="0.01"/>
+          </CCUISlider>
+          <CCUISlider label="p2">
+            <preset value="0.01"/>
+          </CCUISlider>
+          <CCUISlider label="p3">
+            <preset value="0.01"/>
+          </CCUISlider>
+          <CCUISlider label="p4">
+            <preset value="0.13333334"/>
+          </CCUISlider>
+          <CCUIDropDown label="gen mode">
+            <preset value="REFLECTION_MAP"/>
+          </CCUIDropDown>
+        </uielements>
+      </CCUIComponent>
+    </uielements>
+    <presetnames>
+      <presetname name="Preset:0"/>
+    </presetnames>
+  </CCControlPresetTab>
+  <globalsettings label="global" numberofpresets="0" selectedpreset="0">
+    <presetnames/>
+  </globalsettings>
+</ui>

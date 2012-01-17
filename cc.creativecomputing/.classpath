@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="src" path="demo"/>
+	<classpathentry kind="src" path="dev"/>
+	<classpathentry kind="src" path="extern"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.launching.macosx.MacOSXType/JVM 1.6.0">
+		<attributes>
+			<attribute name="org.eclipse.jdt.launching.CLASSPATH_ATTR_LIBRARY_PATH_ENTRY" value="cc.creativecomputing/lib/natives"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="lib/quicktime/QTJava.zip">
+		<attributes>
+			<attribute name="org.eclipse.jdt.launching.CLASSPATH_ATTR_LIBRARY_PATH_ENTRY" value="cc.creativecomputing/lib/quicktime"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="lib/serial/RXTXcomm.jar">
+		<attributes>
+			<attribute name="org.eclipse.jdt.launching.CLASSPATH_ATTR_LIBRARY_PATH_ENTRY" value="cc.creativecomputing/lib/serial"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="lib/osxtouch/GlulogicMT.jar">
+		<attributes>
+			<attribute name="org.eclipse.jdt.launching.CLASSPATH_ATTR_LIBRARY_PATH_ENTRY" value="cc.creativecomputing/lib/osxtouch"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="lib/jocl/jocl.jar">
+		<attributes>
+			<attribute name="org.eclipse.jdt.launching.CLASSPATH_ATTR_LIBRARY_PATH_ENTRY" value="cc.creativecomputing/lib/jocl"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="lib/input">
+		<attributes>
+			<attribute name="org.eclipse.jdt.launching.CLASSPATH_ATTR_LIBRARY_PATH_ENTRY" value="cc.creativecomputing/lib/input"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="lib/netty/netty-3.2.4.Final.jar" sourcepath="lib/netty/netty-3.2.4.Final-sources.jar"/>
+	<classpathentry kind="lib" path="lib/jogl/gluegen-rt.jar">
+		<attributes>
+			<attribute name="org.eclipse.jdt.launching.CLASSPATH_ATTR_LIBRARY_PATH_ENTRY" value="cc.creativecomputing/lib/jogl"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="lib/jogl/gluegen.jar">
+		<attributes>
+			<attribute name="org.eclipse.jdt.launching.CLASSPATH_ATTR_LIBRARY_PATH_ENTRY" value="cc.creativecomputing/lib/jogl"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="lib/jogl/jogl.all.jar">
+		<attributes>
+			<attribute name="org.eclipse.jdt.launching.CLASSPATH_ATTR_LIBRARY_PATH_ENTRY" value="cc.creativecomputing/lib/jogl"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="lib/jogl/nativewindow.all.jar">
+		<attributes>
+			<attribute name="org.eclipse.jdt.launching.CLASSPATH_ATTR_LIBRARY_PATH_ENTRY" value="cc.creativecomputing/lib/jogl"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="lib/jogl/newt.all.jar">
+		<attributes>
+			<attribute name="org.eclipse.jdt.launching.CLASSPATH_ATTR_LIBRARY_PATH_ENTRY" value="cc.creativecomputing/lib/jogl"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

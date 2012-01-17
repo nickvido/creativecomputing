@@ -1,0 +1,53 @@
+[Thu Apr 28 22:43:42 CEST 2011] [CCLog Line:177:initialize] [INFO] logging to file: log/Christian-Riekoffs-MacBook-Pro.local-2011-04-28_22-43-42.txt
+[Thu Apr 28 22:43:42 CEST 2011] [CCTextureUtil Line:368:toTextureData] [INFO] DEFAULT
+[Thu Apr 28 22:43:42 CEST 2011] [CCTextureUtil Line:389:toTextureData] [INFO] CCAppCapabilities.GL_EXT_abgr:true
+[Thu Apr 28 22:43:42 CEST 2011] [CCTextureUtil Line:390:toTextureData] [INFO] CCAppCapabilities.GL_VERSION_1_2:true
+[Thu Apr 28 22:43:42 CEST 2011] [CCTextureUtil Line:368:toTextureData] [INFO] DEFAULT
+[Thu Apr 28 22:43:42 CEST 2011] [CCTextureUtil Line:389:toTextureData] [INFO] CCAppCapabilities.GL_EXT_abgr:true
+[Thu Apr 28 22:43:42 CEST 2011] [CCTextureUtil Line:390:toTextureData] [INFO] CCAppCapabilities.GL_VERSION_1_2:true
+[Thu Apr 28 22:43:57 CEST 2011] [CCApp:display] [WARNING] 22
+java.lang.ArrayIndexOutOfBoundsException: 22
+	at cc.creativecomputing.graphics.font.text.CCText$CCTextGridLine.gridPos(CCText.java:139)
+	at cc.creativecomputing.graphics.font.text.CCText$CCTextGridLine.access$7(CCText.java:138)
+	at cc.creativecomputing.graphics.font.text.CCText$CCTextGrid.upperIndices(CCText.java:245)
+	at cc.creativecomputing.newui.widget.CCUITextFieldWidget$CCUITextFieldForegroundDecorator.moveCursorUp(CCUITextFieldWidget.java:90)
+	at cc.creativecomputing.newui.widget.CCUITextFieldWidget.keyEvent(CCUITextFieldWidget.java:188)
+	at cc.creativecomputing.newui.CCUI.keyPressed(CCUI.java:331)
+	at cc.creativecomputing.CCAbstractApp.handleKeyEvent(CCAbstractApp.java:544)
+	at cc.creativecomputing.CCAbstractApp.dequeueKeyEvents(CCAbstractApp.java:530)
+	at cc.creativecomputing.CCApp.display(CCApp.java:590)
+	at com.sun.opengl.impl.GLDrawableHelper.display(GLDrawableHelper.java:78)
+	at javax.media.opengl.GLCanvas$DisplayAction.run(GLCanvas.java:435)
+	at com.sun.opengl.impl.GLDrawableHelper.invokeGL(GLDrawableHelper.java:194)
+	at javax.media.opengl.GLCanvas$DisplayOnEventDispatchThreadAction.run(GLCanvas.java:452)
+	at java.awt.event.InvocationEvent.dispatch(InvocationEvent.java:199)
+	at java.awt.EventQueue.dispatchEvent(EventQueue.java:633)
+	at java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:296)
+	at java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:211)
+	at java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:201)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:196)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:188)
+	at java.awt.EventDispatchThread.run(EventDispatchThread.java:122)
+[Thu Apr 28 22:43:57 CEST 2011] [CCApp:display] [WARNING] 22
+java.lang.ArrayIndexOutOfBoundsException: 22
+	at cc.creativecomputing.graphics.font.text.CCText$CCTextGridLine.gridPos(CCText.java:139)
+	at cc.creativecomputing.graphics.font.text.CCText$CCTextGridLine.access$7(CCText.java:138)
+	at cc.creativecomputing.graphics.font.text.CCText$CCTextGrid.upperIndices(CCText.java:245)
+	at cc.creativecomputing.newui.widget.CCUITextFieldWidget$CCUITextFieldForegroundDecorator.moveCursorUp(CCUITextFieldWidget.java:90)
+	at cc.creativecomputing.newui.widget.CCUITextFieldWidget.keyEvent(CCUITextFieldWidget.java:188)
+	at cc.creativecomputing.newui.CCUI.keyPressed(CCUI.java:331)
+	at cc.creativecomputing.CCAbstractApp.handleKeyEvent(CCAbstractApp.java:544)
+	at cc.creativecomputing.CCAbstractApp.dequeueKeyEvents(CCAbstractApp.java:530)
+	at cc.creativecomputing.CCApp.display(CCApp.java:590)
+	at com.sun.opengl.impl.GLDrawableHelper.display(GLDrawableHelper.java:78)
+	at javax.media.opengl.GLCanvas$DisplayAction.run(GLCanvas.java:435)
+	at com.sun.opengl.impl.GLDrawableHelper.invokeGL(GLDrawableHelper.java:194)
+	at javax.media.opengl.GLCanvas$DisplayOnEventDispatchThreadAction.run(GLCanvas.java:452)
+	at java.awt.event.InvocationEvent.dispatch(InvocationEvent.java:199)
+	at java.awt.EventQueue.dispatchEvent(EventQueue.java:633)
+	at java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:296)
+	at java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:211)
+	at java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:201)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:196)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:188)
+	at java.awt.EventDispatchThread.run(EventDispatchThread.java:122)

@@ -1,0 +1,23 @@
+ui
+##
+
+switch to more flexible fenggui
+switch from creating controls by annotation to more flexible use of objects probably by using reflection
+create control objects for classes like camera, lights, fog etc to avoid the need of writing these objects again
+create more ui elements for color
+
+timeline
+########
+allow different datatypes so create more track types
+integrate timeline into cc ui
+allow group tracks
+clean up model and view
+
+jogl
+####
+switch to new jogl 2.0
+
+textures
+########
+
+integrate and test new cleaned up texture code

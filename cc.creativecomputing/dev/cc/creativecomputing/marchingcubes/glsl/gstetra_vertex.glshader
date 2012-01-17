@@ -1,0 +1,28 @@
+/* $Id: vertexpassthrough_transform.glshader,v 1.1 2007/03/23 13:50:51 dyken Exp $ */
+
+#extension GL_EXT_gpu_shader4 : enable
+
+varying out vec3 Normal_g;
+varying out int flag_g;
+varying out float value_g;
+
+
+uniform sampler3D function_tex;
+uniform float threshold;
+
+void main ()
+{
+	ivec3 pos = ivec3( gl_Vertex.xyz );
+
+	vec4 vals = vec4( texelFetch3D( function_tex, pos, 0 ).a,
+					  texelFetch3D( function_tex, pos+ivec3(1,0,0), 0 ).a,
+					  texelFetch3D( function_tex, pos+ivec3(0,1,0), 0 ).a,
+					  texelFetch3D( function_tex, pos+ivec3(0,0,1), 0 ).a )
+			  - vec4(threshold);
+
+	Normal_g = -gl_NormalMatrix*vals.yzw;
+	flag_g = int(vals.x >= 0.0);
+	value_g = vals.x;
+	gl_Position = gl_ModelViewProjectionMatrix * vec4( pos, 1.0 );
+	gl_FrontColor = gl_Color;
+}

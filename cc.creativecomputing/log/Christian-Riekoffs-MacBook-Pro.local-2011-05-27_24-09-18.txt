@@ -1,0 +1,400 @@
+[Fri May 27 00:09:18 CEST 2011] [CCLog Line:177:initialize] [INFO] logging to file: log/Christian-Riekoffs-MacBook-Pro.local-2011-05-27_24-09-18.txt
+[Fri May 27 00:09:18 CEST 2011] [CCApp:display] [SEVERE] com.jogamp.opencl.CLException$CLBuildProgramFailureException: 
+CLDevice [id: 16918016 name: GeForce 8600M GT type: GPU profile: FULL_PROFILE] build log:
+<program source>:102:2: error: use of undeclared identifier 'vec3'
+         vec3 i  = floor(v + dot(v, C.yyy) );
+         ^
+<program source>:103:2: error: use of undeclared identifier 'vec3'
+         vec3 x0 =   v - i + dot(i, C.xxx) ;
+         ^
+<program source>:106:2: error: use of undeclared identifier 'vec3'
+         vec3 g = step(x0.yzx, x0.xyz);
+         ^
+<program source>:107:2: error: use of undeclared identifier 'vec3'
+         vec3 l = 1.0 - g;
+         ^
+<program source>:108:2: error: use of undeclared identifier 'vec3'
+         vec3 i1 = min( g.xyz, l.zxy );
+         ^
+<program source>:109:2: error: use of undeclared identifier 'vec3'
+         vec3 i2 = max( g.xyz, l.zxy );
+         ^
+<program source>:115:2: error: use of undeclared identifier 'vec3'
+         vec3 x1 = x0 - i1 + C.xxx;
+         ^
+<program source>:116:2: error: use of undeclared identifier 'vec3'
+         vec3 x2 = x0 - i2 + C.yyy; // 2.0*C.x = 1/3 = C.y
+         ^
+<program source>:117:2: error: use of undeclared identifier 'vec3'
+         vec3 x3 = x0 - D.yyy;      // -1.0+3.0*C.x = -0.5 = -D.y
+         ^
+<program source>:120:2: error: use of undeclared identifier 'i'
+         i = fmod(i, 289.0 ); 
+         ^
+<program source>:122:3: error: use of undeclared identifier 'i'
+                 i.z + float4(0.0, i1.z, i2.z, 1.0 )) + 
+                 ^
+<program source>:130:2: error: use of undeclared identifier 'vec3'
+         vec3  ns = n_ * D.wyz - D.xzx;
+         ^
+<program source>:132:24: error: use of undeclared identifier 'ns'
+         float4 j = p - 49.0 * floor(p * ns.z * ns.z);  //  fmod(p,7*7)
+                               ^
+/System/Library/Frameworks/OpenCL.framework/Resources/cl_kernel.h:2000:21: note: instantiated from:
+ #define floor(X)    __CLFN_F1_MODD(X,floor)
+                     ^
+<program source>:132:24: note: instantiated from:
+         float4 j = p - 49.0 * floor(p * ns.z * ns.z);  //  fmod(p,7*7)
+                               ^
+<program source>:132:34: note: instantiated from:
+         float4 j = p - 49.0 * floor(p * ns.z * ns.z);  //  fmod(p,7*7)
+                                         ^
+<program source>:134:14: error: use of undeclared identifier 'ns'
+         float4 x_ = floor(j * ns.z);
+                     ^
+/System/Library/Frameworks/OpenCL.framework/Resources/cl_kernel.h:2000:21: note: instantiated from:
+ #define floor(X)    __CLFN_F1_MODD(X,floor)
+                     ^
+<program source>:134:14: note: instantiated from:
+         float4 x_ = floor(j * ns.z);
+                     ^
+<program source>:134:24: note: instantiated from:
+         float4 x_ = floor(j * ns.z);
+                               ^
+<program source>:135:14:{135:14-135:19}{135:14-135:19}: error: can't convert between vector values of different size ('__float4' and 'double')
+         float4 y_ = floor(j - 7.0 * x_ );    // fmod(j,N)
+                     ^~~~~~~~~~~~~~~~~~~~
+/System/Library/Frameworks/OpenCL.framework/Resources/cl_kernel.h:2000:21: note: instantiated from:
+ #define floor(X)    __CLFN_F1_MODD(X,floor)
+                     ^
+<program source>:135:14: note: instantiated from:
+         float4 y_ = floor(j - 7.0 * x_ );    // fmod(j,N)
+                     ^         ~~~   ~~
+<program source>:135:28: note: instantiated from:
+         float4 y_ = floor(j - 7.0 * x_ );    // fmod(j,N)
+                               ~~~ ^ ~~
+<program source>:137:17: error: use of undeclared identifier 'ns'
+         float4 x = x_ *ns.x + ns.yyyy;
+                        ^
+<program source>:138:17: error: use of undeclared identifier 'ns'
+         float4 y = y_ *ns.x + ns.yyyy;
+                        ^
+<program source>:139:17:{139:19-139:23}{139:13-139:16}: error: can't convert between vector values of different size ('float  __attribute__((ext_vector_type(4)))' and 'double')
+         float4 h = 1.0 - fabs(x) - fabs(y);
+                    ~~~ ^ ~~~~~~~
+<program source>:141:14: error: unexpected type name '__float4': expected expression
+         float4 b0 = float4( x.xy, y.xy );
+                     ^
+/System/Library/Frameworks/OpenCL.framework/Resources/cl_kernel.h:172:18: note: instantiated from:
+ #define float4                  __float4
+                                 ^
+<program source>:142:14: error: unexpected type name '__float4': expected expression
+         float4 b1 = float4( x.zw, y.zw );
+                     ^
+/System/Library/Frameworks/OpenCL.framework/Resources/cl_kernel.h:172:18: note: instantiated from:
+ #define float4                  __float4
+                                 ^
+<program source>:148:15: error: unexpected type name '__float4': expected expression
+         float4 sh = -step(h, float4(0.0));
+                      ^
+<program source>:148:23: note: instantiated from:
+         float4 sh = -step(h, float4(0.0));
+                              ^
+/System/Library/Frameworks/OpenCL.framework/Resources/cl_kernel.h:172:18: note: instantiated from:
+ #define float4                  __float4
+                                 ^
+<program source>:153:2: error: use of undeclared identifier 'vec3'
+         vec3 p0 = vec3(a0.xy,h.x);
+         ^
+<program source>:154:2: error: use of undeclared identifier 'vec3'
+         vec3 p1 = vec3(a0.zw,h.y);
+         ^
+<program source>:155:2: error: use of undeclared identifier 'vec3'
+         vec3 p2 = vec3(a1.xy,h.z);
+         ^
+<program source>:156:2: error: use of undeclared identifier 'vec3'
+         vec3 p3 = vec3(a1.zw,h.w);
+         ^
+<program source>:159:30: error: unexpected type name '__float4': expected expression
+         float4 norm = taylorInvSqrt(float4(dot(p0,p0), dot(p1,p1), dot(p2, p2), dot(p3,p3)));
+                                     ^
+/System/Library/Frameworks/OpenCL.framework/Resources/cl_kernel.h:172:18: note: instantiated from:
+ #define float4                  __float4
+                                 ^
+<program source>:159:37: error: use of undeclared identifier 'p0'
+         float4 norm = taylorInvSqrt(float4(dot(p0,p0), dot(p1,p1), dot(p2, p2), dot(p3,p3)));
+                                            ^
+<program source>:159:41: note: instantiated from:
+         float4 norm = taylorInvSqrt(float4(dot(p0,p0), dot(p1,p1), dot(p2, p2), dot(p3,p3)));
+                                                ^
+<program source>:160:2: error: use of undeclared identifier 'p0'
+         p0 *= norm.x;
+         ^
+<program source>:161:2: error: use of undeclared identifier 'p1'
+         p1 *= norm.y;
+         ^
+<program source>:162:2: error: use of undeclared identifier 'p2'
+         p2 *= norm.z;
+         ^
+<program source>:163:2: error: use of undeclared identifier 'p3'
+         p3 *= norm.w;
+         ^
+<program source>:166:13: error: unexpected type name '__float4': expected expression
+         float4 m = max(0.6 - float4(dot(x0,x0), dot(x1,x1), dot(x2,x2), dot(x3,x3)), 0.0);
+                    ^
+/System/Library/Frameworks/OpenCL.framework/Resources/cl_kernel.h:2190:29: note: instantiated from:
+ #define max(X,Y)            __CLFN_ALL2_plus(X,Y,max)
+                             ^
+<program source>:166:13: note: instantiated from:
+         float4 m = max(0.6 - float4(dot(x0,x0), dot(x1,x1), dot(x2,x2), dot(x3,x3)), 0.0);
+                    ^
+<program source>:166:23: note: instantiated from:
+         float4 m = max(0.6 - float4(dot(x0,x0), dot(x1,x1), dot(x2,x2), dot(x3,x3)), 0.0);
+                              ^
+/System/Library/Frameworks/OpenCL.framework/Resources/cl_kernel.h:172:18: note: instantiated from:
+ #define float4                  __float4
+                                 ^
+<program source>:166:13: error: use of undeclared identifier 'x0'
+         float4 m = max(0.6 - float4(dot(x0,x0), dot(x1,x1), dot(x2,x2), dot(x3,x3)), 0.0);
+                    ^
+/System/Library/Frameworks/OpenCL.framework/Resources/cl_kernel.h:2190:29: note: instantiated from:
+ #define max(X,Y)            __CLFN_ALL2_plus(X,Y,max)
+                             ^
+<program source>:166:13: note: instantiated from:
+         float4 m = max(0.6 - float4(dot(x0,x0), dot(x1,x1), dot(x2,x2), dot(x3,x3)), 0.0);
+                    ^
+<program source>:166:30: note: instantiated from:
+         float4 m = max(0.6 - float4(dot(x0,x0), dot(x1,x1), dot(x2,x2), dot(x3,x3)), 0.0);
+                                     ^
+<program source>:166:34: note: instantiated from:
+         float4 m = max(0.6 - float4(dot(x0,x0), dot(x1,x1), dot(x2,x2), dot(x3,x3)), 0.0);
+                                         ^
+<program source>:168:16: error: unexpected type name '__float4': expected expression
+         return 42.0 * dot( m*m, float4( dot(p0,x0), dot(p1,x1), dot(p2,x2), dot(p3,x3) ) );
+                       ^
+<program source>:168:26: note: instantiated from:
+         return 42.0 * dot( m*m, float4( dot(p0,x0), dot(p1,x1), dot(p2,x2), dot(p3,x3) ) );
+                                 ^
+/System/Library/Frameworks/OpenCL.framework/Resources/cl_kernel.h:172:18: note: instantiated from:
+ #define float4                  __float4
+                                 ^
+<program source>:168:16: error: use of undeclared identifier 'p0'
+         return 42.0 * dot( m*m, float4( dot(p0,x0), dot(p1,x1), dot(p2,x2), dot(p3,x3) ) );
+                       ^
+<program source>:168:34: note: instantiated from:
+         return 42.0 * dot( m*m, float4( dot(p0,x0), dot(p1,x1), dot(p2,x2), dot(p3,x3) ) );
+                                         ^
+<program source>:168:38: note: instantiated from:
+         return 42.0 * dot( m*m, float4( dot(p0,x0), dot(p1,x1), dot(p2,x2), dot(p3,x3) ) );
+                                             ^
+CLDevice [id: 16909312 name: Intel(R) Core(TM)2 Duo CPU     T8300  @ 2.40GHz type: CPU profile: FULL_PROFILE] build log:
+<program source>:102:2: error: use of undeclared identifier 'vec3'
+         vec3 i  = floor(v + dot(v, C.yyy) );
+         ^
+<program source>:103:2: error: use of undeclared identifier 'vec3'
+         vec3 x0 =   v - i + dot(i, C.xxx) ;
+         ^
+<program source>:106:2: error: use of undeclared identifier 'vec3'
+         vec3 g = step(x0.yzx, x0.xyz);
+         ^
+<program source>:107:2: error: use of undeclared identifier 'vec3'
+         vec3 l = 1.0 - g;
+         ^
+<program source>:108:2: error: use of undeclared identifier 'vec3'
+         vec3 i1 = min( g.xyz, l.zxy );
+         ^
+<program source>:109:2: error: use of undeclared identifier 'vec3'
+         vec3 i2 = max( g.xyz, l.zxy );
+         ^
+<program source>:115:2: error: use of undeclared identifier 'vec3'
+         vec3 x1 = x0 - i1 + C.xxx;
+         ^
+<program source>:116:2: error: use of undeclared identifier 'vec3'
+         vec3 x2 = x0 - i2 + C.yyy; // 2.0*C.x = 1/3 = C.y
+         ^
+<program source>:117:2: error: use of undeclared identifier 'vec3'
+         vec3 x3 = x0 - D.yyy;      // -1.0+3.0*C.x = -0.5 = -D.y
+         ^
+<program source>:120:2: error: use of undeclared identifier 'i'
+         i = fmod(i, 289.0 ); 
+         ^
+<program source>:122:3: error: use of undeclared identifier 'i'
+                 i.z + float4(0.0, i1.z, i2.z, 1.0 )) + 
+                 ^
+<program source>:130:2: error: use of undeclared identifier 'vec3'
+         vec3  ns = n_ * D.wyz - D.xzx;
+         ^
+<program source>:132:24: error: use of undeclared identifier 'ns'
+         float4 j = p - 49.0 * floor(p * ns.z * ns.z);  //  fmod(p,7*7)
+                               ^
+/System/Library/Frameworks/OpenCL.framework/Resources/cl_kernel.h:2000:21: note: instantiated from:
+ #define floor(X)    __CLFN_F1_MODD(X,floor)
+                     ^
+<program source>:132:24: note: instantiated from:
+         float4 j = p - 49.0 * floor(p * ns.z * ns.z);  //  fmod(p,7*7)
+                               ^
+<program source>:132:34: note: instantiated from:
+         float4 j = p - 49.0 * floor(p * ns.z * ns.z);  //  fmod(p,7*7)
+                                         ^
+<program source>:134:14: error: use of undeclared identifier 'ns'
+         float4 x_ = floor(j * ns.z);
+                     ^
+/System/Library/Frameworks/OpenCL.framework/Resources/cl_kernel.h:2000:21: note: instantiated from:
+ #define floor(X)    __CLFN_F1_MODD(X,floor)
+                     ^
+<program source>:134:14: note: instantiated from:
+         float4 x_ = floor(j * ns.z);
+                     ^
+<program source>:134:24: note: instantiated from:
+         float4 x_ = floor(j * ns.z);
+                               ^
+<program source>:135:14:{135:14-135:19}{135:14-135:19}: error: can't convert between vector values of different size ('__float4' and 'double')
+         float4 y_ = floor(j - 7.0 * x_ );    // fmod(j,N)
+                     ^~~~~~~~~~~~~~~~~~~~
+/System/Library/Frameworks/OpenCL.framework/Resources/cl_kernel.h:2000:21: note: instantiated from:
+ #define floor(X)    __CLFN_F1_MODD(X,floor)
+                     ^
+<program source>:135:14: note: instantiated from:
+         float4 y_ = floor(j - 7.0 * x_ );    // fmod(j,N)
+                     ^         ~~~   ~~
+<program source>:135:28: note: instantiated from:
+         float4 y_ = floor(j - 7.0 * x_ );    // fmod(j,N)
+                               ~~~ ^ ~~
+<program source>:137:17: error: use of undeclared identifier 'ns'
+         float4 x = x_ *ns.x + ns.yyyy;
+                        ^
+<program source>:138:17: error: use of undeclared identifier 'ns'
+         float4 y = y_ *ns.x + ns.yyyy;
+                        ^
+<program source>:139:17:{139:19-139:23}{139:13-139:16}: error: can't convert between vector values of different size ('float  __attribute__((ext_vector_type(4)))' and 'double')
+         float4 h = 1.0 - fabs(x) - fabs(y);
+                    ~~~ ^ ~~~~~~~
+<program source>:141:14: error: unexpected type name '__float4': expected expression
+         float4 b0 = float4( x.xy, y.xy );
+                     ^
+/System/Library/Frameworks/OpenCL.framework/Resources/cl_kernel.h:172:18: note: instantiated from:
+ #define float4                  __float4
+                                 ^
+<program source>:142:14: error: unexpected type name '__float4': expected expression
+         float4 b1 = float4( x.zw, y.zw );
+                     ^
+/System/Library/Frameworks/OpenCL.framework/Resources/cl_kernel.h:172:18: note: instantiated from:
+ #define float4                  __float4
+                                 ^
+<program source>:148:15: error: unexpected type name '__float4': expected expression
+         float4 sh = -step(h, float4(0.0));
+                      ^
+<program source>:148:23: note: instantiated from:
+         float4 sh = -step(h, float4(0.0));
+                              ^
+/System/Library/Frameworks/OpenCL.framework/Resources/cl_kernel.h:172:18: note: instantiated from:
+ #define float4                  __float4
+                                 ^
+<program source>:153:2: error: use of undeclared identifier 'vec3'
+         vec3 p0 = vec3(a0.xy,h.x);
+         ^
+<program source>:154:2: error: use of undeclared identifier 'vec3'
+         vec3 p1 = vec3(a0.zw,h.y);
+         ^
+<program source>:155:2: error: use of undeclared identifier 'vec3'
+         vec3 p2 = vec3(a1.xy,h.z);
+         ^
+<program source>:156:2: error: use of undeclared identifier 'vec3'
+         vec3 p3 = vec3(a1.zw,h.w);
+         ^
+<program source>:159:30: error: unexpected type name '__float4': expected expression
+         float4 norm = taylorInvSqrt(float4(dot(p0,p0), dot(p1,p1), dot(p2, p2), dot(p3,p3)));
+                                     ^
+/System/Library/Frameworks/OpenCL.framework/Resources/cl_kernel.h:172:18: note: instantiated from:
+ #define float4                  __float4
+                                 ^
+<program source>:159:37: error: use of undeclared identifier 'p0'
+         float4 norm = taylorInvSqrt(float4(dot(p0,p0), dot(p1,p1), dot(p2, p2), dot(p3,p3)));
+                                            ^
+<program source>:159:41: note: instantiated from:
+         float4 norm = taylorInvSqrt(float4(dot(p0,p0), dot(p1,p1), dot(p2, p2), dot(p3,p3)));
+                                                ^
+<program source>:160:2: error: use of undeclared identifier 'p0'
+         p0 *= norm.x;
+         ^
+<program source>:161:2: error: use of undeclared identifier 'p1'
+         p1 *= norm.y;
+         ^
+<program source>:162:2: error: use of undeclared identifier 'p2'
+         p2 *= norm.z;
+         ^
+<program source>:163:2: error: use of undeclared identifier 'p3'
+         p3 *= norm.w;
+         ^
+<program source>:166:13: error: unexpected type name '__float4': expected expression
+         float4 m = max(0.6 - float4(dot(x0,x0), dot(x1,x1), dot(x2,x2), dot(x3,x3)), 0.0);
+                    ^
+/System/Library/Frameworks/OpenCL.framework/Resources/cl_kernel.h:2190:29: note: instantiated from:
+ #define max(X,Y)            __CLFN_ALL2_plus(X,Y,max)
+                             ^
+<program source>:166:13: note: instantiated from:
+         float4 m = max(0.6 - float4(dot(x0,x0), dot(x1,x1), dot(x2,x2), dot(x3,x3)), 0.0);
+                    ^
+<program source>:166:23: note: instantiated from:
+         float4 m = max(0.6 - float4(dot(x0,x0), dot(x1,x1), dot(x2,x2), dot(x3,x3)), 0.0);
+                              ^
+/System/Library/Frameworks/OpenCL.framework/Resources/cl_kernel.h:172:18: note: instantiated from:
+ #define float4                  __float4
+                                 ^
+<program source>:166:13: error: use of undeclared identifier 'x0'
+         float4 m = max(0.6 - float4(dot(x0,x0), dot(x1,x1), dot(x2,x2), dot(x3,x3)), 0.0);
+                    ^
+/System/Library/Frameworks/OpenCL.framework/Resources/cl_kernel.h:2190:29: note: instantiated from:
+ #define max(X,Y)            __CLFN_ALL2_plus(X,Y,max)
+                             ^
+<program source>:166:13: note: instantiated from:
+         float4 m = max(0.6 - float4(dot(x0,x0), dot(x1,x1), dot(x2,x2), dot(x3,x3)), 0.0);
+                    ^
+<program source>:166:30: note: instantiated from:
+         float4 m = max(0.6 - float4(dot(x0,x0), dot(x1,x1), dot(x2,x2), dot(x3,x3)), 0.0);
+                                     ^
+<program source>:166:34: note: instantiated from:
+         float4 m = max(0.6 - float4(dot(x0,x0), dot(x1,x1), dot(x2,x2), dot(x3,x3)), 0.0);
+                                         ^
+<program source>:168:16: error: unexpected type name '__float4': expected expression
+         return 42.0 * dot( m*m, float4( dot(p0,x0), dot(p1,x1), dot(p2,x2), dot(p3,x3) ) );
+                       ^
+<program source>:168:26: note: instantiated from:
+         return 42.0 * dot( m*m, float4( dot(p0,x0), dot(p1,x1), dot(p2,x2), dot(p3,x3) ) );
+                                 ^
+/System/Library/Frameworks/OpenCL.framework/Resources/cl_kernel.h:172:18: note: instantiated from:
+ #define float4                  __float4
+                                 ^
+<program source>:168:16: error: use of undeclared identifier 'p0'
+         return 42.0 * dot( m*m, float4( dot(p0,x0), dot(p1,x1), dot(p2,x2), dot(p3,x3) ) );
+                       ^
+<program source>:168:34: note: instantiated from:
+         return 42.0 * dot( m*m, float4( dot(p0,x0), dot(p1,x1), dot(p2,x2), dot(p3,x3) ) );
+                                         ^
+<program source>:168:38: note: instantiated from:
+         return 42.0 * dot( m*m, float4( dot(p0,x0), dot(p1,x1), dot(p2,x2), dot(p3,x3) ) );
+                                             ^ [error: CL_BUILD_PROGRAM_FAILURE]
+	at com.jogamp.opencl.CLException.newException(CLException.java:78)
+	at com.jogamp.opencl.CLProgram.build(CLProgram.java:381)
+	at cc.creativecomputing.opencl.CCCLProgram.build(CCCLProgram.java:187)
+	at cc.creativecomputing.opencl.demos.noise.CCCLTurbulence2DDemo.setup(CCCLTurbulence2DDemo.java:125)
+	at cc.creativecomputing.CCApp.display(CCApp.java:562)
+	at jogamp.opengl.GLDrawableHelper.display(GLDrawableHelper.java:191)
+	at javax.media.opengl.awt.GLCanvas$DisplayAction.run(GLCanvas.java:873)
+	at jogamp.opengl.GLDrawableHelper.invokeGL(GLDrawableHelper.java:363)
+	at javax.media.opengl.awt.GLCanvas.maybeDoSingleThreadedWorkaround(GLCanvas.java:769)
+	at javax.media.opengl.awt.GLCanvas.display(GLCanvas.java:388)
+	at javax.media.opengl.awt.GLCanvas.paint(GLCanvas.java:487)
+	at sun.awt.RepaintArea.paintComponent(RepaintArea.java:276)
+	at sun.awt.RepaintArea.paint(RepaintArea.java:241)
+	at apple.awt.ComponentModel.handleEvent(ComponentModel.java:263)
+	at java.awt.Component.dispatchEventImpl(Component.java:4790)
+	at java.awt.Component.dispatchEvent(Component.java:4544)
+	at java.awt.EventQueue.dispatchEvent(EventQueue.java:635)
+	at java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:296)
+	at java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:211)
+	at java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:201)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:196)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:188)
+	at java.awt.EventDispatchThread.run(EventDispatchThread.java:122)
+

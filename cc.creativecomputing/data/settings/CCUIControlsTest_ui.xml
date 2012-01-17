@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<ui>
+  <CCControlPresetTab numberofpresets="3" label="test" selectedpreset="0">
+    <uielements>
+      <CCUIPresetControl label="presets">
+        <uielements/>
+      </CCUIPresetControl>
+      <CCUIComponent label="CCControls">
+        <uielements>
+          <CCUIField valueX="0.55333334" label="vec" valueY="0.55333334">
+            <preset y="0.55333334" x="0.55333334"/>
+            <preset y="0.0" x="0.0"/>
+            <preset y="0.0" x="0.0"/>
+          </CCUIField>
+          <CCUIDropDown label="enum">
+            <preset value="BLEND"/>
+            <preset value="null"/>
+            <preset value="BLEND"/>
+          </CCUIDropDown>
+          <CCUISlider label="number">
+            <preset value="0.67333335"/>
+            <preset value="0.52666664"/>
+            <preset value="0.87333333"/>
+          </CCUISlider>
+          <CCUIButton label="boolean">
+            <preset value="true"/>
+            <preset value="false"/>
+            <preset value="false"/>
+          </CCUIButton>
+        </uielements>
+      </CCUIComponent>
+    </uielements>
+    <presetnames>
+      <presetname name="Preset:0"/>
+      <presetname name="Preset:1"/>
+      <presetname name="Preset:2"/>
+    </presetnames>
+  </CCControlPresetTab>
+  <globalsettings label="global" numberofpresets="0" selectedpreset="0">
+    <presetnames/>
+  </globalsettings>
+</ui>

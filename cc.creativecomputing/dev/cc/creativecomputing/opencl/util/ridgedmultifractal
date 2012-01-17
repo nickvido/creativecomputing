@@ -1,0 +1,73 @@
+float ridgedmultifractal2d(
+	float2 position, 
+	float frequency,
+	float lacunarity, 
+	float increment, 
+	float octaves)
+{
+	int i = 0;
+	float fi = 0.0f;
+	float remainder = 0.0f;	
+	float sample = 0.0f;	
+	float value = 0.0f;
+	int iterations = (int)octaves;
+
+	float threshold = 0.5f;
+	float offset = 1.0f;
+	float weight = 1.0f;
+
+	float signal = fabs( sgnoise2d(position * frequency) );
+	signal = offset - signal;
+	signal *= signal;
+	value = signal;
+
+	for ( i = 0; i < iterations; i++ )
+	{
+		frequency *= lacunarity;
+		weight = clamp( signal * threshold, 0.0f, 1.0f );	
+		signal = fabs( sgnoise2d(position * frequency) );
+		signal = offset - signal;
+		signal *= signal;
+		signal *= weight;
+		value += signal * pow( lacunarity, -fi * increment );
+
+	}
+	return value;
+}
+
+float ridgedmultifractal3d(
+	float4 position, 
+	float frequency,
+	float lacunarity, 
+	float increment, 
+	float octaves)
+{
+	int i = 0;
+	float fi = 0.0f;
+	float remainder = 0.0f;	
+	float sample = 0.0f;	
+	float value = 0.0f;
+	int iterations = (int)octaves;
+
+	float threshold = 0.5f;
+	float offset = 1.0f;
+	float weight = 1.0f;
+
+	float signal = fabs( (1.0f - 2.0f * sgnoise3d(position * frequency)) );
+	signal = offset - signal;
+	signal *= signal;
+	value = signal;
+
+	for ( i = 0; i < iterations; i++ )
+	{
+		frequency *= lacunarity;
+		weight = clamp( signal * threshold, 0.0f, 1.0f );	
+		signal = fabs( (1.0f - 2.0f * sgnoise3d(position * frequency)) );
+		signal = offset - signal;
+		signal *= signal;
+		signal *= weight;
+		value += signal * pow( lacunarity, -fi * increment );
+
+	}
+	return value;
+}

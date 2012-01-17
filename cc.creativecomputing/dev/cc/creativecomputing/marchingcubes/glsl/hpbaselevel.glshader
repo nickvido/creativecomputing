@@ -1,0 +1,136 @@
+/* $Id: hpbaselevel.glshader,v 1.1 2007/03/27 13:49:16 dyken Exp $ */
+
+//#extension GL_ARB_draw_buffers : enable
+
+#ifdef USE_TEX3D
+uniform sampler3D function_tex;
+#else
+uniform sampler2D function_tex;
+#endif
+
+
+#ifdef FS_TILE_TABLE
+uniform sampler1D tiletable_tex;
+#endif
+
+uniform sampler1D tricount_tex;
+
+uniform float threshold;
+
+void main()
+{
+	vec2 foo = vec2(HP_COLS,HP_ROWS)*gl_TexCoord[0].xy;
+
+	float slice = dot(vec2(1.0,float(HP_COLS)), floor(foo));
+	if(slice < FUNC_SLICES-1 ) {
+#ifdef USE_TEX3D
+		const vec3 delta = vec3( 1.0/FUNC_WIDTH, 1.0/FUNC_HEIGHT, 1.0/FUNC_SLICES);
+			
+		vec3 tp = vec3( fract(foo), (1.0/FUNC_SLICES)*(slice+0.5) );
+		vec4 mask = vec4(1.0);
+		
+		vec3 l0 = vec3( (texture3D( function_tex, tp + vec3(-0.5, -0.5, 0.0)*delta ).a < threshold ?  1.0 : 0.0 ) +
+						(texture3D( function_tex, tp + vec3(-0.5, -0.5, 1.0)*delta ).a < threshold ? 16.0 : 0.0 ),
+						(texture3D( function_tex, tp + vec3( 0.5, -0.5, 0.0)*delta ).a < threshold ?  1.0 : 0.0 ) +
+						(texture3D( function_tex, tp + vec3( 0.5, -0.5, 1.0)*delta ).a < threshold ? 16.0 : 0.0 ),
+						(texture3D( function_tex, tp + vec3( 1.5, -0.5, 0.0)*delta ).a < threshold ?  1.0 : 0.0 ) +
+						(texture3D( function_tex, tp + vec3( 1.5, -0.5, 1.0)*delta ).a < threshold ? 16.0 : 0.0 ) );
+		vec3 l1 = vec3( (texture3D( function_tex, tp + vec3(-0.5,  0.5, 0.0)*delta ).a < threshold ?  1.0 : 0.0 ) +
+						(texture3D( function_tex, tp + vec3(-0.5,  0.5, 1.0)*delta ).a < threshold ? 16.0 : 0.0 ),
+						(texture3D( function_tex, tp + vec3( 0.5,  0.5, 0.0)*delta ).a < threshold ?  1.0 : 0.0 ) +
+						(texture3D( function_tex, tp + vec3( 0.5,  0.5, 1.0)*delta ).a < threshold ? 16.0 : 0.0 ),
+						(texture3D( function_tex, tp + vec3( 1.5,  0.5, 0.0)*delta ).a < threshold ?  1.0 : 0.0 ) +
+						(texture3D( function_tex, tp + vec3( 1.5,  0.5, 1.0)*delta ).a < threshold ? 16.0 : 0.0 ) );
+		vec3 l2 = vec3( (texture3D( function_tex, tp + vec3(-0.5,  1.5, 0.0)*delta ).a < threshold ?  1.0 : 0.0 ) +
+						(texture3D( function_tex, tp + vec3(-0.5,  1.5, 1.0)*delta ).a < threshold ? 16.0 : 0.0 ),
+						(texture3D( function_tex, tp + vec3( 0.5,  1.5, 0.0)*delta ).a < threshold ?  1.0 : 0.0 ) +
+						(texture3D( function_tex, tp + vec3( 0.5,  1.5, 1.0)*delta ).a < threshold ? 16.0 : 0.0 ),
+						(texture3D( function_tex, tp + vec3( 1.5,  1.5, 0.0)*delta ).a < threshold ?  1.0 : 0.0 ) +
+						(texture3D( function_tex, tp + vec3( 1.5,  1.5, 1.0)*delta ).a < threshold ? 16.0 : 0.0 ) );
+
+#else
+		float sc_slice = (1.0/FUNC_COLS)*slice;
+
+		vec2 tp = fract(foo);
+		bvec2 bmask = lessThan(tp, vec2((FUNC_TSIZE-2.0)/FUNC_TSIZE));
+		vec4 mask = vec4(bmask.x&&bmask.y );
+
+		tp *= vec2(1.0/FUNC_COLS, 1.0/FUNC_ROWS);
+
+
+#ifdef FS_TILE_TABLE
+		vec4 toff = texture1D( tiletable_tex, (1.0/(FUNC_SLICES))*(slice+0.5) );
+		vec2 cs = tp + toff.rg;
+		vec2 ns = tp + toff.ba;
+#else
+		vec2 cs = tp + vec2( fract(sc_slice), (1.0/FUNC_ROWS)*floor(sc_slice));
+		vec2 ns = tp + vec2( fract(sc_slice+(1.0/FUNC_COLS)), (1.0/FUNC_ROWS)*floor(sc_slice+(1.0/FUNC_COLS)));
+#endif
+
+#if 0
+
+		vec4 foo = vec4(vec3(1.0/FUNC_WIDTH),1.0/FUNC_HEIGHT)*vec4(-0.5,0.5,1.5,-0.5);
+		bvec3 l0a = bvec3( texture2D( function_tex, cs+foo.xw ).a < threshold,
+						   texture2D( function_tex, cs+foo.yw ).a < threshold,
+						   texture2D( function_tex, cs+foo.zw ).a < threshold );
+		bvec3 l0b = bvec3( texture2D( function_tex, ns+foo.xw ).a < threshold,
+						   texture2D( function_tex, ns+foo.yw ).a < threshold,
+						   texture2D( function_tex, ns+foo.zw ).a < threshold );
+		foo.w = (0.5/FUNC_HEIGHT);
+		bvec3 l1a = bvec3( texture2D( function_tex, cs+foo.xw ).a < threshold,
+						   texture2D( function_tex, cs+foo.yw ).a < threshold,
+						   texture2D( function_tex, cs+foo.zw ).a < threshold );
+		bvec3 l1b = bvec3( texture2D( function_tex, ns+foo.xw ).a < threshold,
+						   texture2D( function_tex, ns+foo.yw ).a < threshold,
+						   texture2D( function_tex, ns+foo.zw ).a < threshold );
+		foo.w = (1.5/FUNC_HEIGHT);
+		bvec3 l2a = bvec3( texture2D( function_tex, cs+foo.xw ).a < threshold,
+						   texture2D( function_tex, cs+foo.yw ).a < threshold,
+						   texture2D( function_tex, cs+foo.zw ).a < threshold );
+		bvec3 l2b = bvec3( texture2D( function_tex, ns+foo.xw ).a < threshold,
+						   texture2D( function_tex, ns+foo.yw ).a < threshold,
+						   texture2D( function_tex, ns+foo.zw ).a < threshold );
+
+		vec3 l0 = vec3(l0a) + 16.0*vec3(l0b);
+		vec3 l1 = vec3(l1a) + 16.0*vec3(l1b);
+		vec3 l2 = vec3(l2a) + 16.0*vec3(l2b);
+#else
+		vec3 l0 = vec3( (texture2D( function_tex, cs+vec2(-0.5/FUNC_WIDTH,  -0.5/FUNC_HEIGHT)).a < threshold ?  1.0 : 0.0 ) +
+						(texture2D( function_tex, ns+vec2(-0.5/FUNC_WIDTH,  -0.5/FUNC_HEIGHT)).a < threshold ? 16.0 : 0.0 ),
+						(texture2D( function_tex, cs+vec2( 0.5/FUNC_WIDTH,  -0.5/FUNC_HEIGHT)).a < threshold ?  1.0 : 0.0 ) +
+						(texture2D( function_tex, ns+vec2( 0.5/FUNC_WIDTH,  -0.5/FUNC_HEIGHT)).a < threshold ? 16.0 : 0.0 ),
+						(texture2D( function_tex, cs+vec2( 1.5/FUNC_WIDTH,  -0.5/FUNC_HEIGHT)).a < threshold ?  1.0 : 0.0 ) +
+						(texture2D( function_tex, ns+vec2( 1.5/FUNC_WIDTH,  -0.5/FUNC_HEIGHT)).a < threshold ? 16.0 : 0.0 ) );
+		vec3 l1 = vec3( (texture2D( function_tex, cs+vec2(-0.5/FUNC_WIDTH,  0.5/FUNC_HEIGHT)).a < threshold ?  1.0 : 0.0 ) +
+						(texture2D( function_tex, ns+vec2(-0.5/FUNC_WIDTH,  0.5/FUNC_HEIGHT)).a < threshold ? 16.0 : 0.0 ),
+						(texture2D( function_tex, cs+vec2( 0.5/FUNC_WIDTH,  0.5/FUNC_HEIGHT)).a < threshold ?  1.0 : 0.0 ) +
+						(texture2D( function_tex, ns+vec2( 0.5/FUNC_WIDTH,  0.5/FUNC_HEIGHT)).a < threshold ? 16.0 : 0.0 ),
+						(texture2D( function_tex, cs+vec2( 1.5/FUNC_WIDTH,  0.5/FUNC_HEIGHT)).a < threshold ?  1.0 : 0.0 ) +
+						(texture2D( function_tex, ns+vec2( 1.5/FUNC_WIDTH,  0.5/FUNC_HEIGHT)).a < threshold ? 16.0 : 0.0 ) );
+		vec3 l2 = vec3( (texture2D( function_tex, cs+vec2(-0.5/FUNC_WIDTH,  1.5/FUNC_HEIGHT)).a < threshold ?  1.0 : 0.0 ) +
+						(texture2D( function_tex, ns+vec2(-0.5/FUNC_WIDTH,  1.5/FUNC_HEIGHT)).a < threshold ? 16.0 : 0.0 ),
+						(texture2D( function_tex, cs+vec2( 0.5/FUNC_WIDTH,  1.5/FUNC_HEIGHT)).a < threshold ?  1.0 : 0.0 ) +
+						(texture2D( function_tex, ns+vec2( 0.5/FUNC_WIDTH,  1.5/FUNC_HEIGHT)).a < threshold ? 16.0 : 0.0 ),
+						(texture2D( function_tex, cs+vec2( 1.5/FUNC_WIDTH,  1.5/FUNC_HEIGHT)).a < threshold ?  1.0 : 0.0 ) +
+						(texture2D( function_tex, ns+vec2( 1.5/FUNC_WIDTH,  1.5/FUNC_HEIGHT)).a < threshold ? 16.0 : 0.0 ) );
+#endif
+
+#endif
+		vec4 codes = (1.0/256.0)*vec4( l0.x+2.0*l0.y+4.0*l1.x +8.0*l1.y+0.5,
+						 			   l0.y+2.0*l0.z+4.0*l1.y +8.0*l1.z+0.5,
+									   l1.x+2.0*l1.y+4.0*l2.x +8.0*l2.y+0.5,
+						 			   l1.y+2.0*l1.z+4.0*l2.y +8.0*l2.z+0.5 );
+
+#ifdef USE_GEOMETRY_SHADER
+		vec4 counts = vec4( equal(notEqual( vec4(0.5/256.0), codes ), notEqual( vec4(255.5/256.0), codes ) ) );
+#else
+		vec4 counts = vec4( texture1D( tricount_tex, codes.x ).a,
+							texture1D( tricount_tex, codes.y ).a,
+							texture1D( tricount_tex, codes.z ).a,
+							texture1D( tricount_tex, codes.w ).a );
+#endif
+		gl_FragColor = mask*(counts + codes);//vec4(notEqual(vec4(0.5/256.0),codes));
+	} else {
+		gl_FragColor = vec4(0.0);
+	}
+}

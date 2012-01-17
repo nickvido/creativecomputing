@@ -1,0 +1,66 @@
+[Fri Jul 29 23:22:04 CEST 2011] [CCLog Line:177:initialize] [INFO] logging to file: log/noname-2011-07-29_23-22-03.txt
+[Fri Jul 29 23:22:04 CEST 2011] [CCApp:display] [SEVERE] java.lang.reflect.UndeclaredThrowableException
+	at $Proxy0.setup(Unknown Source)
+	at cc.creativecomputing.CCApp.display(CCApp.java:554)
+	at jogamp.opengl.GLDrawableHelper.display(GLDrawableHelper.java:165)
+	at javax.media.opengl.awt.GLCanvas$DisplayAction.run(GLCanvas.java:899)
+	at jogamp.opengl.GLDrawableHelper.invokeGL(GLDrawableHelper.java:335)
+	at javax.media.opengl.awt.GLCanvas.maybeDoSingleThreadedWorkaround(GLCanvas.java:795)
+	at javax.media.opengl.awt.GLCanvas.display(GLCanvas.java:399)
+	at javax.media.opengl.awt.GLCanvas.paint(GLCanvas.java:498)
+	at sun.awt.RepaintArea.paintComponent(RepaintArea.java:276)
+	at sun.awt.RepaintArea.paint(RepaintArea.java:241)
+	at apple.awt.ComponentModel.handleEvent(ComponentModel.java:263)
+	at java.awt.Component.dispatchEventImpl(Component.java:4812)
+	at java.awt.Component.dispatchEvent(Component.java:4566)
+	at java.awt.EventQueue.dispatchEventImpl(EventQueue.java:680)
+	at java.awt.EventQueue.access$000(EventQueue.java:86)
+	at java.awt.EventQueue$1.run(EventQueue.java:639)
+	at java.awt.EventQueue$1.run(EventQueue.java:637)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.AccessControlContext$1.doIntersectionPrivilege(AccessControlContext.java:87)
+	at java.security.AccessControlContext$1.doIntersectionPrivilege(AccessControlContext.java:98)
+	at java.awt.EventQueue$2.run(EventQueue.java:653)
+	at java.awt.EventQueue$2.run(EventQueue.java:651)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.AccessControlContext$1.doIntersectionPrivilege(AccessControlContext.java:87)
+	at java.awt.EventQueue.dispatchEvent(EventQueue.java:650)
+	at java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:296)
+	at java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:211)
+	at java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:201)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:196)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:188)
+	at java.awt.EventDispatchThread.run(EventDispatchThread.java:122)
+Caused by: java.lang.reflect.InvocationTargetException
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at cc.creativecomputing.events.CCListenerManager$ProxyInvocationHandler.invoke(CCListenerManager.java:170)
+	... 31 more
+Caused by: cc.creativecomputing.xml.CCXMLException: Not able to build object from xml.
+	at cc.creativecomputing.xml.CCXMLObjectSerializer.toObject(CCXMLObjectSerializer.java:447)
+	at cc.creativecomputing.newui.CCUI.createWidget(CCUI.java:270)
+	at cc.creativecomputing.newui.CCUI.createWidget(CCUI.java:257)
+	at cc.creativecomputing.demo.ui.CCUIDecoratorDemo.setup(CCUIDecoratorDemo.java:43)
+	... 36 more
+Caused by: cc.creativecomputing.xml.CCXMLException: Not able to build object from xml.
+	at cc.creativecomputing.xml.CCXMLObjectSerializer.toObject(CCXMLObjectSerializer.java:447)
+	at cc.creativecomputing.xml.CCXMLObjectSerializer.toObject(CCXMLObjectSerializer.java:504)
+	at cc.creativecomputing.xml.CCXMLObjectSerializer.setCollectionField(CCXMLObjectSerializer.java:287)
+	at cc.creativecomputing.xml.CCXMLObjectSerializer.toObject(CCXMLObjectSerializer.java:442)
+	... 39 more
+Caused by: cc.creativecomputing.xml.CCXMLException: Not able to build object from xml.
+	at cc.creativecomputing.xml.CCXMLObjectSerializer.toObject(CCXMLObjectSerializer.java:447)
+	at cc.creativecomputing.xml.CCXMLObjectSerializer.setObjectField(CCXMLObjectSerializer.java:377)
+	at cc.creativecomputing.xml.CCXMLObjectSerializer.toObject(CCXMLObjectSerializer.java:444)
+	... 42 more
+Caused by: cc.creativecomputing.xml.CCXMLException: 
+Error reading Attribute from xml element gradient in line:22
+The required attribute: >>rigth<< needs to be defined as node in your xml
+	at cc.creativecomputing.xml.CCXMLObjectSerializer.readAttribute(CCXMLObjectSerializer.java:105)
+	at cc.creativecomputing.xml.CCXMLObjectSerializer.toObject(CCXMLObjectSerializer.java:455)
+	at cc.creativecomputing.xml.CCXMLObjectSerializer.setObjectField(CCXMLObjectSerializer.java:377)
+	at cc.creativecomputing.xml.CCXMLObjectSerializer.toObject(CCXMLObjectSerializer.java:444)
+	... 44 more
+

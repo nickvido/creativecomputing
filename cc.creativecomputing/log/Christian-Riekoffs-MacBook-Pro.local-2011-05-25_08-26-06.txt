@@ -1,0 +1,178 @@
+[Wed May 25 08:26:06 CEST 2011] [CCLog Line:177:initialize] [INFO] logging to file: log/Christian-Riekoffs-MacBook-Pro.local-2011-05-25_08-26-06.txt
+[Wed May 25 08:26:06 CEST 2011] [CCApp:display] [SEVERE] com.jogamp.opencl.CLException$CLBuildProgramFailureException: 
+CLDevice [id: 16918016 name: GeForce 8600M GT type: GPU profile: FULL_PROFILE] build log:
+<program source>:62:16: error: unexpected type name '__float2': expected expression
+   float2 g00 = float2(gx.x,gy.x);
+                ^
+/System/Library/Frameworks/OpenCL.framework/Resources/cl_kernel.h:170:18: note: instantiated from:
+ #define float2                  __float2
+                                 ^
+<program source>:63:16: error: unexpected type name '__float2': expected expression
+   float2 g10 = float2(gx.y,gy.y);
+                ^
+/System/Library/Frameworks/OpenCL.framework/Resources/cl_kernel.h:170:18: note: instantiated from:
+ #define float2                  __float2
+                                 ^
+<program source>:64:16: error: unexpected type name '__float2': expected expression
+   float2 g01 = float2(gx.z,gy.z);
+                ^
+/System/Library/Frameworks/OpenCL.framework/Resources/cl_kernel.h:170:18: note: instantiated from:
+ #define float2                  __float2
+                                 ^
+<program source>:65:16: error: unexpected type name '__float2': expected expression
+   float2 g11 = float2(gx.w,gy.w);
+                ^
+/System/Library/Frameworks/OpenCL.framework/Resources/cl_kernel.h:170:18: note: instantiated from:
+ #define float2                  __float2
+                                 ^
+<program source>:67:31: error: unexpected type name '__float4': expected expression
+   float4 norm = taylorInvSqrt(float4(dot(g00, g00), dot(g01, g01), dot(g10, g10), dot(g11, g11)));
+                               ^
+/System/Library/Frameworks/OpenCL.framework/Resources/cl_kernel.h:172:18: note: instantiated from:
+ #define float4                  __float4
+                                 ^
+<program source>:73:15: error: unexpected type name '__float2': expected expression
+   float n00 = dot(g00, float2(fx.x, fy.x));
+               ^
+<program source>:73:24: note: instantiated from:
+   float n00 = dot(g00, float2(fx.x, fy.x));
+                        ^
+/System/Library/Frameworks/OpenCL.framework/Resources/cl_kernel.h:170:18: note: instantiated from:
+ #define float2                  __float2
+                                 ^
+<program source>:74:15: error: unexpected type name '__float2': expected expression
+   float n10 = dot(g10, float2(fx.y, fy.y));
+               ^
+<program source>:74:24: note: instantiated from:
+   float n10 = dot(g10, float2(fx.y, fy.y));
+                        ^
+/System/Library/Frameworks/OpenCL.framework/Resources/cl_kernel.h:170:18: note: instantiated from:
+ #define float2                  __float2
+                                 ^
+<program source>:75:15: error: unexpected type name '__float2': expected expression
+   float n01 = dot(g01, float2(fx.z, fy.z));
+               ^
+<program source>:75:24: note: instantiated from:
+   float n01 = dot(g01, float2(fx.z, fy.z));
+                        ^
+/System/Library/Frameworks/OpenCL.framework/Resources/cl_kernel.h:170:18: note: instantiated from:
+ #define float2                  __float2
+                                 ^
+<program source>:76:15: error: unexpected type name '__float2': expected expression
+   float n11 = dot(g11, float2(fx.w, fy.w));
+               ^
+<program source>:76:24: note: instantiated from:
+   float n11 = dot(g11, float2(fx.w, fy.w));
+                        ^
+/System/Library/Frameworks/OpenCL.framework/Resources/cl_kernel.h:170:18: note: instantiated from:
+ #define float2                  __float2
+                                 ^
+<program source>:79:16: error: unexpected type name '__float2': expected expression
+   float2 n_x = mix(float2(n00, n01), float2(n10, n11), fade_xy.x);
+                ^
+<program source>:79:20: note: instantiated from:
+   float2 n_x = mix(float2(n00, n01), float2(n10, n11), fade_xy.x);
+                    ^
+/System/Library/Frameworks/OpenCL.framework/Resources/cl_kernel.h:170:18: note: instantiated from:
+ #define float2                  __float2
+                                 ^
+CLDevice [id: 16909312 name: Intel(R) Core(TM)2 Duo CPU     T8300  @ 2.40GHz type: CPU profile: FULL_PROFILE] build log:
+<program source>:62:16: error: unexpected type name '__float2': expected expression
+   float2 g00 = float2(gx.x,gy.x);
+                ^
+/System/Library/Frameworks/OpenCL.framework/Resources/cl_kernel.h:170:18: note: instantiated from:
+ #define float2                  __float2
+                                 ^
+<program source>:63:16: error: unexpected type name '__float2': expected expression
+   float2 g10 = float2(gx.y,gy.y);
+                ^
+/System/Library/Frameworks/OpenCL.framework/Resources/cl_kernel.h:170:18: note: instantiated from:
+ #define float2                  __float2
+                                 ^
+<program source>:64:16: error: unexpected type name '__float2': expected expression
+   float2 g01 = float2(gx.z,gy.z);
+                ^
+/System/Library/Frameworks/OpenCL.framework/Resources/cl_kernel.h:170:18: note: instantiated from:
+ #define float2                  __float2
+                                 ^
+<program source>:65:16: error: unexpected type name '__float2': expected expression
+   float2 g11 = float2(gx.w,gy.w);
+                ^
+/System/Library/Frameworks/OpenCL.framework/Resources/cl_kernel.h:170:18: note: instantiated from:
+ #define float2                  __float2
+                                 ^
+<program source>:67:31: error: unexpected type name '__float4': expected expression
+   float4 norm = taylorInvSqrt(float4(dot(g00, g00), dot(g01, g01), dot(g10, g10), dot(g11, g11)));
+                               ^
+/System/Library/Frameworks/OpenCL.framework/Resources/cl_kernel.h:172:18: note: instantiated from:
+ #define float4                  __float4
+                                 ^
+<program source>:73:15: error: unexpected type name '__float2': expected expression
+   float n00 = dot(g00, float2(fx.x, fy.x));
+               ^
+<program source>:73:24: note: instantiated from:
+   float n00 = dot(g00, float2(fx.x, fy.x));
+                        ^
+/System/Library/Frameworks/OpenCL.framework/Resources/cl_kernel.h:170:18: note: instantiated from:
+ #define float2                  __float2
+                                 ^
+<program source>:74:15: error: unexpected type name '__float2': expected expression
+   float n10 = dot(g10, float2(fx.y, fy.y));
+               ^
+<program source>:74:24: note: instantiated from:
+   float n10 = dot(g10, float2(fx.y, fy.y));
+                        ^
+/System/Library/Frameworks/OpenCL.framework/Resources/cl_kernel.h:170:18: note: instantiated from:
+ #define float2                  __float2
+                                 ^
+<program source>:75:15: error: unexpected type name '__float2': expected expression
+   float n01 = dot(g01, float2(fx.z, fy.z));
+               ^
+<program source>:75:24: note: instantiated from:
+   float n01 = dot(g01, float2(fx.z, fy.z));
+                        ^
+/System/Library/Frameworks/OpenCL.framework/Resources/cl_kernel.h:170:18: note: instantiated from:
+ #define float2                  __float2
+                                 ^
+<program source>:76:15: error: unexpected type name '__float2': expected expression
+   float n11 = dot(g11, float2(fx.w, fy.w));
+               ^
+<program source>:76:24: note: instantiated from:
+   float n11 = dot(g11, float2(fx.w, fy.w));
+                        ^
+/System/Library/Frameworks/OpenCL.framework/Resources/cl_kernel.h:170:18: note: instantiated from:
+ #define float2                  __float2
+                                 ^
+<program source>:79:16: error: unexpected type name '__float2': expected expression
+   float2 n_x = mix(float2(n00, n01), float2(n10, n11), fade_xy.x);
+                ^
+<program source>:79:20: note: instantiated from:
+   float2 n_x = mix(float2(n00, n01), float2(n10, n11), fade_xy.x);
+                    ^
+/System/Library/Frameworks/OpenCL.framework/Resources/cl_kernel.h:170:18: note: instantiated from:
+ #define float2                  __float2
+                                 ^ [error: CL_BUILD_PROGRAM_FAILURE]
+	at com.jogamp.opencl.CLException.newException(CLException.java:78)
+	at com.jogamp.opencl.CLProgram.build(CLProgram.java:381)
+	at com.jogamp.opencl.CLProgram.build(CLProgram.java:262)
+	at cc.creativecomputing.opencl.demos.noise.CCCLSimplex2dNoiseDemo.setup(CCCLSimplex2dNoiseDemo.java:91)
+	at cc.creativecomputing.CCApp.display(CCApp.java:562)
+	at jogamp.opengl.GLDrawableHelper.display(GLDrawableHelper.java:191)
+	at javax.media.opengl.awt.GLCanvas$DisplayAction.run(GLCanvas.java:873)
+	at jogamp.opengl.GLDrawableHelper.invokeGL(GLDrawableHelper.java:363)
+	at javax.media.opengl.awt.GLCanvas.maybeDoSingleThreadedWorkaround(GLCanvas.java:769)
+	at javax.media.opengl.awt.GLCanvas.display(GLCanvas.java:388)
+	at javax.media.opengl.awt.GLCanvas.paint(GLCanvas.java:487)
+	at sun.awt.RepaintArea.paintComponent(RepaintArea.java:276)
+	at sun.awt.RepaintArea.paint(RepaintArea.java:241)
+	at apple.awt.ComponentModel.handleEvent(ComponentModel.java:263)
+	at java.awt.Component.dispatchEventImpl(Component.java:4790)
+	at java.awt.Component.dispatchEvent(Component.java:4544)
+	at java.awt.EventQueue.dispatchEvent(EventQueue.java:635)
+	at java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:296)
+	at java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:211)
+	at java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:201)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:196)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:188)
+	at java.awt.EventDispatchThread.run(EventDispatchThread.java:122)
+

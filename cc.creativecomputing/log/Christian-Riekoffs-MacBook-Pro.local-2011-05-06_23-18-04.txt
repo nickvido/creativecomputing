@@ -1,0 +1,53 @@
+[Fri May 06 23:18:04 CEST 2011] [CCLog Line:177:initialize] [INFO] logging to file: log/Christian-Riekoffs-MacBook-Pro.local-2011-05-06_23-18-04.txt
+[Fri May 06 23:18:04 CEST 2011] [CCTextureUtil Line:377:toTextureData] [INFO] DEFAULT
+[Fri May 06 23:18:04 CEST 2011] [CCTextureUtil Line:398:toTextureData] [INFO] CCAppCapabilities.GL_EXT_abgr:true
+[Fri May 06 23:18:04 CEST 2011] [CCTextureUtil Line:399:toTextureData] [INFO] CCAppCapabilities.GL_VERSION_1_2:true
+[Fri May 06 23:18:04 CEST 2011] [CCTextureUtil Line:377:toTextureData] [INFO] DEFAULT
+[Fri May 06 23:18:04 CEST 2011] [CCTextureUtil Line:398:toTextureData] [INFO] CCAppCapabilities.GL_EXT_abgr:true
+[Fri May 06 23:18:04 CEST 2011] [CCTextureUtil Line:399:toTextureData] [INFO] CCAppCapabilities.GL_VERSION_1_2:true
+[Fri May 06 23:18:05 CEST 2011] [CCImageIOFormat Line:94:createTextureData] [INFO] TextureIO.newTextureData(): BufferedImage type for stream = 6
+[Fri May 06 23:18:05 CEST 2011] [CCTextureUtil Line:377:toTextureData] [INFO] DEFAULT
+[Fri May 06 23:18:05 CEST 2011] [CCTextureUtil Line:398:toTextureData] [INFO] CCAppCapabilities.GL_EXT_abgr:true
+[Fri May 06 23:18:05 CEST 2011] [CCTextureUtil Line:399:toTextureData] [INFO] CCAppCapabilities.GL_VERSION_1_2:true
+[Fri May 06 23:18:05 CEST 2011] [CCImageIOFormat Line:94:createTextureData] [INFO] TextureIO.newTextureData(): BufferedImage type for stream = 6
+[Fri May 06 23:18:05 CEST 2011] [CCTextureUtil Line:377:toTextureData] [INFO] DEFAULT
+[Fri May 06 23:18:05 CEST 2011] [CCTextureUtil Line:398:toTextureData] [INFO] CCAppCapabilities.GL_EXT_abgr:true
+[Fri May 06 23:18:05 CEST 2011] [CCTextureUtil Line:399:toTextureData] [INFO] CCAppCapabilities.GL_VERSION_1_2:true
+[Fri May 06 23:18:05 CEST 2011] [CCImageIOFormat Line:94:createTextureData] [INFO] TextureIO.newTextureData(): BufferedImage type for stream = 6
+[Fri May 06 23:18:05 CEST 2011] [CCTextureUtil Line:377:toTextureData] [INFO] DEFAULT
+[Fri May 06 23:18:05 CEST 2011] [CCTextureUtil Line:398:toTextureData] [INFO] CCAppCapabilities.GL_EXT_abgr:true
+[Fri May 06 23:18:05 CEST 2011] [CCTextureUtil Line:399:toTextureData] [INFO] CCAppCapabilities.GL_VERSION_1_2:true
+[Fri May 06 23:18:05 CEST 2011] [CCImageIOFormat Line:94:createTextureData] [INFO] TextureIO.newTextureData(): BufferedImage type for stream = 6
+[Fri May 06 23:18:05 CEST 2011] [CCTextureUtil Line:377:toTextureData] [INFO] DEFAULT
+[Fri May 06 23:18:05 CEST 2011] [CCTextureUtil Line:398:toTextureData] [INFO] CCAppCapabilities.GL_EXT_abgr:true
+[Fri May 06 23:18:05 CEST 2011] [CCTextureUtil Line:399:toTextureData] [INFO] CCAppCapabilities.GL_VERSION_1_2:true
+[Fri May 06 23:18:05 CEST 2011] [CCImageIOFormat Line:94:createTextureData] [INFO] TextureIO.newTextureData(): BufferedImage type for stream = 6
+[Fri May 06 23:18:05 CEST 2011] [CCTextureUtil Line:377:toTextureData] [INFO] DEFAULT
+[Fri May 06 23:18:05 CEST 2011] [CCTextureUtil Line:398:toTextureData] [INFO] CCAppCapabilities.GL_EXT_abgr:true
+[Fri May 06 23:18:05 CEST 2011] [CCTextureUtil Line:399:toTextureData] [INFO] CCAppCapabilities.GL_VERSION_1_2:true
+[Fri May 06 23:18:23 CEST 2011] [CCApp:display] [SEVERE] java.lang.IndexOutOfBoundsException: Index: 0, Size: 0
+	at java.util.ArrayList.RangeCheck(ArrayList.java:547)
+	at java.util.ArrayList.get(ArrayList.java:322)
+	at cc.creativecomputing.graphics.font.text.CCText$CCTextGrid.gridPosition(CCText.java:332)
+	at cc.creativecomputing.newui.decorator.controller.CCUITextDecoratorController.moveCursorBackward(CCUITextDecoratorController.java:226)
+	at cc.creativecomputing.newui.decorator.controller.CCUITextDecoratorController.delete(CCUITextDecoratorController.java:288)
+	at cc.creativecomputing.newui.decorator.controller.CCUITextDecoratorController.keyEvent(CCUITextDecoratorController.java:167)
+	at cc.creativecomputing.newui.widget.CCUITextFieldWidget.keyEvent(CCUITextFieldWidget.java:122)
+	at cc.creativecomputing.newui.widget.CCUIWidget.keyEvent(CCUIWidget.java:307)
+	at cc.creativecomputing.newui.CCUI.keyPressed(CCUI.java:361)
+	at cc.creativecomputing.CCAbstractApp.handleKeyEvent(CCAbstractApp.java:544)
+	at cc.creativecomputing.CCAbstractApp.dequeueKeyEvents(CCAbstractApp.java:530)
+	at cc.creativecomputing.CCApp.display(CCApp.java:589)
+	at jogamp.opengl.GLDrawableHelper.display(GLDrawableHelper.java:191)
+	at javax.media.opengl.awt.GLCanvas$DisplayAction.run(GLCanvas.java:873)
+	at jogamp.opengl.GLDrawableHelper.invokeGL(GLDrawableHelper.java:363)
+	at javax.media.opengl.awt.GLCanvas$DisplayOnEventDispatchThreadAction.run(GLCanvas.java:890)
+	at java.awt.event.InvocationEvent.dispatch(InvocationEvent.java:199)
+	at java.awt.EventQueue.dispatchEvent(EventQueue.java:633)
+	at java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:296)
+	at java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:211)
+	at java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:201)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:196)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:188)
+	at java.awt.EventDispatchThread.run(EventDispatchThread.java:122)
+

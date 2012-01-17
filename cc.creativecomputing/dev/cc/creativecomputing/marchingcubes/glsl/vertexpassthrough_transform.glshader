@@ -1,0 +1,10 @@
+/* $Id: vertexpassthrough_transform.glshader,v 1.1 2007/03/23 13:50:51 dyken Exp $ */
+
+varying vec3 Normal;
+
+void main()
+{
+	gl_Position = gl_ModelViewProjectionMatrix * gl_Vertex;
+	Normal = gl_NormalMatrix * gl_Normal;
+	gl_FrontColor = gl_Color;
+}

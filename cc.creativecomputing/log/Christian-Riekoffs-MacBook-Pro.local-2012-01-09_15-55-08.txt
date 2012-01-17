@@ -1,0 +1,2 @@
+[Mon Jan 09 15:55:08 CET 2012] [CCLog Line:177:initialize] [INFO] logging to file: log/Christian-Riekoffs-MacBook-Pro.local-2012-01-09_15-55-08.txt
+[Mon Jan 09 15:55:08 CET 2012] [CCGraphics Line:302:checkError] [SEVERE] # INVALID OPERATION REPORTED. check for function calls that are invalid in the current graphics state.

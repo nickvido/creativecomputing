@@ -1,0 +1,24 @@
+#include "shader/util/texturenoise.fp"
+
+uniform float4x4 modelViewProjection : state.matrix.mvp;
+uniform float4x4 modelView : state.matrix.modelview[0];
+
+uniform float pointSize;
+uniform float tanHalfFov;
+
+uniform float noiseScale;
+uniform float2 noiseOffset;
+
+void main (
+	in float4 iPosition : POSITION,
+	in float2 iTexCoord : TEXCOORD0,
+	out float4 oPosition : POSITION,
+	out float2 oTexCoord : TEXCOORD0
+){
+	float4 position = noise((iTexCoord + noiseOffset.xy) * noiseScale);
+	position += noise((iTexCoord + noiseOffset.yx) * noiseScale);
+	iPosition.z += position.x * 300 - 150;
+	oPosition = mul(modelViewProjection,iPosition);
+	oTexCoord = iTexCoord;
+}
+	           

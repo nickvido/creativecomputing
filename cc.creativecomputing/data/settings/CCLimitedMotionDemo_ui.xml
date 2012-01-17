@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<ui>
+	<CCControlPresetTab label="app" selectedpreset="0" numberofpresets="1">
+		<uielements>
+			<CCUIPresetControl label="presets">
+				<uielements/>
+			</CCUIPresetControl>
+			<CCUIComponent label="app">
+				<uielements>
+					<CCUISlider label="speed">
+						<preset value="0.07333333"/>
+					</CCUISlider>
+				</uielements>
+			</CCUIComponent>
+			<CCUIComponent label="limiter">
+				<uielements>
+					<CCUISlider label="look ahead">
+						<preset value="1.0"/>
+					</CCUISlider>
+					<CCUISlider label="target look ahead">
+						<preset value="0.0"/>
+					</CCUISlider>
+					<CCUISlider label="max velocity">
+						<preset value="58.333332"/>
+					</CCUISlider>
+					<CCUISlider label="max acceleration">
+						<preset value="80.0"/>
+					</CCUISlider>
+				</uielements>
+			</CCUIComponent>
+		</uielements>
+		<presetnames>
+			<presetname name="Preset:0"/>
+		</presetnames>
+	</CCControlPresetTab>
+	<globalsettings selectedpreset="0" numberofpresets="0" label="global">
+		<presetnames/>
+	</globalsettings>
+</ui>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<ui>
+	<globalsettings label="global" numberofpresets="0" selectedpreset="0">
+		<presetnames/>
+	</globalsettings>
+	<CCControlPresetTab numberofpresets="1" label="light" selectedpreset="0">
+		<uielements>
+			<CCUIPresetControl label="presets">
+				<uielements/>
+			</CCUIPresetControl>
+			<CCUIComponent label="light">
+				<uielements>
+					<CCUISlider label="back red">
+						<preset value="0.0"/>
+					</CCUISlider>
+					<CCUISlider label="back green">
+						<preset value="0.0"/>
+					</CCUISlider>
+					<CCUISlider label="back blue">
+						<preset value="0.0"/>
+					</CCUISlider>
+					<CCUISlider label="red">
+						<preset value="1.0"/>
+					</CCUISlider>
+					<CCUISlider label="green">
+						<preset value="1.0"/>
+					</CCUISlider>
+					<CCUISlider label="blue">
+						<preset value="1.0"/>
+					</CCUISlider>
+					<CCUISlider label="ambient red">
+						<preset value="0.0"/>
+					</CCUISlider>
+					<CCUISlider label="ambient green">
+						<preset value="0.0"/>
+					</CCUISlider>
+					<CCUISlider label="ambient blue">
+						<preset value="0.0"/>
+					</CCUISlider>
+					<CCUISlider label="specular red">
+						<preset value="0.66"/>
+					</CCUISlider>
+					<CCUISlider label="specular green">
+						<preset value="0.64666665"/>
+					</CCUISlider>
+					<CCUISlider label="specular blue">
+						<preset value="0.6533333"/>
+					</CCUISlider>
+					<CCUISlider label="shininess">
+						<preset value="6.7333336"/>
+					</CCUISlider>
+					<CCUISlider label="normalScale">
+						<preset value="0.67333335"/>
+					</CCUISlider>
+					<CCUISlider label="x">
+						<preset value="0.24000001"/>
+					</CCUISlider>
+					<CCUISlider label="y">
+						<preset value="-0.6"/>
+					</CCUISlider>
+					<CCUISlider label="z">
+						<preset value="-1.0"/>
+					</CCUISlider>
+				</uielements>
+			</CCUIComponent>
+		</uielements>
+		<presetnames>
+			<presetname name="Preset:0"/>
+		</presetnames>
+	</CCControlPresetTab>
+</ui>

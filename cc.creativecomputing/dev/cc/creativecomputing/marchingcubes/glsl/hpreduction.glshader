@@ -1,0 +1,25 @@
+/* $Id: hpbaselevel.glshader,v 1.1 2007/03/27 13:49:16 dyken Exp $ */
+
+#ifndef PRE_OP
+#define PRE_OP floor(
+#endif
+
+#ifndef POST_OP
+#define POST_OP )
+#endif
+
+uniform sampler2D hp_tex;
+uniform vec2 delta;
+
+void main()
+{
+/*	vec4 sums = vec4( dot(vec4(1.0), floor( texture2D( hp_tex, gl_TexCoord[0].xy+delta.xx ) )),
+					  dot(vec4(1.0), floor( texture2D( hp_tex, gl_TexCoord[0].xy+delta.yx ) )),
+					  dot(vec4(1.0), floor( texture2D( hp_tex, gl_TexCoord[0].xy+delta.xy ) )),
+					  dot(vec4(1.0), floor( texture2D( hp_tex, gl_TexCoord[0].xy+delta.yy ) )) );
+*/	vec4 sums = vec4( dot(vec4(1.0), PRE_OP texture2D( hp_tex, gl_TexCoord[0].xy+delta.xx ) POST_OP),
+					  dot(vec4(1.0), PRE_OP texture2D( hp_tex, gl_TexCoord[0].xy+delta.yx ) POST_OP),
+					  dot(vec4(1.0), PRE_OP texture2D( hp_tex, gl_TexCoord[0].xy+delta.xy ) POST_OP),
+					  dot(vec4(1.0), PRE_OP texture2D( hp_tex, gl_TexCoord[0].xy+delta.yy ) POST_OP) );
+	gl_FragColor = sums;
+}

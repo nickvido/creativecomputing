@@ -1,0 +1,75 @@
+/* $Id: mtetra_g.glshader,v 1.2 2007/02/06 15:13:00 dyken Exp $ */
+#extension GL_EXT_gpu_shader4 : enable
+#extension GL_EXT_geometry_shader4 : enable
+#version 120
+
+varying in vec3 Normal_g[4];
+varying in float value_g[4];
+varying in int flag_g[4];
+
+varying out vec3 Normal;
+
+void main ()
+{
+	int index = (flag_g[0]<<3) |
+				(flag_g[1]<<2) |
+				(flag_g[2]<<1) |
+				 flag_g[3] ;
+
+
+	struct { ivec4 e0; ivec4 e1; } EdgeTable[15] = {
+		{ ivec4(0, 0, 0, 0), ivec4(0, 0, 0, 1) },	// all vertices out
+		{ ivec4(3, 0, 3, 1), ivec4(3, 2, 0, 0) },	// 0001
+		{ ivec4(2, 1, 2, 0), ivec4(2, 3, 0, 0) },	// 0010
+		{ ivec4(2, 0, 3, 0), ivec4(2, 1, 3, 1) },	// 0011 - 2 triangles
+		{ ivec4(1, 2, 1, 3), ivec4(1, 0, 0, 0) },	// 0100
+		{ ivec4(1, 0, 1, 2), ivec4(3, 0, 3, 2) },	// 0101 - 2 triangles
+		{ ivec4(1, 0, 2, 0), ivec4(1, 3, 2, 3) },	// 0110 - 2 triangles
+		{ ivec4(3, 0, 1, 0), ivec4(2, 0, 0, 0) },	// 0111
+		{ ivec4(0, 2, 0, 1), ivec4(0, 3, 0, 0) },	// 1000
+		{ ivec4(0, 1, 3, 1), ivec4(0, 2, 3, 2) },	// 1001 - 2 triangles
+		{ ivec4(0, 1, 0, 3), ivec4(2, 1, 2, 3) },	// 1010 - 2 triangles
+		{ ivec4(3, 1, 2, 1), ivec4(0, 1, 0, 0) },	// 1011
+		{ ivec4(0, 2, 1, 2), ivec4(0, 3, 1, 3) },	// 1100 - 2 triangles
+		{ ivec4(1, 2, 3, 2), ivec4(0, 2, 0, 0) },	// 1101
+		{ ivec4(0, 3, 2, 3), ivec4(1, 3, 0, 0) }	// 1110
+	};
+
+	gl_FrontColor = gl_FrontColorIn[0];
+	if(index > 0 && index < 15) {
+		ivec4 e0 = EdgeTable[index].e0;
+		ivec4 e1 = EdgeTable[index].e1;
+		float t;
+		
+		t = -value_g[ e0.x ]/(value_g[e0.y]-value_g[e0.x]);
+
+		Normal = mix( Normal_g[e0.x], Normal_g[e0.y], t );
+		gl_Position = mix( gl_PositionIn[e0.x], gl_PositionIn[e0.y], t );
+		EmitVertex();
+
+		t = -value_g[ e0.z ]/(value_g[e0.w]-value_g[e0.z]);
+
+		Normal = mix( Normal_g[e0.z], Normal_g[e0.w], t );
+		gl_Position = mix( gl_PositionIn[e0.z], gl_PositionIn[e0.w], t );
+		EmitVertex();
+
+		t = -value_g[ e1.x ]/(value_g[e1.y]-value_g[e1.x]);
+
+		Normal = mix( Normal_g[e1.x], Normal_g[e1.y], t );
+		gl_Position = mix( gl_PositionIn[e1.x], gl_PositionIn[e1.y], t );
+		EmitVertex();
+
+//		EndPrimitive();
+		
+
+		if( e1.z != 0 ) {
+			t = -value_g[ e1.z ]/(value_g[e1.w]-value_g[e1.z]);
+			Normal = mix( Normal_g[e1.z], Normal_g[e1.w], t );
+			gl_Position = mix( gl_PositionIn[e1.z], gl_PositionIn[e1.w], t );
+			EmitVertex();
+//			EndPrimitive();
+		}
+
+	}
+
+}

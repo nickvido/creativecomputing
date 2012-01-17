@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<ui>
+  <CCControlPresetTab numberofpresets="1" label="circles" selectedpreset="0">
+    <uielements>
+      <CCUIPresetControl label="presets">
+        <uielements/>
+      </CCUIPresetControl>
+      <CCUIComponent label="circle1">
+        <uielements>
+          <CCUISlider label="x">
+            <preset value="0.0"/>
+          </CCUISlider>
+          <CCUISlider label="y">
+            <preset value="0.0"/>
+          </CCUISlider>
+          <CCUISlider label="radius">
+            <preset value="1.0"/>
+          </CCUISlider>
+          <CCTimedDataUI label="envelope">
+            <preset>
+              <envelope>
+                <ControlPoint type="linear" y="0.16666669" x="0.25333333"/>
+                <ControlPoint type="linear" y="0.5466666" x="0.36"/>
+                <ControlPoint type="linear" y="0.43333334" x="0.82666665"/>
+                <ControlPoint type="linear" y="0.6933333" x="1.0533333"/>
+                <ControlPoint type="linear" y="0.52" x="1.3553333"/>
+                <ControlPoint type="linear" y="0.36" x="1.4933333"/>
+                <ControlPoint type="linear" y="0.1533333" x="1.9"/>
+              </envelope>
+              <envelope>
+                <ControlPoint type="linear" y="0.20666665" x="0.13333334"/>
+                <ControlPoint type="linear" y="0.75333333" x="0.45333335"/>
+                <ControlPoint type="linear" y="0.2733333" x="0.7733333"/>
+                <ControlPoint type="linear" y="0.44" x="0.94666666"/>
+                <ControlPoint type="linear" y="0.3466667" x="1.2933333"/>
+                <ControlPoint type="linear" y="0.87333333" x="1.6933334"/>
+              </envelope>
+              <envelope>
+                <ControlPoint type="linear" y="0.23333335" x="0.17333333"/>
+                <ControlPoint type="linear" y="0.74666667" x="0.72"/>
+                <ControlPoint type="linear" y="0.76666665" x="1.2533333"/>
+                <ControlPoint type="linear" y="0.36666667" x="1.32"/>
+                <ControlPoint type="linear" y="0.13999999" x="1.6533333"/>
+              </envelope>
+              <envelope>
+                <ControlPoint type="linear" y="0.16666669" x="0.08"/>
+                <ControlPoint type="linear" y="0.64666665" x="0.21333334"/>
+                <ControlPoint type="linear" y="0.26" x="0.46666667"/>
+                <ControlPoint type="linear" y="0.68" x="0.9066667"/>
+                <ControlPoint type="linear" y="0.3466667" x="1.4133333"/>
+                <ControlPoint type="linear" y="0.75333333" x="1.56"/>
+                <ControlPoint type="linear" y="0.30666667" x="1.88"/>
+              </envelope>
+            </preset>
+          </CCTimedDataUI>
+          <CCUIEnvelopeControl label="envelopes">
+            <uielements/>
+          </CCUIEnvelopeControl>
+        </uielements>
+      </CCUIComponent>
+      <CCUIComponent label="circle2">
+        <uielements>
+          <CCUISlider label="x">
+            <preset value="0.0"/>
+          </CCUISlider>
+          <CCUISlider label="y">
+            <preset value="140.0"/>
+          </CCUISlider>
+          <CCUISlider label="radius">
+            <preset value="1.0"/>
+          </CCUISlider>
+          <CCTimedDataUI label="envelope">
+            <preset>
+              <envelope>
+                <ControlPoint type="linear" y="0.0" x="0.0"/>
+                <ControlPoint type="linear" y="0.13333333" x="0.28"/>
+                <ControlPoint type="linear" y="0.50666666" x="0.6"/>
+                <ControlPoint type="linear" y="0.76" x="1.3333334"/>
+                <ControlPoint type="linear" y="0.14666665" x="1.5866667"/>
+              </envelope>
+              <envelope>
+                <ControlPoint type="linear" y="0.17333335" x="0.2"/>
+                <ControlPoint type="linear" y="0.6533333" x="0.96"/>
+                <ControlPoint type="linear" y="0.14666665" x="1.28"/>
+                <ControlPoint type="linear" y="0.64" x="1.5333333"/>
+              </envelope>
+              <envelope/>
+              <envelope/>
+            </preset>
+          </CCTimedDataUI>
+          <CCUIEnvelopeControl label="envelopes">
+            <uielements/>
+          </CCUIEnvelopeControl>
+        </uielements>
+      </CCUIComponent>
+    </uielements>
+    <presetnames>
+      <presetname name="Preset:0"/>
+    </presetnames>
+  </CCControlPresetTab>
+  <globalsettings label="global" numberofpresets="0" selectedpreset="0">
+    <presetnames/>
+  </globalsettings>
+</ui>

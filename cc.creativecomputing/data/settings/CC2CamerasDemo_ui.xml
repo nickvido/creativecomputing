@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<ui>
+  <CCControlPresetTab numberofpresets="1" label="camera" selectedpreset="0">
+    <uielements>
+      <CCUIPresetControl label="presets">
+        <uielements/>
+      </CCUIPresetControl>
+      <CCUIComponent label="camera1">
+        <uielements>
+          <CCUISlider label="camera near">
+            <preset value="533.3334"/>
+          </CCUISlider>
+          <CCUISlider label="camera far">
+            <preset value="1000.0"/>
+          </CCUISlider>
+          <CCUISlider label="frustum offset x">
+            <preset value="-50.0"/>
+          </CCUISlider>
+          <CCUISlider label="frustum offset y">
+            <preset value="0.0"/>
+          </CCUISlider>
+          <CCUISlider label="x rotation">
+            <preset value="0.0"/>
+          </CCUISlider>
+          <CCUISlider label="y rotation">
+            <preset value="0.0"/>
+          </CCUISlider>
+          <CCUISlider label="z rotation">
+            <preset value="0.16755162"/>
+          </CCUISlider>
+          <CCUISlider label="fov">
+            <preset value="1.0471976"/>
+          </CCUISlider>
+        </uielements>
+      </CCUIComponent>
+      <CCUIComponent label="camera2">
+        <uielements>
+          <CCUISlider label="camera near">
+            <preset value="133.33334"/>
+          </CCUISlider>
+          <CCUISlider label="camera far">
+            <preset value="1000.0"/>
+          </CCUISlider>
+          <CCUISlider label="frustum offset x">
+            <preset value="50.0"/>
+          </CCUISlider>
+          <CCUISlider label="frustum offset y">
+            <preset value="0.0"/>
+          </CCUISlider>
+          <CCUISlider label="x rotation">
+            <preset value="0.0"/>
+          </CCUISlider>
+          <CCUISlider label="y rotation">
+            <preset value="0.0"/>
+          </CCUISlider>
+          <CCUISlider label="z rotation">
+            <preset value="0.08377581"/>
+          </CCUISlider>
+          <CCUISlider label="fov">
+            <preset value="1.0471976"/>
+          </CCUISlider>
+        </uielements>
+      </CCUIComponent>
+    </uielements>
+    <presetnames>
+      <presetname name="Preset:0"/>
+    </presetnames>
+  </CCControlPresetTab>
+  <globalsettings label="global" numberofpresets="0" selectedpreset="0">
+    <presetnames/>
+  </globalsettings>
+</ui>

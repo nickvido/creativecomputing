@@ -1,0 +1,10 @@
+[Thu Oct 06 13:46:51 CEST 2011] [CCLog Line:177:initialize] [INFO] logging to file: log/Christian-Riekoffs-MacBook-Pro.local-2011-10-06_13-46-51.txt
+[Thu Oct 06 13:46:52 CEST 2011] [CCGraphics Line:298:checkError] [SEVERE] # INVALID VALUE REPORTED. check for errors with passed values that are out of a defined range.
+[Thu Oct 06 13:46:52 CEST 2011] [CCGraphics Line:298:checkError] [SEVERE] # INVALID VALUE REPORTED. check for errors with passed values that are out of a defined range.
+[Thu Oct 06 13:46:52 CEST 2011] [CCGraphics Line:298:checkError] [SEVERE] # INVALID VALUE REPORTED. check for errors with passed values that are out of a defined range.
+[Thu Oct 06 13:46:52 CEST 2011] [CCGraphics Line:298:checkError] [SEVERE] # INVALID VALUE REPORTED. check for errors with passed values that are out of a defined range.
+[Thu Oct 06 13:46:52 CEST 2011] [CCGraphics Line:298:checkError] [SEVERE] # INVALID VALUE REPORTED. check for errors with passed values that are out of a defined range.
+[Thu Oct 06 13:46:52 CEST 2011] [CCGraphics Line:298:checkError] [SEVERE] # INVALID VALUE REPORTED. check for errors with passed values that are out of a defined range.
+[Thu Oct 06 13:46:52 CEST 2011] [CCGraphics Line:298:checkError] [SEVERE] # INVALID VALUE REPORTED. check for errors with passed values that are out of a defined range.
+[Thu Oct 06 13:46:52 CEST 2011] [CCGraphics Line:298:checkError] [SEVERE] # INVALID VALUE REPORTED. check for errors with passed values that are out of a defined range.
+[Thu Oct 06 13:46:52 CEST 2011] [CCGraphics Line:298:checkError] [SEVERE] # INVALID VALUE REPORTED. check for errors with passed values that are out of a defined range.

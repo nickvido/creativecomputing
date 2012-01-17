@@ -1,0 +1,36 @@
+/* -*- mode: C++; tab-width:4; c-basic-offset: 4; indent-tabs-mode:nil -*-
+ *
+ * (C) 2007 Christopher Dyken, <erikd@ifi.uio.no>
+ * 
+ * Distributed under the GNU GPL
+ *
+ */
+
+//			 x^5,	x^4,	y^4,	z^4,	x^2y^2,	x^2z^2,	y^2z^2,	xyz,	x^2,	y^2,	z^2,	1
+
+uniform float shape[12];
+
+void main()
+{
+	vec2 foo = vec2(FUNC_COLS,FUNC_ROWS)*gl_TexCoord[0].xy;
+	float slice = dot(vec2(1.0,float(FUNC_COLS)), floor(foo));
+	vec3 p = 1.2*(vec3( 2.0*fract(foo), (2.0/FUNC_SLICES)*(slice+0.5) ) - vec3(1.0));
+
+
+	gl_FragColor = vec4( -(
+		shape[0]*p.x*p.x*p.x*p.x*p.x+
+		shape[1]*p.x*p.x*p.x*p.x +
+		shape[2]*p.y*p.y*p.y*p.y +
+		shape[3]*p.z*p.z*p.z*p.z +
+		shape[4]*p.x*p.x*p.y*p.y +
+		shape[5]*p.x*p.x*p.z*p.z +
+		shape[6]*p.y*p.y*p.z*p.z +
+		shape[7]*p.x*p.y*p.z +
+		shape[8]*p.x*p.x +
+		shape[9]*p.y*p.y +
+		shape[10]*p.z*p.z +
+		shape[11] )
+	);
+
+//	gl_FragColor = vec4( -dot(p,p)+0.5 );
+}

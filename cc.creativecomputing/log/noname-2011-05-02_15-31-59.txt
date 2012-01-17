@@ -1,0 +1,7 @@
+[Mon May 02 15:31:59 CEST 2011] [CCLog Line:177:initialize] [INFO] logging to file: log/noname-2011-05-02_15-31-59.txt
+[Mon May 02 15:32:00 CEST 2011] [CCTextureUtil Line:368:toTextureData] [INFO] DEFAULT
+[Mon May 02 15:32:00 CEST 2011] [CCTextureUtil Line:389:toTextureData] [INFO] CCAppCapabilities.GL_EXT_abgr:true
+[Mon May 02 15:32:00 CEST 2011] [CCTextureUtil Line:390:toTextureData] [INFO] CCAppCapabilities.GL_VERSION_1_2:true
+[Mon May 02 15:32:00 CEST 2011] [CCTextureUtil Line:368:toTextureData] [INFO] DEFAULT
+[Mon May 02 15:32:00 CEST 2011] [CCTextureUtil Line:389:toTextureData] [INFO] CCAppCapabilities.GL_EXT_abgr:true
+[Mon May 02 15:32:00 CEST 2011] [CCTextureUtil Line:390:toTextureData] [INFO] CCAppCapabilities.GL_VERSION_1_2:true

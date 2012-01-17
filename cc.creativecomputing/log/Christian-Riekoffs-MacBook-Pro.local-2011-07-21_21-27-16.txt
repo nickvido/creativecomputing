@@ -1,0 +1,109 @@
+[Thu Jul 21 21:27:16 CEST 2011] [CCLog Line:177:initialize] [INFO] logging to file: log/Christian-Riekoffs-MacBook-Pro.local-2011-07-21_21-27-16.txt
+[Thu Jul 21 21:27:16 CEST 2011] [CCTextureUtil Line:379:toTextureData] [INFO] DEFAULT
+[Thu Jul 21 21:27:16 CEST 2011] [CCTextureUtil Line:400:toTextureData] [INFO] CCAppCapabilities.GL_EXT_abgr:true
+[Thu Jul 21 21:27:16 CEST 2011] [CCTextureUtil Line:401:toTextureData] [INFO] CCAppCapabilities.GL_VERSION_1_2:true
+[Thu Jul 21 21:27:16 CEST 2011] [CCTextureUtil Line:379:toTextureData] [INFO] DEFAULT
+[Thu Jul 21 21:27:16 CEST 2011] [CCTextureUtil Line:400:toTextureData] [INFO] CCAppCapabilities.GL_EXT_abgr:true
+[Thu Jul 21 21:27:16 CEST 2011] [CCTextureUtil Line:401:toTextureData] [INFO] CCAppCapabilities.GL_VERSION_1_2:true
+[Thu Jul 21 21:27:16 CEST 2011] [CCImageIOFormat Line:95:createTextureData] [INFO] TextureIO.newTextureData(): BufferedImage type for stream = 6
+[Thu Jul 21 21:27:16 CEST 2011] [CCTextureUtil Line:379:toTextureData] [INFO] DEFAULT
+[Thu Jul 21 21:27:16 CEST 2011] [CCTextureUtil Line:400:toTextureData] [INFO] CCAppCapabilities.GL_EXT_abgr:true
+[Thu Jul 21 21:27:16 CEST 2011] [CCTextureUtil Line:401:toTextureData] [INFO] CCAppCapabilities.GL_VERSION_1_2:true
+[Thu Jul 21 21:27:16 CEST 2011] [CCImageIOFormat Line:95:createTextureData] [INFO] TextureIO.newTextureData(): BufferedImage type for stream = 6
+[Thu Jul 21 21:27:16 CEST 2011] [CCTextureUtil Line:379:toTextureData] [INFO] DEFAULT
+[Thu Jul 21 21:27:16 CEST 2011] [CCTextureUtil Line:400:toTextureData] [INFO] CCAppCapabilities.GL_EXT_abgr:true
+[Thu Jul 21 21:27:16 CEST 2011] [CCTextureUtil Line:401:toTextureData] [INFO] CCAppCapabilities.GL_VERSION_1_2:true
+[Thu Jul 21 21:27:16 CEST 2011] [CCImageIOFormat Line:95:createTextureData] [INFO] TextureIO.newTextureData(): BufferedImage type for stream = 6
+[Thu Jul 21 21:27:16 CEST 2011] [CCTextureUtil Line:379:toTextureData] [INFO] DEFAULT
+[Thu Jul 21 21:27:16 CEST 2011] [CCTextureUtil Line:400:toTextureData] [INFO] CCAppCapabilities.GL_EXT_abgr:true
+[Thu Jul 21 21:27:16 CEST 2011] [CCTextureUtil Line:401:toTextureData] [INFO] CCAppCapabilities.GL_VERSION_1_2:true
+[Thu Jul 21 21:27:16 CEST 2011] [CCImageIOFormat Line:95:createTextureData] [INFO] TextureIO.newTextureData(): BufferedImage type for stream = 6
+[Thu Jul 21 21:27:16 CEST 2011] [CCTextureUtil Line:379:toTextureData] [INFO] DEFAULT
+[Thu Jul 21 21:27:16 CEST 2011] [CCTextureUtil Line:400:toTextureData] [INFO] CCAppCapabilities.GL_EXT_abgr:true
+[Thu Jul 21 21:27:16 CEST 2011] [CCTextureUtil Line:401:toTextureData] [INFO] CCAppCapabilities.GL_VERSION_1_2:true
+[Thu Jul 21 21:27:16 CEST 2011] [CCImageIOFormat Line:95:createTextureData] [INFO] TextureIO.newTextureData(): BufferedImage type for stream = 6
+[Thu Jul 21 21:27:16 CEST 2011] [CCTextureUtil Line:379:toTextureData] [INFO] DEFAULT
+[Thu Jul 21 21:27:16 CEST 2011] [CCTextureUtil Line:400:toTextureData] [INFO] CCAppCapabilities.GL_EXT_abgr:true
+[Thu Jul 21 21:27:16 CEST 2011] [CCTextureUtil Line:401:toTextureData] [INFO] CCAppCapabilities.GL_VERSION_1_2:true
+[Thu Jul 21 21:28:18 CEST 2011] [CCApp:display] [SEVERE] java.lang.reflect.UndeclaredThrowableException
+	at $Proxy5.mousePressed(Unknown Source)
+	at cc.creativecomputing.CCAbstractApp.handleMouseEvent(CCAbstractApp.java:413)
+	at cc.creativecomputing.CCAbstractApp.dequeueMouseEvents(CCAbstractApp.java:403)
+	at cc.creativecomputing.CCApp.display(CCApp.java:579)
+	at com.jogamp.opengl.impl.GLDrawableHelper.display(GLDrawableHelper.java:183)
+	at javax.media.opengl.awt.GLCanvas$DisplayAction.run(GLCanvas.java:700)
+	at com.jogamp.opengl.impl.GLDrawableHelper.invokeGL(GLDrawableHelper.java:357)
+	at javax.media.opengl.awt.GLCanvas$DisplayOnEventDispatchThreadAction.run(GLCanvas.java:717)
+	at java.awt.event.InvocationEvent.dispatch(InvocationEvent.java:199)
+	at java.awt.EventQueue.dispatchEventImpl(EventQueue.java:678)
+	at java.awt.EventQueue.access$000(EventQueue.java:86)
+	at java.awt.EventQueue$1.run(EventQueue.java:639)
+	at java.awt.EventQueue$1.run(EventQueue.java:637)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.AccessControlContext$1.doIntersectionPrivilege(AccessControlContext.java:87)
+	at java.awt.EventQueue.dispatchEvent(EventQueue.java:648)
+	at java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:296)
+	at java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:211)
+	at java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:201)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:196)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:188)
+	at java.awt.EventDispatchThread.run(EventDispatchThread.java:122)
+Caused by: java.lang.reflect.InvocationTargetException
+	at sun.reflect.GeneratedMethodAccessor13.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at cc.creativecomputing.events.CCListenerManager$ProxyInvocationHandler.invoke(CCListenerManager.java:170)
+	... 22 more
+Caused by: java.lang.ArrayIndexOutOfBoundsException: 12
+	at cc.creativecomputing.graphics.font.text.CCText$CCTextGridLine.gridPos(CCText.java:172)
+	at cc.creativecomputing.graphics.font.text.CCText$CCTextGridLine.access$10(CCText.java:171)
+	at cc.creativecomputing.graphics.font.text.CCText$CCTextGrid.gridPosition(CCText.java:333)
+	at cc.creativecomputing.newui.decorator.controller.CCUITextDecoratorController.moveCursorToPosition(CCUITextDecoratorController.java:206)
+	at cc.creativecomputing.newui.decorator.controller.CCUITextDecoratorController.onEvent(CCUITextDecoratorController.java:80)
+	at cc.creativecomputing.newui.widget.CCUIWidget.callListener(CCUIWidget.java:231)
+	at cc.creativecomputing.newui.widget.CCUIWidget.handleEvent(CCUIWidget.java:241)
+	at cc.creativecomputing.newui.widget.CCUIWidget.checkEvent(CCUIWidget.java:305)
+	at cc.creativecomputing.newui.CCUI.mousePressed(CCUI.java:293)
+	... 26 more
+
+[Thu Jul 21 21:28:43 CEST 2011] [CCApp:display] [SEVERE] java.lang.reflect.UndeclaredThrowableException
+	at $Proxy5.mousePressed(Unknown Source)
+	at cc.creativecomputing.CCAbstractApp.handleMouseEvent(CCAbstractApp.java:413)
+	at cc.creativecomputing.CCAbstractApp.dequeueMouseEvents(CCAbstractApp.java:403)
+	at cc.creativecomputing.CCApp.display(CCApp.java:579)
+	at com.jogamp.opengl.impl.GLDrawableHelper.display(GLDrawableHelper.java:183)
+	at javax.media.opengl.awt.GLCanvas$DisplayAction.run(GLCanvas.java:700)
+	at com.jogamp.opengl.impl.GLDrawableHelper.invokeGL(GLDrawableHelper.java:357)
+	at javax.media.opengl.awt.GLCanvas$DisplayOnEventDispatchThreadAction.run(GLCanvas.java:717)
+	at java.awt.event.InvocationEvent.dispatch(InvocationEvent.java:199)
+	at java.awt.EventQueue.dispatchEventImpl(EventQueue.java:678)
+	at java.awt.EventQueue.access$000(EventQueue.java:86)
+	at java.awt.EventQueue$1.run(EventQueue.java:639)
+	at java.awt.EventQueue$1.run(EventQueue.java:637)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.AccessControlContext$1.doIntersectionPrivilege(AccessControlContext.java:87)
+	at java.awt.EventQueue.dispatchEvent(EventQueue.java:648)
+	at java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:296)
+	at java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:211)
+	at java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:201)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:196)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:188)
+	at java.awt.EventDispatchThread.run(EventDispatchThread.java:122)
+Caused by: java.lang.reflect.InvocationTargetException
+	at sun.reflect.GeneratedMethodAccessor13.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at cc.creativecomputing.events.CCListenerManager$ProxyInvocationHandler.invoke(CCListenerManager.java:170)
+	... 22 more
+Caused by: java.lang.IndexOutOfBoundsException: Index: 2, Size: 2
+	at java.util.ArrayList.RangeCheck(ArrayList.java:547)
+	at java.util.ArrayList.get(ArrayList.java:322)
+	at cc.creativecomputing.graphics.font.text.CCText$CCTextGrid.gridPosition(CCText.java:332)
+	at cc.creativecomputing.newui.decorator.controller.CCUITextDecoratorController.moveCursorToPosition(CCUITextDecoratorController.java:206)
+	at cc.creativecomputing.newui.decorator.controller.CCUITextDecoratorController.onEvent(CCUITextDecoratorController.java:80)
+	at cc.creativecomputing.newui.widget.CCUIWidget.callListener(CCUIWidget.java:231)
+	at cc.creativecomputing.newui.widget.CCUIWidget.handleEvent(CCUIWidget.java:241)
+	at cc.creativecomputing.newui.widget.CCUIWidget.checkEvent(CCUIWidget.java:305)
+	at cc.creativecomputing.newui.CCUI.mousePressed(CCUI.java:293)
+	... 26 more
+

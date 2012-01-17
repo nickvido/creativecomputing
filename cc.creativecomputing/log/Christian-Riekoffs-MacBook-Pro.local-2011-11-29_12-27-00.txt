@@ -1,0 +1,5 @@
+[Tue Nov 29 12:27:00 CET 2011] [CCLog Line:177:initialize] [INFO] logging to file: log/Christian-Riekoffs-MacBook-Pro.local-2011-11-29_12-27-00.txt
+[Tue Nov 29 12:27:00 CET 2011] [CCColorHSBRGBConverstionDemo Line:34:main] [INFO] 1. r: 0.4 g: 0.3 b:0.8
+[Tue Nov 29 12:27:00 CET 2011] [CCColorHSBRGBConverstionDemo Line:36:main] [INFO] 1. h: 0.7 s: 0.625 b:0.8
+[Tue Nov 29 12:27:00 CET 2011] [CCColorHSBRGBConverstionDemo Line:41:main] [INFO] 2. h: 0.7 s: 0.625 0.385
+[Tue Nov 29 12:27:00 CET 2011] [CCColorHSBRGBConverstionDemo Line:42:main] [INFO] 2. r: 0.39999992 g: 0.3 b:0.8

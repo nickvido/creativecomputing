@@ -1,0 +1,11 @@
+[Thu Aug 04 14:16:56 CEST 2011] [CCLog Line:177:initialize] [INFO] logging to file: log/Christian-Riekoffs-MacBook-Pro.local-2011-08-04_14-16-56.txt
+[Thu Aug 04 14:16:56 CEST 2011] [CCImageIOFormat Line:94:createTextureData] [INFO] TextureIO.newTextureData(): BufferedImage type for stream = 12
+[Thu Aug 04 14:16:56 CEST 2011] [CCTextureUtil Line:379:toTextureData] [INFO] DEFAULT:12
+[Thu Aug 04 14:16:56 CEST 2011] [CCTextureUtil Line:400:toTextureData] [INFO] CCAppCapabilities.GL_EXT_abgr:true
+[Thu Aug 04 14:16:56 CEST 2011] [CCTextureUtil Line:401:toTextureData] [INFO] CCAppCapabilities.GL_VERSION_1_2:true
+[Thu Aug 04 14:16:56 CEST 2011] [CCTexture2D Line:157:dataImplementation] [INFO] TEXTURE_2D
+[Thu Aug 04 14:16:56 CEST 2011] [CCTexture2D Line:158:dataImplementation] [INFO] RGBA
+[Thu Aug 04 14:16:56 CEST 2011] [CCTexture2D Line:159:dataImplementation] [INFO] RGBA
+[Thu Aug 04 14:16:56 CEST 2011] [CCTexture2D Line:160:dataImplementation] [INFO] UNSIGNED_BYTE
+[Thu Aug 04 14:16:56 CEST 2011] [CCTexture2D Line:161:dataImplementation] [INFO] 486
+[Thu Aug 04 14:16:56 CEST 2011] [CCTexture2D Line:162:dataImplementation] [INFO] 9

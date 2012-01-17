@@ -1,0 +1,16 @@
+uniform float4x4 mvp : state.matrix.mvp;
+
+void main(
+	in float4 iPosition : POSITION,
+	in float4 iTexCoords : TEXCOORD0,
+	in float4 iColor : COLOR,
+	out float4 oPosition : POSITION, 
+	out float4 oTextureCoords : TEXCOORD0,
+	out float4 oColor : COLOR
+){
+
+	// Transform the input points.
+	oPosition = mul(mvp,iPosition);
+	oTextureCoords = iTexCoords;
+	oColor = iColor;
+}

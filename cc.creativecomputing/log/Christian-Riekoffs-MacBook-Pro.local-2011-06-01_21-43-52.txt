@@ -1,0 +1,208 @@
+[Wed Jun 01 21:43:52 CEST 2011] [CCLog Line:177:initialize] [INFO] logging to file: log/Christian-Riekoffs-MacBook-Pro.local-2011-06-01_21-43-52.txt
+[Wed Jun 01 21:43:52 CEST 2011] [CCApp:display] [SEVERE] com.jogamp.opencl.CLException$CLBuildProgramFailureException: 
+CLDevice [id: 16918016 name: GeForce 8600M GT type: GPU profile: FULL_PROFILE] build log:
+<program source>:50:18:{50:5-50:17}: error: array type '__float4 [4]' is not assignable
+                                 delta[i + 1] = delta[i];
+                                 ~~~~~~~~~~~~ ^
+<program source>:55:17:{55:4-55:16}: error: array type '__float4 [4]' is not assignable
+                         delta[index] = d; 
+                         ~~~~~~~~~~~~ ^
+<program source>:79:66:{79:66-79:71}: warning: incompatible pointer types passing '__float4 *', expected '__float4 (*)[4]'
+         AddSamples(int_at.x, int_at.y, int_at.z, max_order, new_at, &F, delta, ID);
+                                                                         ^~~~~
+<program source>:85:106:{85:106-85:111}: warning: incompatible pointer types passing '__float4 *', expected '__float4 (*)[4]'
+         if (v2.x  < F[max_order - 1]) AddSamples(int_at[0] - 1, int_at[1],              int_at[2],              max_order, new_at, &F, delta, ID);
+                                                                                                                                        ^~~~~
+<program source>:86:107:{86:107-86:112}: warning: incompatible pointer types passing '__float4 *', expected '__float4 (*)[4]'
+         if (v2.y  < F[max_order - 1]) AddSamples(int_at[0],             int_at[1] - 1,  int_at[2],              max_order, new_at, &F, delta, ID);
+                                                                                                                                        ^~~~~
+<program source>:87:109:{87:109-87:114}: warning: incompatible pointer types passing '__float4 *', expected '__float4 (*)[4]'
+         if (v2.z  < F[max_order - 1]) AddSamples(int_at[0] ,            int_at[1],              int_at[2] - 1,  max_order, new_at, &F, delta, ID);
+                                                                                                                                        ^~~~~
+<program source>:88:107:{88:107-88:112}: warning: incompatible pointer types passing '__float4 *', expected '__float4 (*)[4]'
+         if (mv2.x < F[max_order - 1]) AddSamples(int_at[0] + 1, int_at[1],              int_at[2],              max_order, new_at, &F, delta, ID);
+                                                                                                                                        ^~~~~
+<program source>:89:108:{89:108-89:113}: warning: incompatible pointer types passing '__float4 *', expected '__float4 (*)[4]'
+         if (mv2.y < F[max_order - 1]) AddSamples(int_at[0],             int_at[1] + 1,  int_at[2],              max_order, new_at, &F, delta, ID);
+                                                                                                                                        ^~~~~
+<program source>:90:109:{90:109-90:114}: warning: incompatible pointer types passing '__float4 *', expected '__float4 (*)[4]'
+         if (mv2.z < F[max_order - 1]) AddSamples(int_at[0] ,            int_at[1],              int_at[2] + 1,  max_order, new_at, &F, delta, ID);
+                                                                                                                                        ^~~~~
+<program source>:92:118:{92:118-92:123}: warning: incompatible pointer types passing '__float4 *', expected '__float4 (*)[4]'
+         if ( v2.x +  v2.y < F[max_order - 1]) AddSamples(int_at[0] - 1, int_at[1] - 1,  int_at[2],              max_order, new_at, &F, delta, ID); 
+                                                                                                                                        ^~~~~
+<program source>:93:118:{93:118-93:123}: warning: incompatible pointer types passing '__float4 *', expected '__float4 (*)[4]'
+         if ( v2.x +  v2.z < F[max_order - 1]) AddSamples(int_at[0] - 1, int_at[1],              int_at[2] - 1,  max_order, new_at, &F, delta, ID); 
+                                                                                                                                        ^~~~~
+<program source>:94:118:{94:118-94:123}: warning: incompatible pointer types passing '__float4 *', expected '__float4 (*)[4]'
+         if ( v2.y +  v2.z < F[max_order - 1]) AddSamples(int_at[0],     int_at[1] - 1,  int_at[2] - 1,  max_order, new_at, &F, delta, ID); 
+                                                                                                                                ^~~~~
+<program source>:95:118:{95:118-95:123}: warning: incompatible pointer types passing '__float4 *', expected '__float4 (*)[4]'
+         if (mv2.x + mv2.y < F[max_order - 1]) AddSamples(int_at[0] + 1, int_at[1] + 1,  int_at[2],              max_order, new_at, &F, delta, ID); 
+                                                                                                                                        ^~~~~
+<program source>:96:118:{96:118-96:123}: warning: incompatible pointer types passing '__float4 *', expected '__float4 (*)[4]'
+         if (mv2.x + mv2.z < F[max_order - 1]) AddSamples(int_at[0] + 1, int_at[1],              int_at[2] + 1,  max_order, new_at, &F, delta, ID); 
+                                                                                                                                        ^~~~~
+<program source>:97:117:{97:117-97:122}: warning: incompatible pointer types passing '__float4 *', expected '__float4 (*)[4]'
+         if (mv2.y + mv2.z < F[max_order - 1]) AddSamples(int_at[0],     int_at[1] +1,   int_at[2] + 1,  max_order, new_at, &F, delta, ID); 
+                                                                                                                                ^~~~~
+<program source>:98:116:{98:116-98:121}: warning: incompatible pointer types passing '__float4 *', expected '__float4 (*)[4]'
+         if ( v2.x + mv2.y < F[max_order - 1]) AddSamples(int_at[0] - 1, int_at[1] +1,   int_at[2],              max_order, new_at, &F, delta, ID); 
+                                                                                                                                        ^~~~~
+<program source>:99:118:{99:118-99:123}: warning: incompatible pointer types passing '__float4 *', expected '__float4 (*)[4]'
+         if ( v2.x + mv2.z < F[max_order - 1]) AddSamples(int_at[0] - 1, int_at[1],              int_at[2] + 1,  max_order, new_at, &F, delta, ID); 
+                                                                                                                                        ^~~~~
+<program source>:100:117:{100:117-100:122}: warning: incompatible pointer types passing '__float4 *', expected '__float4 (*)[4]'
+         if ( v2.y + mv2.z < F[max_order - 1]) AddSamples(int_at[0],     int_at[1] -1,   int_at[2] + 1,  max_order, new_at, &F, delta, ID); 
+                                                                                                                                ^~~~~
+<program source>:101:116:{101:116-101:121}: warning: incompatible pointer types passing '__float4 *', expected '__float4 (*)[4]'
+         if (mv2.x +  v2.y < F[max_order - 1]) AddSamples(int_at[0] + 1, int_at[1] -1,   int_at[2],              max_order, new_at, &F, delta, ID);
+                                                                                                                                        ^~~~~
+<program source>:102:118:{102:118-102:123}: warning: incompatible pointer types passing '__float4 *', expected '__float4 (*)[4]'
+         if (mv2.x +  v2.z < F[max_order - 1]) AddSamples(int_at[0] + 1, int_at[1],              int_at[2] - 1,  max_order, new_at, &F, delta, ID);
+                                                                                                                                        ^~~~~
+<program source>:103:118:{103:118-103:123}: warning: incompatible pointer types passing '__float4 *', expected '__float4 (*)[4]'
+         if (mv2.y +  v2.z < F[max_order - 1]) AddSamples(int_at[0],     int_at[1] + 1,  int_at[2] - 1,  max_order, new_at, &F, delta, ID);
+                                                                                                                                ^~~~~
+<program source>:105:127:{105:127-105:132}: warning: incompatible pointer types passing '__float4 *', expected '__float4 (*)[4]'
+         if ( v2.x +  v2.y +  v2.z < F[max_order - 1]) AddSamples(int_at[0] - 1, int_at[1] - 1, int_at[2] - 1, max_order, new_at, &F, delta, ID); 
+                                                                                                                                      ^~~~~
+<program source>:106:127:{106:127-106:132}: warning: incompatible pointer types passing '__float4 *', expected '__float4 (*)[4]'
+         if ( v2.x +  v2.y + mv2.z < F[max_order - 1]) AddSamples(int_at[0] - 1, int_at[1] - 1, int_at[2] + 1, max_order, new_at, &F, delta, ID); 
+                                                                                                                                      ^~~~~
+<program source>:107:127:{107:127-107:132}: warning: incompatible pointer types passing '__float4 *', expected '__float4 (*)[4]'
+         if ( v2.x + mv2.y +  v2.z < F[max_order - 1]) AddSamples(int_at[0] - 1, int_at[1] + 1, int_at[2] - 1, max_order, new_at, &F, delta, ID); 
+                                                                                                                                      ^~~~~
+<program source>:108:127:{108:127-108:132}: warning: incompatible pointer types passing '__float4 *', expected '__float4 (*)[4]'
+         if ( v2.x + mv2.y + mv2.z < F[max_order - 1]) AddSamples(int_at[0] - 1, int_at[1] + 1, int_at[2] + 1, max_order, new_at, &F, delta, ID); 
+                                                                                                                                      ^~~~~
+<program source>:109:127:{109:127-109:132}: warning: incompatible pointer types passing '__float4 *', expected '__float4 (*)[4]'
+         if (mv2.x +  v2.y +  v2.z < F[max_order - 1]) AddSamples(int_at[0] + 1, int_at[1] - 1, int_at[2] - 1, max_order, new_at, &F, delta, ID); 
+                                                                                                                                      ^~~~~
+<program source>:110:127:{110:127-110:132}: warning: incompatible pointer types passing '__float4 *', expected '__float4 (*)[4]'
+         if (mv2.x +  v2.y + mv2.z < F[max_order - 1]) AddSamples(int_at[0] + 1, int_at[1] - 1, int_at[2] + 1, max_order, new_at, &F, delta, ID); 
+                                                                                                                                      ^~~~~
+<program source>:111:127:{111:127-111:132}: warning: incompatible pointer types passing '__float4 *', expected '__float4 (*)[4]'
+         if (mv2.x + mv2.y +  v2.z < F[max_order - 1]) AddSamples(int_at[0] + 1, int_at[1] + 1, int_at[2] - 1, max_order, new_at, &F, delta, ID); 
+                                                                                                                                      ^~~~~
+<program source>:112:127:{112:127-112:132}: warning: incompatible pointer types passing '__float4 *', expected '__float4 (*)[4]'
+         if (mv2.x + mv2.y + mv2.z < F[max_order - 1]) AddSamples(int_at[0] + 1, int_at[1] + 1, int_at[2] + 1, max_order, new_at, &F, delta, ID);
+                                                                                                                                      ^~~~~
+<program source>:140:57:{140:57-140:63}: warning: incompatible pointer types passing '__float4 (*)[4]', expected '__float4 *'
+     float4 myValue = celular((float4)(mySample,0,0), 4, &delta, id);
+                                                         ^~~~~~
+CLDevice [id: 16909312 name: Intel(R) Core(TM)2 Duo CPU     T8300  @ 2.40GHz type: CPU profile: FULL_PROFILE] build log:
+<program source>:50:18:{50:5-50:17}: error: array type '__float4 [4]' is not assignable
+                                 delta[i + 1] = delta[i];
+                                 ~~~~~~~~~~~~ ^
+<program source>:55:17:{55:4-55:16}: error: array type '__float4 [4]' is not assignable
+                         delta[index] = d; 
+                         ~~~~~~~~~~~~ ^
+<program source>:79:66:{79:66-79:71}: warning: incompatible pointer types passing '__float4 *', expected '__float4 (*)[4]'
+         AddSamples(int_at.x, int_at.y, int_at.z, max_order, new_at, &F, delta, ID);
+                                                                         ^~~~~
+<program source>:85:106:{85:106-85:111}: warning: incompatible pointer types passing '__float4 *', expected '__float4 (*)[4]'
+         if (v2.x  < F[max_order - 1]) AddSamples(int_at[0] - 1, int_at[1],              int_at[2],              max_order, new_at, &F, delta, ID);
+                                                                                                                                        ^~~~~
+<program source>:86:107:{86:107-86:112}: warning: incompatible pointer types passing '__float4 *', expected '__float4 (*)[4]'
+         if (v2.y  < F[max_order - 1]) AddSamples(int_at[0],             int_at[1] - 1,  int_at[2],              max_order, new_at, &F, delta, ID);
+                                                                                                                                        ^~~~~
+<program source>:87:109:{87:109-87:114}: warning: incompatible pointer types passing '__float4 *', expected '__float4 (*)[4]'
+         if (v2.z  < F[max_order - 1]) AddSamples(int_at[0] ,            int_at[1],              int_at[2] - 1,  max_order, new_at, &F, delta, ID);
+                                                                                                                                        ^~~~~
+<program source>:88:107:{88:107-88:112}: warning: incompatible pointer types passing '__float4 *', expected '__float4 (*)[4]'
+         if (mv2.x < F[max_order - 1]) AddSamples(int_at[0] + 1, int_at[1],              int_at[2],              max_order, new_at, &F, delta, ID);
+                                                                                                                                        ^~~~~
+<program source>:89:108:{89:108-89:113}: warning: incompatible pointer types passing '__float4 *', expected '__float4 (*)[4]'
+         if (mv2.y < F[max_order - 1]) AddSamples(int_at[0],             int_at[1] + 1,  int_at[2],              max_order, new_at, &F, delta, ID);
+                                                                                                                                        ^~~~~
+<program source>:90:109:{90:109-90:114}: warning: incompatible pointer types passing '__float4 *', expected '__float4 (*)[4]'
+         if (mv2.z < F[max_order - 1]) AddSamples(int_at[0] ,            int_at[1],              int_at[2] + 1,  max_order, new_at, &F, delta, ID);
+                                                                                                                                        ^~~~~
+<program source>:92:118:{92:118-92:123}: warning: incompatible pointer types passing '__float4 *', expected '__float4 (*)[4]'
+         if ( v2.x +  v2.y < F[max_order - 1]) AddSamples(int_at[0] - 1, int_at[1] - 1,  int_at[2],              max_order, new_at, &F, delta, ID); 
+                                                                                                                                        ^~~~~
+<program source>:93:118:{93:118-93:123}: warning: incompatible pointer types passing '__float4 *', expected '__float4 (*)[4]'
+         if ( v2.x +  v2.z < F[max_order - 1]) AddSamples(int_at[0] - 1, int_at[1],              int_at[2] - 1,  max_order, new_at, &F, delta, ID); 
+                                                                                                                                        ^~~~~
+<program source>:94:118:{94:118-94:123}: warning: incompatible pointer types passing '__float4 *', expected '__float4 (*)[4]'
+         if ( v2.y +  v2.z < F[max_order - 1]) AddSamples(int_at[0],     int_at[1] - 1,  int_at[2] - 1,  max_order, new_at, &F, delta, ID); 
+                                                                                                                                ^~~~~
+<program source>:95:118:{95:118-95:123}: warning: incompatible pointer types passing '__float4 *', expected '__float4 (*)[4]'
+         if (mv2.x + mv2.y < F[max_order - 1]) AddSamples(int_at[0] + 1, int_at[1] + 1,  int_at[2],              max_order, new_at, &F, delta, ID); 
+                                                                                                                                        ^~~~~
+<program source>:96:118:{96:118-96:123}: warning: incompatible pointer types passing '__float4 *', expected '__float4 (*)[4]'
+         if (mv2.x + mv2.z < F[max_order - 1]) AddSamples(int_at[0] + 1, int_at[1],              int_at[2] + 1,  max_order, new_at, &F, delta, ID); 
+                                                                                                                                        ^~~~~
+<program source>:97:117:{97:117-97:122}: warning: incompatible pointer types passing '__float4 *', expected '__float4 (*)[4]'
+         if (mv2.y + mv2.z < F[max_order - 1]) AddSamples(int_at[0],     int_at[1] +1,   int_at[2] + 1,  max_order, new_at, &F, delta, ID); 
+                                                                                                                                ^~~~~
+<program source>:98:116:{98:116-98:121}: warning: incompatible pointer types passing '__float4 *', expected '__float4 (*)[4]'
+         if ( v2.x + mv2.y < F[max_order - 1]) AddSamples(int_at[0] - 1, int_at[1] +1,   int_at[2],              max_order, new_at, &F, delta, ID); 
+                                                                                                                                        ^~~~~
+<program source>:99:118:{99:118-99:123}: warning: incompatible pointer types passing '__float4 *', expected '__float4 (*)[4]'
+         if ( v2.x + mv2.z < F[max_order - 1]) AddSamples(int_at[0] - 1, int_at[1],              int_at[2] + 1,  max_order, new_at, &F, delta, ID); 
+                                                                                                                                        ^~~~~
+<program source>:100:117:{100:117-100:122}: warning: incompatible pointer types passing '__float4 *', expected '__float4 (*)[4]'
+         if ( v2.y + mv2.z < F[max_order - 1]) AddSamples(int_at[0],     int_at[1] -1,   int_at[2] + 1,  max_order, new_at, &F, delta, ID); 
+                                                                                                                                ^~~~~
+<program source>:101:116:{101:116-101:121}: warning: incompatible pointer types passing '__float4 *', expected '__float4 (*)[4]'
+         if (mv2.x +  v2.y < F[max_order - 1]) AddSamples(int_at[0] + 1, int_at[1] -1,   int_at[2],              max_order, new_at, &F, delta, ID);
+                                                                                                                                        ^~~~~
+<program source>:102:118:{102:118-102:123}: warning: incompatible pointer types passing '__float4 *', expected '__float4 (*)[4]'
+         if (mv2.x +  v2.z < F[max_order - 1]) AddSamples(int_at[0] + 1, int_at[1],              int_at[2] - 1,  max_order, new_at, &F, delta, ID);
+                                                                                                                                        ^~~~~
+<program source>:103:118:{103:118-103:123}: warning: incompatible pointer types passing '__float4 *', expected '__float4 (*)[4]'
+         if (mv2.y +  v2.z < F[max_order - 1]) AddSamples(int_at[0],     int_at[1] + 1,  int_at[2] - 1,  max_order, new_at, &F, delta, ID);
+                                                                                                                                ^~~~~
+<program source>:105:127:{105:127-105:132}: warning: incompatible pointer types passing '__float4 *', expected '__float4 (*)[4]'
+         if ( v2.x +  v2.y +  v2.z < F[max_order - 1]) AddSamples(int_at[0] - 1, int_at[1] - 1, int_at[2] - 1, max_order, new_at, &F, delta, ID); 
+                                                                                                                                      ^~~~~
+<program source>:106:127:{106:127-106:132}: warning: incompatible pointer types passing '__float4 *', expected '__float4 (*)[4]'
+         if ( v2.x +  v2.y + mv2.z < F[max_order - 1]) AddSamples(int_at[0] - 1, int_at[1] - 1, int_at[2] + 1, max_order, new_at, &F, delta, ID); 
+                                                                                                                                      ^~~~~
+<program source>:107:127:{107:127-107:132}: warning: incompatible pointer types passing '__float4 *', expected '__float4 (*)[4]'
+         if ( v2.x + mv2.y +  v2.z < F[max_order - 1]) AddSamples(int_at[0] - 1, int_at[1] + 1, int_at[2] - 1, max_order, new_at, &F, delta, ID); 
+                                                                                                                                      ^~~~~
+<program source>:108:127:{108:127-108:132}: warning: incompatible pointer types passing '__float4 *', expected '__float4 (*)[4]'
+         if ( v2.x + mv2.y + mv2.z < F[max_order - 1]) AddSamples(int_at[0] - 1, int_at[1] + 1, int_at[2] + 1, max_order, new_at, &F, delta, ID); 
+                                                                                                                                      ^~~~~
+<program source>:109:127:{109:127-109:132}: warning: incompatible pointer types passing '__float4 *', expected '__float4 (*)[4]'
+         if (mv2.x +  v2.y +  v2.z < F[max_order - 1]) AddSamples(int_at[0] + 1, int_at[1] - 1, int_at[2] - 1, max_order, new_at, &F, delta, ID); 
+                                                                                                                                      ^~~~~
+<program source>:110:127:{110:127-110:132}: warning: incompatible pointer types passing '__float4 *', expected '__float4 (*)[4]'
+         if (mv2.x +  v2.y + mv2.z < F[max_order - 1]) AddSamples(int_at[0] + 1, int_at[1] - 1, int_at[2] + 1, max_order, new_at, &F, delta, ID); 
+                                                                                                                                      ^~~~~
+<program source>:111:127:{111:127-111:132}: warning: incompatible pointer types passing '__float4 *', expected '__float4 (*)[4]'
+         if (mv2.x + mv2.y +  v2.z < F[max_order - 1]) AddSamples(int_at[0] + 1, int_at[1] + 1, int_at[2] - 1, max_order, new_at, &F, delta, ID); 
+                                                                                                                                      ^~~~~
+<program source>:112:127:{112:127-112:132}: warning: incompatible pointer types passing '__float4 *', expected '__float4 (*)[4]'
+         if (mv2.x + mv2.y + mv2.z < F[max_order - 1]) AddSamples(int_at[0] + 1, int_at[1] + 1, int_at[2] + 1, max_order, new_at, &F, delta, ID);
+                                                                                                                                      ^~~~~
+<program source>:140:57:{140:57-140:63}: warning: incompatible pointer types passing '__float4 (*)[4]', expected '__float4 *'
+     float4 myValue = celular((float4)(mySample,0,0), 4, &delta, id);
+                                                         ^~~~~~ [error: CL_BUILD_PROGRAM_FAILURE]
+	at com.jogamp.opencl.CLException.newException(CLException.java:78)
+	at com.jogamp.opencl.CLProgram.build(CLProgram.java:381)
+	at cc.creativecomputing.opencl.CCCLProgram.build(CCCLProgram.java:188)
+	at cc.creativecomputing.opencl.demos.noise.CCCLCelularImageDemo.setup(CCCLCelularImageDemo.java:117)
+	at cc.creativecomputing.CCApp.display(CCApp.java:562)
+	at jogamp.opengl.GLDrawableHelper.display(GLDrawableHelper.java:191)
+	at javax.media.opengl.awt.GLCanvas$DisplayAction.run(GLCanvas.java:873)
+	at jogamp.opengl.GLDrawableHelper.invokeGL(GLDrawableHelper.java:363)
+	at javax.media.opengl.awt.GLCanvas.maybeDoSingleThreadedWorkaround(GLCanvas.java:769)
+	at javax.media.opengl.awt.GLCanvas.display(GLCanvas.java:388)
+	at javax.media.opengl.awt.GLCanvas.paint(GLCanvas.java:487)
+	at sun.awt.RepaintArea.paintComponent(RepaintArea.java:276)
+	at sun.awt.RepaintArea.paint(RepaintArea.java:241)
+	at apple.awt.ComponentModel.handleEvent(ComponentModel.java:263)
+	at java.awt.Component.dispatchEventImpl(Component.java:4790)
+	at java.awt.Component.dispatchEvent(Component.java:4544)
+	at java.awt.EventQueue.dispatchEvent(EventQueue.java:635)
+	at java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:296)
+	at java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:211)
+	at java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:201)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:196)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:188)
+	at java.awt.EventDispatchThread.run(EventDispatchThread.java:122)
+

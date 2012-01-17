@@ -1,0 +1,53 @@
+[Mon May 02 13:41:46 CEST 2011] [CCLog Line:177:initialize] [INFO] logging to file: log/noname-2011-05-02_13-41-46.txt
+[Mon May 02 13:41:46 CEST 2011] [CCTextureUtil Line:368:toTextureData] [INFO] DEFAULT
+[Mon May 02 13:41:46 CEST 2011] [CCTextureUtil Line:389:toTextureData] [INFO] CCAppCapabilities.GL_EXT_abgr:true
+[Mon May 02 13:41:46 CEST 2011] [CCTextureUtil Line:390:toTextureData] [INFO] CCAppCapabilities.GL_VERSION_1_2:true
+[Mon May 02 13:41:46 CEST 2011] [CCTextureUtil Line:368:toTextureData] [INFO] DEFAULT
+[Mon May 02 13:41:46 CEST 2011] [CCTextureUtil Line:389:toTextureData] [INFO] CCAppCapabilities.GL_EXT_abgr:true
+[Mon May 02 13:41:46 CEST 2011] [CCTextureUtil Line:390:toTextureData] [INFO] CCAppCapabilities.GL_VERSION_1_2:true
+[Mon May 02 13:41:50 CEST 2011] [CCApp:display] [WARNING] String index out of range: -1
+java.lang.StringIndexOutOfBoundsException: String index out of range: -1
+	at java.lang.String.substring(String.java:1937)
+	at cc.creativecomputing.graphics.font.text.CCText.delete(CCText.java:404)
+	at cc.creativecomputing.newui.decorator.controller.CCUITextDecoratorController.delete(CCUITextDecoratorController.java:213)
+	at cc.creativecomputing.newui.decorator.controller.CCUITextDecoratorController.keyEvent(CCUITextDecoratorController.java:136)
+	at cc.creativecomputing.newui.widget.CCUITextFieldWidget.keyEvent(CCUITextFieldWidget.java:103)
+	at cc.creativecomputing.newui.CCUI.keyPressed(CCUI.java:331)
+	at cc.creativecomputing.CCAbstractApp.handleKeyEvent(CCAbstractApp.java:544)
+	at cc.creativecomputing.CCAbstractApp.dequeueKeyEvents(CCAbstractApp.java:530)
+	at cc.creativecomputing.CCApp.display(CCApp.java:590)
+	at com.sun.opengl.impl.GLDrawableHelper.display(GLDrawableHelper.java:78)
+	at javax.media.opengl.GLCanvas$DisplayAction.run(GLCanvas.java:435)
+	at com.sun.opengl.impl.GLDrawableHelper.invokeGL(GLDrawableHelper.java:194)
+	at javax.media.opengl.GLCanvas$DisplayOnEventDispatchThreadAction.run(GLCanvas.java:452)
+	at java.awt.event.InvocationEvent.dispatch(InvocationEvent.java:199)
+	at java.awt.EventQueue.dispatchEvent(EventQueue.java:633)
+	at java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:296)
+	at java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:211)
+	at java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:201)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:196)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:188)
+	at java.awt.EventDispatchThread.run(EventDispatchThread.java:122)
+[Mon May 02 13:41:50 CEST 2011] [CCApp:display] [WARNING] String index out of range: -1
+java.lang.StringIndexOutOfBoundsException: String index out of range: -1
+	at java.lang.String.substring(String.java:1937)
+	at cc.creativecomputing.graphics.font.text.CCText.delete(CCText.java:404)
+	at cc.creativecomputing.newui.decorator.controller.CCUITextDecoratorController.delete(CCUITextDecoratorController.java:213)
+	at cc.creativecomputing.newui.decorator.controller.CCUITextDecoratorController.keyEvent(CCUITextDecoratorController.java:136)
+	at cc.creativecomputing.newui.widget.CCUITextFieldWidget.keyEvent(CCUITextFieldWidget.java:103)
+	at cc.creativecomputing.newui.CCUI.keyPressed(CCUI.java:331)
+	at cc.creativecomputing.CCAbstractApp.handleKeyEvent(CCAbstractApp.java:544)
+	at cc.creativecomputing.CCAbstractApp.dequeueKeyEvents(CCAbstractApp.java:530)
+	at cc.creativecomputing.CCApp.display(CCApp.java:590)
+	at com.sun.opengl.impl.GLDrawableHelper.display(GLDrawableHelper.java:78)
+	at javax.media.opengl.GLCanvas$DisplayAction.run(GLCanvas.java:435)
+	at com.sun.opengl.impl.GLDrawableHelper.invokeGL(GLDrawableHelper.java:194)
+	at javax.media.opengl.GLCanvas$DisplayOnEventDispatchThreadAction.run(GLCanvas.java:452)
+	at java.awt.event.InvocationEvent.dispatch(InvocationEvent.java:199)
+	at java.awt.EventQueue.dispatchEvent(EventQueue.java:633)
+	at java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:296)
+	at java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:211)
+	at java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:201)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:196)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:188)
+	at java.awt.EventDispatchThread.run(EventDispatchThread.java:122)

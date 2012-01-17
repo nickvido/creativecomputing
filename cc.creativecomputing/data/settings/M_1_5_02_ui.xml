@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<ui>
+	<CCControlPresetTab numberofpresets="1" label="app" selectedpreset="0">
+		<uielements>
+			<CCUIPresetControl label="presets">
+				<uielements/>
+			</CCUIPresetControl>
+			<CCUIComponent label="app">
+				<uielements>
+					<CCUISlider label="agents count">
+						<preset value="2334.1"/>
+					</CCUISlider>
+					<CCUISlider label="emit radius">
+						<preset value="60.8"/>
+					</CCUISlider>
+					<CCUISlider label="noise scale">
+						<preset value="60.4"/>
+					</CCUISlider>
+					<CCUISlider label="noise strength">
+						<preset value="2.2"/>
+					</CCUISlider>
+					<CCUISlider label="stroke width">
+						<preset value="0.0"/>
+					</CCUISlider>
+					<CCUISlider label="overlay alpha">
+						<preset value="0.06"/>
+					</CCUISlider>
+					<CCUISlider label="agents alpha">
+						<preset value="0.22666667"/>
+					</CCUISlider>
+					<CCUISlider label="agents r">
+						<preset value="0.033333335"/>
+					</CCUISlider>
+					<CCUISlider label="agents g">
+						<preset value="0.20666666"/>
+					</CCUISlider>
+					<CCUISlider label="agents b">
+						<preset value="0.74"/>
+					</CCUISlider>
+				</uielements>
+			</CCUIComponent>
+		</uielements>
+		<presetnames>
+			<presetname name="Preset:0"/>
+		</presetnames>
+	</CCControlPresetTab>
+	<globalsettings label="global" numberofpresets="0" selectedpreset="0">
+		<presetnames/>
+	</globalsettings>
+</ui>

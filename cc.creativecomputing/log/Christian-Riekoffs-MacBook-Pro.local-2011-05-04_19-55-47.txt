@@ -1,0 +1,69 @@
+[Wed May 04 19:55:47 CEST 2011] [CCLog Line:177:initialize] [INFO] logging to file: log/Christian-Riekoffs-MacBook-Pro.local-2011-05-04_19-55-47.txt
+[Wed May 04 19:55:47 CEST 2011] [CCTextureUtil Line:377:toTextureData] [INFO] DEFAULT
+[Wed May 04 19:55:47 CEST 2011] [CCTextureUtil Line:398:toTextureData] [INFO] CCAppCapabilities.GL_EXT_abgr:true
+[Wed May 04 19:55:47 CEST 2011] [CCTextureUtil Line:399:toTextureData] [INFO] CCAppCapabilities.GL_VERSION_1_2:true
+[Wed May 04 19:55:48 CEST 2011] [CCTextureUtil Line:377:toTextureData] [INFO] DEFAULT
+[Wed May 04 19:55:48 CEST 2011] [CCTextureUtil Line:398:toTextureData] [INFO] CCAppCapabilities.GL_EXT_abgr:true
+[Wed May 04 19:55:48 CEST 2011] [CCTextureUtil Line:399:toTextureData] [INFO] CCAppCapabilities.GL_VERSION_1_2:true
+[Wed May 04 19:55:48 CEST 2011] [CCImageIOFormat Line:94:createTextureData] [INFO] TextureIO.newTextureData(): BufferedImage type for stream = 6
+[Wed May 04 19:55:48 CEST 2011] [CCTextureUtil Line:377:toTextureData] [INFO] DEFAULT
+[Wed May 04 19:55:48 CEST 2011] [CCTextureUtil Line:398:toTextureData] [INFO] CCAppCapabilities.GL_EXT_abgr:true
+[Wed May 04 19:55:48 CEST 2011] [CCTextureUtil Line:399:toTextureData] [INFO] CCAppCapabilities.GL_VERSION_1_2:true
+[Wed May 04 19:55:49 CEST 2011] [CCUIAnimation Line:139:animate] [INFO] The given property:foreground.color is not accessable.
+[Wed May 04 19:55:50 CEST 2011] [CCUIAnimation Line:139:animate] [INFO] The given property:foreground.color is not accessable.
+[Wed May 04 19:55:50 CEST 2011] [CCUIAnimation Line:139:animate] [INFO] The given property:foreground.color is not accessable.
+[Wed May 04 19:55:50 CEST 2011] [CCUIAnimation Line:139:animate] [INFO] The given property:foreground.color is not accessable.
+[Wed May 04 19:55:50 CEST 2011] [CCUIAnimation Line:139:animate] [INFO] The given property:foreground.color is not accessable.
+[Wed May 04 19:55:50 CEST 2011] [CCUIAnimation Line:139:animate] [INFO] The given property:foreground.color is not accessable.
+[Wed May 04 19:55:50 CEST 2011] [CCUIAnimation Line:139:animate] [INFO] The given property:foreground.color is not accessable.
+[Wed May 04 19:55:50 CEST 2011] [CCUIAnimation Line:139:animate] [INFO] The given property:foreground.color is not accessable.
+[Wed May 04 19:55:50 CEST 2011] [CCUIAnimation Line:139:animate] [INFO] The given property:foreground.color is not accessable.
+[Wed May 04 19:55:50 CEST 2011] [CCUIAnimation Line:139:animate] [INFO] The given property:foreground.color is not accessable.
+[Wed May 04 19:55:50 CEST 2011] [CCUIAnimation Line:139:animate] [INFO] The given property:foreground.color is not accessable.
+[Wed May 04 19:55:50 CEST 2011] [CCUIAnimation Line:139:animate] [INFO] The given property:foreground.color is not accessable.
+[Wed May 04 19:55:50 CEST 2011] [CCUIAnimation Line:139:animate] [INFO] The given property:foreground.color is not accessable.
+[Wed May 04 19:55:52 CEST 2011] [CCUIAnimation Line:139:animate] [INFO] The given property:foreground.color is not accessable.
+[Wed May 04 19:55:52 CEST 2011] [CCUIAnimation Line:139:animate] [INFO] The given property:foreground.color is not accessable.
+[Wed May 04 19:55:53 CEST 2011] [CCUIAnimation Line:139:animate] [INFO] The given property:foreground.color is not accessable.
+[Wed May 04 19:55:53 CEST 2011] [CCUIAnimation Line:139:animate] [INFO] The given property:foreground.color is not accessable.
+[Wed May 04 19:55:53 CEST 2011] [CCUIAnimation Line:139:animate] [INFO] The given property:foreground.color is not accessable.
+[Wed May 04 19:55:55 CEST 2011] [CCUIAnimation Line:139:animate] [INFO] The given property:foreground.color is not accessable.
+[Wed May 04 19:55:55 CEST 2011] [CCUIAnimation Line:139:animate] [INFO] The given property:foreground.color is not accessable.
+[Wed May 04 19:55:55 CEST 2011] [CCUIAnimation Line:139:animate] [INFO] The given property:foreground.color is not accessable.
+[Wed May 04 19:55:55 CEST 2011] [CCUIAnimation Line:139:animate] [INFO] The given property:foreground.color is not accessable.
+[Wed May 04 19:55:55 CEST 2011] [CCUIAnimation Line:139:animate] [INFO] The given property:foreground.color is not accessable.
+[Wed May 04 19:55:55 CEST 2011] [CCUIAnimation Line:139:animate] [INFO] The given property:foreground.color is not accessable.
+[Wed May 04 19:55:55 CEST 2011] [CCUIAnimation Line:139:animate] [INFO] The given property:foreground.color is not accessable.
+[Wed May 04 19:55:55 CEST 2011] [CCUIAnimation Line:139:animate] [INFO] The given property:foreground.color is not accessable.
+[Wed May 04 19:55:55 CEST 2011] [CCUIAnimation Line:139:animate] [INFO] The given property:foreground.color is not accessable.
+[Wed May 04 19:55:55 CEST 2011] [CCUIAnimation Line:139:animate] [INFO] The given property:foreground.color is not accessable.
+[Wed May 04 19:55:55 CEST 2011] [CCUIAnimation Line:139:animate] [INFO] The given property:foreground.color is not accessable.
+[Wed May 04 19:55:55 CEST 2011] [CCUIAnimation Line:139:animate] [INFO] The given property:foreground.color is not accessable.
+[Wed May 04 19:55:56 CEST 2011] [CCUIAnimation Line:139:animate] [INFO] The given property:foreground.color is not accessable.
+[Wed May 04 19:55:56 CEST 2011] [CCUIAnimation Line:139:animate] [INFO] The given property:foreground.color is not accessable.
+[Wed May 04 19:55:56 CEST 2011] [CCUIAnimation Line:139:animate] [INFO] The given property:foreground.color is not accessable.
+[Wed May 04 19:55:56 CEST 2011] [CCUIAnimation Line:139:animate] [INFO] The given property:foreground.color is not accessable.
+[Wed May 04 19:55:56 CEST 2011] [CCUIAnimation Line:139:animate] [INFO] The given property:foreground.color is not accessable.
+[Wed May 04 19:55:56 CEST 2011] [CCUIAnimation Line:139:animate] [INFO] The given property:foreground.color is not accessable.
+[Wed May 04 19:55:56 CEST 2011] [CCUIAnimation Line:139:animate] [INFO] The given property:foreground.color is not accessable.
+[Wed May 04 19:55:56 CEST 2011] [CCUIAnimation Line:139:animate] [INFO] The given property:foreground.color is not accessable.
+[Wed May 04 19:55:56 CEST 2011] [CCUIAnimation Line:139:animate] [INFO] The given property:foreground.color is not accessable.
+[Wed May 04 19:55:56 CEST 2011] [CCUIAnimation Line:139:animate] [INFO] The given property:foreground.color is not accessable.
+[Wed May 04 19:55:56 CEST 2011] [CCUIAnimation Line:139:animate] [INFO] The given property:foreground.color is not accessable.
+[Wed May 04 19:55:56 CEST 2011] [CCUIAnimation Line:139:animate] [INFO] The given property:foreground.color is not accessable.
+[Wed May 04 19:56:02 CEST 2011] [CCUIAnimation Line:139:animate] [INFO] The given property:foreground.color is not accessable.
+[Wed May 04 19:56:02 CEST 2011] [CCUIAnimation Line:139:animate] [INFO] The given property:foreground.color is not accessable.
+[Wed May 04 19:56:02 CEST 2011] [CCUIAnimation Line:139:animate] [INFO] The given property:foreground.color is not accessable.
+[Wed May 04 19:56:02 CEST 2011] [CCUIAnimation Line:139:animate] [INFO] The given property:foreground.color is not accessable.
+[Wed May 04 19:56:03 CEST 2011] [CCUIAnimation Line:139:animate] [INFO] The given property:foreground.color is not accessable.
+[Wed May 04 19:56:03 CEST 2011] [CCUIAnimation Line:139:animate] [INFO] The given property:foreground.color is not accessable.
+[Wed May 04 19:56:03 CEST 2011] [CCUIAnimation Line:139:animate] [INFO] The given property:foreground.color is not accessable.
+[Wed May 04 19:56:03 CEST 2011] [CCUIAnimation Line:139:animate] [INFO] The given property:foreground.color is not accessable.
+[Wed May 04 19:56:03 CEST 2011] [CCUIAnimation Line:139:animate] [INFO] The given property:foreground.color is not accessable.
+[Wed May 04 19:56:03 CEST 2011] [CCUIAnimation Line:139:animate] [INFO] The given property:foreground.color is not accessable.
+[Wed May 04 19:56:03 CEST 2011] [CCUIAnimation Line:139:animate] [INFO] The given property:foreground.color is not accessable.
+[Wed May 04 19:56:03 CEST 2011] [CCUIAnimation Line:139:animate] [INFO] The given property:foreground.color is not accessable.
+[Wed May 04 19:56:03 CEST 2011] [CCUIAnimation Line:139:animate] [INFO] The given property:foreground.color is not accessable.
+[Wed May 04 19:56:03 CEST 2011] [CCUIAnimation Line:139:animate] [INFO] The given property:foreground.color is not accessable.
+[Wed May 04 19:56:03 CEST 2011] [CCUIAnimation Line:139:animate] [INFO] The given property:foreground.color is not accessable.
+[Wed May 04 19:56:04 CEST 2011] [CCUIAnimation Line:139:animate] [INFO] The given property:foreground.color is not accessable.

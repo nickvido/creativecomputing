@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<ui>
+  <CCControlPresetTab numberofpresets="1" label="sensors" selectedpreset="0">
+    <uielements>
+      <CCUIPresetControl label="presets">
+        <uielements/>
+      </CCUIPresetControl>
+      <CCUIComponent label="Calibration">
+        <uielements>
+          <CCUIButton label="draw blobs">
+            <preset value="true"/>
+          </CCUIButton>
+          <CCUIButton label="draw cursors">
+            <preset value="true"/>
+          </CCUIButton>
+          <CCUIButton label="draw scale point">
+            <preset value="false"/>
+          </CCUIButton>
+          <CCUISlider label="image thresh">
+            <preset value="124.100006"/>
+          </CCUISlider>
+          <CCUISlider label="image amplify">
+            <preset value="10.0"/>
+          </CCUISlider>
+          <CCUISlider label="gain power">
+            <preset value="4.5333333"/>
+          </CCUISlider>
+          <CCUISlider label="component thresh">
+            <preset value="102.0"/>
+          </CCUISlider>
+          <CCUIDropDown label="matrix draw mode">
+            <preset value="MOMENT"/>
+          </CCUIDropDown>
+        </uielements>
+      </CCUIComponent>
+      <CCUIComponent label="placement">
+        <uielements>
+          <CCUIField valueX="0.0" label="matrix offset" valueY="0.0">
+            <preset y="0.0" x="0.0"/>
+          </CCUIField>
+          <CCUISlider label="offset scale">
+            <preset value="1.0"/>
+          </CCUISlider>
+          <CCUIField valueX="1.0" label="scaling" valueY="1.0">
+            <preset y="1.0" x="1.0"/>
+          </CCUIField>
+          <CCUISlider label="scaling scale">
+            <preset value="1.0"/>
+          </CCUISlider>
+          <CCUIField valueX="0.0" label="scale point" valueY="0.0">
+            <preset y="0.0" x="0.0"/>
+          </CCUIField>
+          <CCUISlider label="scale pointscale">
+            <preset value="1.0"/>
+          </CCUISlider>
+        </uielements>
+      </CCUIComponent>
+    </uielements>
+    <presetnames>
+      <presetname name="Preset:0"/>
+    </presetnames>
+  </CCControlPresetTab>
+  <globalsettings label="global" numberofpresets="0" selectedpreset="0">
+    <presetnames/>
+  </globalsettings>
+</ui>

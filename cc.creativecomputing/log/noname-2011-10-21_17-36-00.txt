@@ -1,0 +1,8 @@
+[Fri Oct 21 17:36:00 CEST 2011] [CCLog Line:177:initialize] [INFO] logging to file: log/noname-2011-10-21_17-36-00.txt
+[Fri Oct 21 17:36:00 CEST 2011] [CCUserGenerator Line:104:onNewUser] [INFO] onNewUser - userId: 1
+[Fri Oct 21 17:36:00 CEST 2011] [CCUserGenerator Line:105:onNewUser] [INFO]   start pose detection
+[Fri Oct 21 17:36:04 CEST 2011] [CCUserGenerator Line:143:onStartPose] [INFO] onStartPose - userId: 1, pose: Psi
+[Fri Oct 21 17:36:04 CEST 2011] [CCUserGenerator Line:144:onStartPose] [INFO]  stop pose detection
+[Fri Oct 21 17:36:04 CEST 2011] [CCUserGenerator Line:117:onStartCalibration] [INFO] onStartCalibration - userId: 1
+[Fri Oct 21 17:36:06 CEST 2011] [CCUserGenerator Line:121:onEndCalibration] [INFO] onEndCalibration - userId: 1, successfull: true
+[Fri Oct 21 17:36:06 CEST 2011] [CCUserGenerator Line:124:onEndCalibration] [INFO]   User calibrated !!!

@@ -1,0 +1,57 @@
+[Thu Apr 28 17:45:06 CEST 2011] [CCLog Line:177:initialize] [INFO] logging to file: log/Christian-Riekoffs-MacBook-Pro.local-2011-04-28_17-45-06.txt
+[Thu Apr 28 17:45:06 CEST 2011] [CCTextureUtil Line:368:toTextureData] [INFO] DEFAULT
+[Thu Apr 28 17:45:06 CEST 2011] [CCTextureUtil Line:389:toTextureData] [INFO] CCAppCapabilities.GL_EXT_abgr:true
+[Thu Apr 28 17:45:06 CEST 2011] [CCTextureUtil Line:390:toTextureData] [INFO] CCAppCapabilities.GL_VERSION_1_2:true
+[Thu Apr 28 17:45:06 CEST 2011] [CCTextureUtil Line:368:toTextureData] [INFO] DEFAULT
+[Thu Apr 28 17:45:06 CEST 2011] [CCTextureUtil Line:389:toTextureData] [INFO] CCAppCapabilities.GL_EXT_abgr:true
+[Thu Apr 28 17:45:06 CEST 2011] [CCTextureUtil Line:390:toTextureData] [INFO] CCAppCapabilities.GL_VERSION_1_2:true
+[Thu Apr 28 17:45:06 CEST 2011] [CCApp:display] [WARNING] 3
+java.lang.ArrayIndexOutOfBoundsException: 3
+	at cc.creativecomputing.newui.decorator.CCUITextDecorator.setup(CCUITextDecorator.java:74)
+	at cc.creativecomputing.newui.widget.CCUITextFieldWidget.setup(CCUITextFieldWidget.java:137)
+	at cc.creativecomputing.newui.CCUI.createWidget(CCUI.java:228)
+	at cc.creativecomputing.demo.ui.CCUILoadWidgetsDemo.setup(CCUILoadWidgetsDemo.java:48)
+	at cc.creativecomputing.CCApp.display(CCApp.java:566)
+	at com.sun.opengl.impl.GLDrawableHelper.display(GLDrawableHelper.java:78)
+	at javax.media.opengl.GLCanvas$DisplayAction.run(GLCanvas.java:435)
+	at com.sun.opengl.impl.GLDrawableHelper.invokeGL(GLDrawableHelper.java:194)
+	at javax.media.opengl.GLCanvas.maybeDoSingleThreadedWorkaround(GLCanvas.java:412)
+	at javax.media.opengl.GLCanvas.display(GLCanvas.java:244)
+	at javax.media.opengl.GLCanvas.paint(GLCanvas.java:277)
+	at sun.awt.RepaintArea.paintComponent(RepaintArea.java:276)
+	at sun.awt.RepaintArea.paint(RepaintArea.java:241)
+	at apple.awt.ComponentModel.handleEvent(ComponentModel.java:263)
+	at java.awt.Component.dispatchEventImpl(Component.java:4790)
+	at java.awt.Component.dispatchEvent(Component.java:4544)
+	at java.awt.EventQueue.dispatchEvent(EventQueue.java:635)
+	at java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:296)
+	at java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:211)
+	at java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:201)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:196)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:188)
+	at java.awt.EventDispatchThread.run(EventDispatchThread.java:122)
+[Thu Apr 28 17:45:06 CEST 2011] [CCApp:display] [WARNING] 3
+java.lang.ArrayIndexOutOfBoundsException: 3
+	at cc.creativecomputing.newui.decorator.CCUITextDecorator.setup(CCUITextDecorator.java:74)
+	at cc.creativecomputing.newui.widget.CCUITextFieldWidget.setup(CCUITextFieldWidget.java:137)
+	at cc.creativecomputing.newui.CCUI.createWidget(CCUI.java:228)
+	at cc.creativecomputing.demo.ui.CCUILoadWidgetsDemo.setup(CCUILoadWidgetsDemo.java:48)
+	at cc.creativecomputing.CCApp.display(CCApp.java:566)
+	at com.sun.opengl.impl.GLDrawableHelper.display(GLDrawableHelper.java:78)
+	at javax.media.opengl.GLCanvas$DisplayAction.run(GLCanvas.java:435)
+	at com.sun.opengl.impl.GLDrawableHelper.invokeGL(GLDrawableHelper.java:194)
+	at javax.media.opengl.GLCanvas.maybeDoSingleThreadedWorkaround(GLCanvas.java:412)
+	at javax.media.opengl.GLCanvas.display(GLCanvas.java:244)
+	at javax.media.opengl.GLCanvas.paint(GLCanvas.java:277)
+	at sun.awt.RepaintArea.paintComponent(RepaintArea.java:276)
+	at sun.awt.RepaintArea.paint(RepaintArea.java:241)
+	at apple.awt.ComponentModel.handleEvent(ComponentModel.java:263)
+	at java.awt.Component.dispatchEventImpl(Component.java:4790)
+	at java.awt.Component.dispatchEvent(Component.java:4544)
+	at java.awt.EventQueue.dispatchEvent(EventQueue.java:635)
+	at java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:296)
+	at java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:211)
+	at java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:201)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:196)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:188)
+	at java.awt.EventDispatchThread.run(EventDispatchThread.java:122)

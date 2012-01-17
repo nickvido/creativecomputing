@@ -1,0 +1,202 @@
+[Tue May 31 10:12:05 CEST 2011] [CCLog Line:177:initialize] [INFO] logging to file: log/Christian-Riekoffs-MacBook-Pro.local-2011-05-31_10-12-05.txt
+[Tue May 31 10:12:05 CEST 2011] [CCApp:display] [SEVERE] com.jogamp.opencl.CLException$CLBuildProgramFailureException: 
+CLDevice [id: 16918016 name: GeForce 8600M GT type: GPU profile: FULL_PROFILE] build log:
+<program source>:133:65:{133:65-133:66}: error: incompatible type passing '__float4', expected 'double *'
+         AddSamples(int_at[0], int_at[1], int_at[2], max_order, new_at, F, delta, ID);
+                                                                        ^
+<program source>:155:100:{155:100-155:101}: error: incompatible type passing '__float4', expected 'double *'
+         if (x2  < F[max_order - 1]) AddSamples(int_at[0] - 1,   int_at[1],              int_at[2],              max_order, new_at, F, delta, ID);
+                                                                                                                                    ^
+<program source>:156:101:{156:101-156:102}: error: incompatible type passing '__float4', expected 'double *'
+         if (y2  < F[max_order - 1]) AddSamples(int_at[0],               int_at[1] - 1,  int_at[2],              max_order, new_at, F, delta, ID);
+                                                                                                                                    ^
+<program source>:157:103:{157:103-157:104}: error: incompatible type passing '__float4', expected 'double *'
+         if (z2  < F[max_order - 1]) AddSamples(int_at[0] ,              int_at[1],              int_at[2] - 1,  max_order, new_at, F, delta, ID);
+                                                                                                                                    ^
+<program source>:158:101:{158:101-158:102}: error: incompatible type passing '__float4', expected 'double *'
+         if (mx2 < F[max_order - 1]) AddSamples(int_at[0] + 1,   int_at[1],              int_at[2],              max_order, new_at, F, delta, ID);
+                                                                                                                                    ^
+<program source>:159:102:{159:102-159:103}: error: incompatible type passing '__float4', expected 'double *'
+         if (my2 < F[max_order - 1]) AddSamples(int_at[0],               int_at[1] + 1,  int_at[2],              max_order, new_at, F, delta, ID);
+                                                                                                                                    ^
+<program source>:160:103:{160:103-160:104}: error: incompatible type passing '__float4', expected 'double *'
+         if (mz2 < F[max_order - 1]) AddSamples(int_at[0] ,              int_at[1],              int_at[2] + 1,  max_order, new_at, F, delta, ID);
+                                                                                                                                    ^
+<program source>:164:110:{164:110-164:111}: error: incompatible type passing '__float4', expected 'double *'
+         if ( x2 +  y2 < F[max_order - 1]) AddSamples(int_at[0] - 1, int_at[1] - 1,      int_at[2],              max_order, new_at, F, delta, ID); 
+                                                                                                                                    ^
+<program source>:165:110:{165:110-165:111}: error: incompatible type passing '__float4', expected 'double *'
+         if ( x2 +  z2 < F[max_order - 1]) AddSamples(int_at[0] - 1, int_at[1],          int_at[2] - 1,  max_order, new_at, F, delta, ID); 
+                                                                                                                            ^
+<program source>:166:110:{166:110-166:111}: error: incompatible type passing '__float4', expected 'double *'
+         if ( y2 +  z2 < F[max_order - 1]) AddSamples(int_at[0],         int_at[1] - 1,  int_at[2] - 1,  max_order, new_at, F, delta, ID); 
+                                                                                                                            ^
+<program source>:167:110:{167:110-167:111}: error: incompatible type passing '__float4', expected 'double *'
+         if (mx2 + my2 < F[max_order - 1]) AddSamples(int_at[0] + 1, int_at[1] + 1,      int_at[2],              max_order, new_at, F, delta, ID); 
+                                                                                                                                    ^
+<program source>:168:110:{168:110-168:111}: error: incompatible type passing '__float4', expected 'double *'
+         if (mx2 + mz2 < F[max_order - 1]) AddSamples(int_at[0] + 1, int_at[1],          int_at[2] + 1,  max_order, new_at, F, delta, ID); 
+                                                                                                                            ^
+<program source>:169:109:{169:109-169:110}: error: incompatible type passing '__float4', expected 'double *'
+         if (my2 + mz2 < F[max_order - 1]) AddSamples(int_at[0],         int_at[1] +1,   int_at[2] + 1,  max_order, new_at, F, delta, ID); 
+                                                                                                                            ^
+<program source>:170:108:{170:108-170:109}: error: incompatible type passing '__float4', expected 'double *'
+         if ( x2 + my2 < F[max_order - 1]) AddSamples(int_at[0] - 1, int_at[1] +1,       int_at[2],              max_order, new_at, F, delta, ID); 
+                                                                                                                                    ^
+<program source>:171:110:{171:110-171:111}: error: incompatible type passing '__float4', expected 'double *'
+         if ( x2 + mz2 < F[max_order - 1]) AddSamples(int_at[0] - 1, int_at[1],          int_at[2] + 1,  max_order, new_at, F, delta, ID); 
+                                                                                                                            ^
+<program source>:172:109:{172:109-172:110}: error: incompatible type passing '__float4', expected 'double *'
+         if ( y2 + mz2 < F[max_order - 1]) AddSamples(int_at[0],         int_at[1] -1,   int_at[2] + 1,  max_order, new_at, F, delta, ID); 
+                                                                                                                            ^
+<program source>:173:108:{173:108-173:109}: error: incompatible type passing '__float4', expected 'double *'
+         if (mx2 +  y2 < F[max_order - 1]) AddSamples(int_at[0] + 1, int_at[1] -1,       int_at[2],              max_order, new_at, F, delta, ID);
+                                                                                                                                    ^
+<program source>:174:110:{174:110-174:111}: error: incompatible type passing '__float4', expected 'double *'
+         if (mx2 +  z2 < F[max_order - 1]) AddSamples(int_at[0] + 1, int_at[1],          int_at[2] - 1,  max_order, new_at, F, delta, ID);
+                                                                                                                            ^
+<program source>:175:110:{175:110-175:111}: error: incompatible type passing '__float4', expected 'double *'
+         if (my2 +  z2 < F[max_order - 1]) AddSamples(int_at[0],         int_at[1] + 1,  int_at[2] - 1,  max_order, new_at, F, delta, ID);
+                                                                                                                            ^
+<program source>:178:117:{178:117-178:118}: error: incompatible type passing '__float4', expected 'double *'
+         if ( x2 +  y2 +  z2 < F[max_order - 1]) AddSamples(int_at[0] - 1, int_at[1] - 1, int_at[2] - 1, max_order, new_at, F, delta, ID); 
+                                                                                                                            ^
+<program source>:179:117:{179:117-179:118}: error: incompatible type passing '__float4', expected 'double *'
+         if ( x2 +  y2 + mz2 < F[max_order - 1]) AddSamples(int_at[0] - 1, int_at[1] - 1, int_at[2] + 1, max_order, new_at, F, delta, ID); 
+                                                                                                                            ^
+<program source>:180:117:{180:117-180:118}: error: incompatible type passing '__float4', expected 'double *'
+         if ( x2 + my2 +  z2 < F[max_order - 1]) AddSamples(int_at[0] - 1, int_at[1] + 1, int_at[2] - 1, max_order, new_at, F, delta, ID); 
+                                                                                                                            ^
+<program source>:181:117:{181:117-181:118}: error: incompatible type passing '__float4', expected 'double *'
+         if ( x2 + my2 + mz2 < F[max_order - 1]) AddSamples(int_at[0] - 1, int_at[1] + 1, int_at[2] + 1, max_order, new_at, F, delta, ID); 
+                                                                                                                            ^
+<program source>:182:117:{182:117-182:118}: error: incompatible type passing '__float4', expected 'double *'
+         if (mx2 +  y2 +  z2 < F[max_order - 1]) AddSamples(int_at[0] + 1, int_at[1] - 1, int_at[2] - 1, max_order, new_at, F, delta, ID); 
+                                                                                                                            ^
+<program source>:183:117:{183:117-183:118}: error: incompatible type passing '__float4', expected 'double *'
+         if (mx2 +  y2 + mz2 < F[max_order - 1]) AddSamples(int_at[0] + 1, int_at[1] - 1, int_at[2] + 1, max_order, new_at, F, delta, ID); 
+                                                                                                                            ^
+<program source>:184:117:{184:117-184:118}: error: incompatible type passing '__float4', expected 'double *'
+         if (mx2 + my2 +  z2 < F[max_order - 1]) AddSamples(int_at[0] + 1, int_at[1] + 1, int_at[2] - 1, max_order, new_at, F, delta, ID); 
+                                                                                                                            ^
+<program source>:185:117:{185:117-185:118}: error: incompatible type passing '__float4', expected 'double *'
+         if (mx2 + my2 + mz2 < F[max_order - 1]) AddSamples(int_at[0] + 1, int_at[1] + 1, int_at[2] + 1, max_order, new_at, F, delta, ID);
+                                                                                                                            ^
+<program source>:295:37:{295:21-295:28}: error: too few arguments to function call
+     float myValue = celular(mySample);
+                     ~~~~~~~         ^
+<program source>:299:4: error: expected '}'
+    
+    ^
+CLDevice [id: 16909312 name: Intel(R) Core(TM)2 Duo CPU     T8300  @ 2.40GHz type: CPU profile: FULL_PROFILE] build log:
+<program source>:133:65:{133:65-133:66}: error: incompatible type passing '__float4', expected 'double *'
+         AddSamples(int_at[0], int_at[1], int_at[2], max_order, new_at, F, delta, ID);
+                                                                        ^
+<program source>:155:100:{155:100-155:101}: error: incompatible type passing '__float4', expected 'double *'
+         if (x2  < F[max_order - 1]) AddSamples(int_at[0] - 1,   int_at[1],              int_at[2],              max_order, new_at, F, delta, ID);
+                                                                                                                                    ^
+<program source>:156:101:{156:101-156:102}: error: incompatible type passing '__float4', expected 'double *'
+         if (y2  < F[max_order - 1]) AddSamples(int_at[0],               int_at[1] - 1,  int_at[2],              max_order, new_at, F, delta, ID);
+                                                                                                                                    ^
+<program source>:157:103:{157:103-157:104}: error: incompatible type passing '__float4', expected 'double *'
+         if (z2  < F[max_order - 1]) AddSamples(int_at[0] ,              int_at[1],              int_at[2] - 1,  max_order, new_at, F, delta, ID);
+                                                                                                                                    ^
+<program source>:158:101:{158:101-158:102}: error: incompatible type passing '__float4', expected 'double *'
+         if (mx2 < F[max_order - 1]) AddSamples(int_at[0] + 1,   int_at[1],              int_at[2],              max_order, new_at, F, delta, ID);
+                                                                                                                                    ^
+<program source>:159:102:{159:102-159:103}: error: incompatible type passing '__float4', expected 'double *'
+         if (my2 < F[max_order - 1]) AddSamples(int_at[0],               int_at[1] + 1,  int_at[2],              max_order, new_at, F, delta, ID);
+                                                                                                                                    ^
+<program source>:160:103:{160:103-160:104}: error: incompatible type passing '__float4', expected 'double *'
+         if (mz2 < F[max_order - 1]) AddSamples(int_at[0] ,              int_at[1],              int_at[2] + 1,  max_order, new_at, F, delta, ID);
+                                                                                                                                    ^
+<program source>:164:110:{164:110-164:111}: error: incompatible type passing '__float4', expected 'double *'
+         if ( x2 +  y2 < F[max_order - 1]) AddSamples(int_at[0] - 1, int_at[1] - 1,      int_at[2],              max_order, new_at, F, delta, ID); 
+                                                                                                                                    ^
+<program source>:165:110:{165:110-165:111}: error: incompatible type passing '__float4', expected 'double *'
+         if ( x2 +  z2 < F[max_order - 1]) AddSamples(int_at[0] - 1, int_at[1],          int_at[2] - 1,  max_order, new_at, F, delta, ID); 
+                                                                                                                            ^
+<program source>:166:110:{166:110-166:111}: error: incompatible type passing '__float4', expected 'double *'
+         if ( y2 +  z2 < F[max_order - 1]) AddSamples(int_at[0],         int_at[1] - 1,  int_at[2] - 1,  max_order, new_at, F, delta, ID); 
+                                                                                                                            ^
+<program source>:167:110:{167:110-167:111}: error: incompatible type passing '__float4', expected 'double *'
+         if (mx2 + my2 < F[max_order - 1]) AddSamples(int_at[0] + 1, int_at[1] + 1,      int_at[2],              max_order, new_at, F, delta, ID); 
+                                                                                                                                    ^
+<program source>:168:110:{168:110-168:111}: error: incompatible type passing '__float4', expected 'double *'
+         if (mx2 + mz2 < F[max_order - 1]) AddSamples(int_at[0] + 1, int_at[1],          int_at[2] + 1,  max_order, new_at, F, delta, ID); 
+                                                                                                                            ^
+<program source>:169:109:{169:109-169:110}: error: incompatible type passing '__float4', expected 'double *'
+         if (my2 + mz2 < F[max_order - 1]) AddSamples(int_at[0],         int_at[1] +1,   int_at[2] + 1,  max_order, new_at, F, delta, ID); 
+                                                                                                                            ^
+<program source>:170:108:{170:108-170:109}: error: incompatible type passing '__float4', expected 'double *'
+         if ( x2 + my2 < F[max_order - 1]) AddSamples(int_at[0] - 1, int_at[1] +1,       int_at[2],              max_order, new_at, F, delta, ID); 
+                                                                                                                                    ^
+<program source>:171:110:{171:110-171:111}: error: incompatible type passing '__float4', expected 'double *'
+         if ( x2 + mz2 < F[max_order - 1]) AddSamples(int_at[0] - 1, int_at[1],          int_at[2] + 1,  max_order, new_at, F, delta, ID); 
+                                                                                                                            ^
+<program source>:172:109:{172:109-172:110}: error: incompatible type passing '__float4', expected 'double *'
+         if ( y2 + mz2 < F[max_order - 1]) AddSamples(int_at[0],         int_at[1] -1,   int_at[2] + 1,  max_order, new_at, F, delta, ID); 
+                                                                                                                            ^
+<program source>:173:108:{173:108-173:109}: error: incompatible type passing '__float4', expected 'double *'
+         if (mx2 +  y2 < F[max_order - 1]) AddSamples(int_at[0] + 1, int_at[1] -1,       int_at[2],              max_order, new_at, F, delta, ID);
+                                                                                                                                    ^
+<program source>:174:110:{174:110-174:111}: error: incompatible type passing '__float4', expected 'double *'
+         if (mx2 +  z2 < F[max_order - 1]) AddSamples(int_at[0] + 1, int_at[1],          int_at[2] - 1,  max_order, new_at, F, delta, ID);
+                                                                                                                            ^
+<program source>:175:110:{175:110-175:111}: error: incompatible type passing '__float4', expected 'double *'
+         if (my2 +  z2 < F[max_order - 1]) AddSamples(int_at[0],         int_at[1] + 1,  int_at[2] - 1,  max_order, new_at, F, delta, ID);
+                                                                                                                            ^
+<program source>:178:117:{178:117-178:118}: error: incompatible type passing '__float4', expected 'double *'
+         if ( x2 +  y2 +  z2 < F[max_order - 1]) AddSamples(int_at[0] - 1, int_at[1] - 1, int_at[2] - 1, max_order, new_at, F, delta, ID); 
+                                                                                                                            ^
+<program source>:179:117:{179:117-179:118}: error: incompatible type passing '__float4', expected 'double *'
+         if ( x2 +  y2 + mz2 < F[max_order - 1]) AddSamples(int_at[0] - 1, int_at[1] - 1, int_at[2] + 1, max_order, new_at, F, delta, ID); 
+                                                                                                                            ^
+<program source>:180:117:{180:117-180:118}: error: incompatible type passing '__float4', expected 'double *'
+         if ( x2 + my2 +  z2 < F[max_order - 1]) AddSamples(int_at[0] - 1, int_at[1] + 1, int_at[2] - 1, max_order, new_at, F, delta, ID); 
+                                                                                                                            ^
+<program source>:181:117:{181:117-181:118}: error: incompatible type passing '__float4', expected 'double *'
+         if ( x2 + my2 + mz2 < F[max_order - 1]) AddSamples(int_at[0] - 1, int_at[1] + 1, int_at[2] + 1, max_order, new_at, F, delta, ID); 
+                                                                                                                            ^
+<program source>:182:117:{182:117-182:118}: error: incompatible type passing '__float4', expected 'double *'
+         if (mx2 +  y2 +  z2 < F[max_order - 1]) AddSamples(int_at[0] + 1, int_at[1] - 1, int_at[2] - 1, max_order, new_at, F, delta, ID); 
+                                                                                                                            ^
+<program source>:183:117:{183:117-183:118}: error: incompatible type passing '__float4', expected 'double *'
+         if (mx2 +  y2 + mz2 < F[max_order - 1]) AddSamples(int_at[0] + 1, int_at[1] - 1, int_at[2] + 1, max_order, new_at, F, delta, ID); 
+                                                                                                                            ^
+<program source>:184:117:{184:117-184:118}: error: incompatible type passing '__float4', expected 'double *'
+         if (mx2 + my2 +  z2 < F[max_order - 1]) AddSamples(int_at[0] + 1, int_at[1] + 1, int_at[2] - 1, max_order, new_at, F, delta, ID); 
+                                                                                                                            ^
+<program source>:185:117:{185:117-185:118}: error: incompatible type passing '__float4', expected 'double *'
+         if (mx2 + my2 + mz2 < F[max_order - 1]) AddSamples(int_at[0] + 1, int_at[1] + 1, int_at[2] + 1, max_order, new_at, F, delta, ID);
+                                                                                                                            ^
+<program source>:295:37:{295:21-295:28}: error: too few arguments to function call
+     float myValue = celular(mySample);
+                     ~~~~~~~         ^
+<program source>:299:4: error: expected '}'
+    
+    ^ [error: CL_BUILD_PROGRAM_FAILURE]
+	at com.jogamp.opencl.CLException.newException(CLException.java:78)
+	at com.jogamp.opencl.CLProgram.build(CLProgram.java:381)
+	at cc.creativecomputing.opencl.CCCLProgram.build(CCCLProgram.java:187)
+	at cc.creativecomputing.opencl.demos.noise.CCCLCelularImageDemo.setup(CCCLCelularImageDemo.java:115)
+	at cc.creativecomputing.CCApp.display(CCApp.java:562)
+	at jogamp.opengl.GLDrawableHelper.display(GLDrawableHelper.java:191)
+	at javax.media.opengl.awt.GLCanvas$DisplayAction.run(GLCanvas.java:873)
+	at jogamp.opengl.GLDrawableHelper.invokeGL(GLDrawableHelper.java:363)
+	at javax.media.opengl.awt.GLCanvas.maybeDoSingleThreadedWorkaround(GLCanvas.java:769)
+	at javax.media.opengl.awt.GLCanvas.display(GLCanvas.java:388)
+	at javax.media.opengl.awt.GLCanvas.paint(GLCanvas.java:487)
+	at sun.awt.RepaintArea.paintComponent(RepaintArea.java:276)
+	at sun.awt.RepaintArea.paint(RepaintArea.java:241)
+	at apple.awt.ComponentModel.handleEvent(ComponentModel.java:263)
+	at java.awt.Component.dispatchEventImpl(Component.java:4790)
+	at java.awt.Component.dispatchEvent(Component.java:4544)
+	at java.awt.EventQueue.dispatchEvent(EventQueue.java:635)
+	at java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:296)
+	at java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:211)
+	at java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:201)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:196)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:188)
+	at java.awt.EventDispatchThread.run(EventDispatchThread.java:122)
+

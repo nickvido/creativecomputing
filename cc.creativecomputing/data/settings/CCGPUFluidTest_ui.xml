@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<ui>
+  <CCControlPresetTab numberofpresets="1" label="fluid" selectedpreset="0">
+    <uielements>
+      <CCUIPresetControl label="presets">
+        <uielements/>
+      </CCUIPresetControl>
+      <CCUIComponent label="fluid">
+        <uielements>
+          <CCUISlider label="advect speed">
+            <preset value="54.000004"/>
+          </CCUISlider>
+          <CCUISlider label="viscousity">
+            <preset value="1.0"/>
+          </CCUISlider>
+          <CCUISlider label="darking">
+            <preset value="5.4666674E-4"/>
+          </CCUISlider>
+          <CCUISlider label="color radius">
+            <preset value="0.86"/>
+          </CCUISlider>
+          <CCUISlider label="impulse radius">
+            <preset value="0.76"/>
+          </CCUISlider>
+        </uielements>
+      </CCUIComponent>
+    </uielements>
+    <presetnames>
+      <presetname name="Preset:0"/>
+    </presetnames>
+  </CCControlPresetTab>
+  <globalsettings label="global" numberofpresets="0" selectedpreset="0">
+    <presetnames/>
+  </globalsettings>
+</ui>

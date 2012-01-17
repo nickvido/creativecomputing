@@ -1,0 +1,147 @@
+#extension GL_EXT_gpu_shader4 : enable
+
+uniform isamplerBuffer histopyramid_tex;
+uniform isampler2D tritab_tex;
+uniform sampler2D function_tex;
+uniform float isovalue;
+uniform int key_offset;
+
+varying out vec3 Normal;
+
+void
+traverseChunk( inout int key,
+               inout int index,
+               in int offset,
+               in int terminate )
+{
+	for( int i=4; i<=terminate; i<<=2 ) {
+		ivec4 value = texelFetchBuffer( histopyramid_tex, offset + index );
+		index <<= 2;
+
+		bool a = value.x <= key;
+		int d = value.x+value.y;
+		bool b = d <= key;
+		d += value.z;
+		bool c = d <= key;
+		if( a ) {
+			index++;
+			key -= value.x;
+		}
+		if( b ) {
+			index++;
+			key -= value.y;
+		}
+		if( c ) {
+			index++;
+			key -= value.z;
+		}
+		offset -= i;
+	}
+}
+
+
+void
+traverseChunkBase( inout int code,
+                   inout int key,
+                   inout int index,
+                   in int offset,
+                   in int terminate )
+{
+	for( int i=4; i<terminate; i<<=2 ) {
+		ivec4 value = texelFetchBuffer( histopyramid_tex, offset+ index );
+		index <<= 2;
+		bool a = value.x <= key;
+		int d = value.x+value.y;
+		bool b = d <= key;
+		d += value.z;
+		bool c = d <= key;
+		if( a ) {
+			index++;
+			key -= value.x;
+		}
+		if( b ) {
+			index++;
+			key -= value.y;
+		}
+		if( c ) {
+			index++;
+			key -= value.z;
+		}
+		offset -= i;
+	}
+	ivec4 raw = texelFetchBuffer( histopyramid_tex, offset+ index );
+	ivec4 value = ivec4( raw.x>>8, raw.y>>8, raw.z>>8,raw.w>>8 );
+	index <<= 2;
+	if( 0 <= key && key < value.x ) {
+		key -= 0;
+		index += 0;
+		code = raw.x;
+	}
+	else if( value.x <= key && key < value.x + value.y ) {
+		key -= value.x;
+		index += 1;
+		code = raw.y;
+	}
+	else if( value.x +value.y <= key && key < value.x + value.y + value.z ) {
+		key -= value.x + value.y;
+		index += 2;
+		code = raw.z;
+	}
+	else {
+		key -= value.x + value.y + value.z;
+		index += 3;
+		code = raw.w;
+	}
+	code = code & 0xff;
+}
+
+
+void
+main()
+{
+	int key = int(gl_Vertex.x) + key_offset;
+	int element_index = 0;
+	int block_index = 0;
+
+	int offsets[LAYERS_N] = { LAYERS_OFFSETS };
+
+	for( int l=LAYERS_N-1; l>0; l--) {
+		traverseChunk( key, element_index, offsets[l] + CHUNK_SIZE4*block_index, TERMINATE );
+		block_index = (block_index<<LAYER_SCALE) + element_index;
+		element_index = 0;
+	}
+	int code;
+	traverseChunkBase( code, key, element_index, offsets[0] + CHUNK_SIZE4*block_index, TERMINATE );
+	
+	ivec4 edgemasks = texelFetch2D( tritab_tex, ivec2( key, code ), 0 );
+
+	ivec3 pa = ivec3( ((block_index & CHUNKS_PER_TILE_MASK) << CHUNK_DIM_LOG2)
+					   + (element_index & CHUNK_DIM_MASK ) + edgemasks.x,
+					  (((block_index>>CHUNKS_PER_TILE_LOG2)&CHUNKS_PER_TILE_MASK)<<CHUNK_DIM_LOG2)
+					   + (element_index >> CHUNK_DIM_LOG2 ) + edgemasks.y,
+					   (block_index >> (CHUNKS_PER_TILE_LOG2<<1)) + edgemasks.z );
+
+	ivec3 pb = pa + ivec3( edgemasks.w>>2, (edgemasks.w>>1)&0x1, edgemasks.w&0x1);
+
+
+	ivec2 tp = (ivec2(pa.z&FUNC_COLS_MASK, pa.z>>FUNC_COLS_LOG2)<<FUNC_TSIZE_LOG2) + pa.xy;
+	float va  = texelFetch2D( function_tex, tp, 0 ).a;
+	float vax = texelFetch2D( function_tex, tp + ivec2(1,0), 0 ).a;
+	float vay = texelFetch2D( function_tex, tp + ivec2(0,1), 0 ).a;
+	tp = (ivec2((pa.z+1)&FUNC_COLS_MASK, (pa.z+1)>>FUNC_COLS_LOG2)<<FUNC_TSIZE_LOG2) + pa.xy;
+	float vaz = texelFetch2D( function_tex, tp, 0 ).a;
+
+	tp = (ivec2(pb.z&FUNC_COLS_MASK, pb.z>>FUNC_COLS_LOG2)<<FUNC_TSIZE_LOG2) + pb.xy;
+	float vb  = texelFetch2D( function_tex, tp, 0 ).a;
+	float vbx = texelFetch2D( function_tex, tp + ivec2(1,0), 0 ).a;
+	float vby = texelFetch2D( function_tex, tp + ivec2(0,1), 0 ).a;
+	tp = (ivec2((pb.z+1)&FUNC_COLS_MASK, (pb.z+1)>>FUNC_COLS_LOG2)<<FUNC_TSIZE_LOG2) + pb.xy;
+	float vbz = texelFetch2D( function_tex, tp, 0 ).a;
+
+	float t = (va-isovalue)/(va-vb);
+//	float t = 0.5;
+
+	gl_Position = gl_ModelViewProjectionMatrix * vec4( mix(pa,pb,t), 1.0 );
+	Normal = -gl_NormalMatrix * (mix(vec3(vax,vay,vaz),vec3(vbx,vby,vbz),t)-vec3(isovalue));
+	gl_FrontColor = gl_Color;
+}

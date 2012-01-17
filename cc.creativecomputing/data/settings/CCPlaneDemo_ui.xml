@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<ui>
+  <CCControlPresetTab numberofpresets="1" label="plane" selectedpreset="0">
+    <uielements>
+      <CCUIPresetControl label="presets">
+        <uielements/>
+      </CCUIPresetControl>
+      <CCUIComponent label="CCPlaneDemoControl">
+        <uielements>
+          <CCUISlider label="norm x">
+            <preset value="-0.013333321"/>
+          </CCUISlider>
+          <CCUISlider label="norm y">
+            <preset value="1.0"/>
+          </CCUISlider>
+          <CCUISlider label="norm z">
+            <preset value="0.120000005"/>
+          </CCUISlider>
+          <CCUISlider label="planeConstant">
+            <preset value="90.66669"/>
+          </CCUISlider>
+        </uielements>
+      </CCUIComponent>
+    </uielements>
+    <presetnames>
+      <presetname name="Preset:0"/>
+    </presetnames>
+  </CCControlPresetTab>
+  <globalsettings label="global" numberofpresets="0" selectedpreset="0">
+    <presetnames/>
+  </globalsettings>
+</ui>

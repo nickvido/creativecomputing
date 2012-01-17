@@ -1,0 +1,6 @@
+[Fri Oct 28 12:50:58 CEST 2011] [CCLog Line:177:initialize] [INFO] logging to file: log/noname-2011-10-28_12-50-58.txt
+[Fri Oct 28 12:50:58 CEST 2011] [CCImageIOFormat Line:94:createTextureData] [INFO] TextureIO.newTextureData(): BufferedImage type for stream = 5
+[Fri Oct 28 12:50:58 CEST 2011] [CCTextureUtil Line:304:toTextureData] [INFO] TYPE_3BYTE_BGR
+[Fri Oct 28 12:50:58 CEST 2011] [CCTextureUtil Line:402:toTextureData] [INFO] CCAppCapabilities.GL_EXT_abgr:true
+[Fri Oct 28 12:50:58 CEST 2011] [CCTextureUtil Line:403:toTextureData] [INFO] CCAppCapabilities.GL_VERSION_1_2:true
+[Fri Oct 28 12:50:58 CEST 2011] [CCGraphics Line:295:checkError] [SEVERE]  # INVALID ENUMERATION REPORTED. check for errors in OPENGL calls with constants.

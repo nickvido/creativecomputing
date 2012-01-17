@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<ui>
+	<CCControlPresetTab numberofpresets="1" label="app" selectedpreset="0">
+		<uielements>
+			<CCUIPresetControl label="presets">
+				<uielements/>
+			</CCUIPresetControl>
+			<CCUIComponent label="app">
+				<uielements>
+					<CCUISlider label="x tiles">
+						<preset value="14.72"/>
+					</CCUISlider>
+					<CCUISlider label="y tiles">
+						<preset value="9.28"/>
+					</CCUISlider>
+					<CCUISlider label="max colors">
+						<preset value="5.5733333"/>
+					</CCUISlider>
+					<CCUISlider label="random seed">
+						<preset value="5.5733333"/>
+					</CCUISlider>
+					<CCUISlider label="hue min">
+						<preset value="0.19333333"/>
+					</CCUISlider>
+					<CCUISlider label="hue max">
+						<preset value="0.50666666"/>
+					</CCUISlider>
+					<CCUISlider label="saturation min">
+						<preset value="0.82666665"/>
+					</CCUISlider>
+					<CCUISlider label="saturation max">
+						<preset value="1.0"/>
+					</CCUISlider>
+					<CCUISlider label="brightness min">
+						<preset value="0.12"/>
+					</CCUISlider>
+					<CCUISlider label="brightness max">
+						<preset value="1.0"/>
+					</CCUISlider>
+				</uielements>
+			</CCUIComponent>
+		</uielements>
+		<presetnames>
+			<presetname name="Preset:0"/>
+		</presetnames>
+	</CCControlPresetTab>
+	<globalsettings label="global" numberofpresets="0" selectedpreset="0">
+		<presetnames/>
+	</globalsettings>
+</ui>

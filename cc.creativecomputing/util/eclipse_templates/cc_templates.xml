@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?><templates><template autoinsert="true" context="java" deleted="false" description="basic template for creative computing app" enabled="true" name="cc">package ${enclosing_package};
+
+import cc.creativecomputing.CCApp;
+import cc.creativecomputing.CCApplicationManager;
+import cc.creativecomputing.CCApplicationSettings;
+
+public class ${primary_type_name} extends CCApp{
+
+	
+	
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 0L;
+
+	public ${primary_type_name}(CCApplicationSettings theSettings) {
+		super(theSettings);
+	}
+	
+	@Override
+	public void setup(){
+		
+	}
+
+	@Override
+	public void update(final float theDeltaTime){
+	}
+	
+	@Override
+	public void draw(){
+		
+	}
+
+	public static void main(String[] args) {
+		CCApplicationManager&lt;${primary_type_name}&gt; myManager = new CCApplicationManager&lt;${primary_type_name}&gt;(${primary_type_name}.class);
+		myManager.settings().size(500, 500);
+		myManager.start();
+	}
+}
+</template><template autoinsert="true" context="java" deleted="false" description="shortcut for keypressed" enabled="true" name="cckp">@Override
+public void keyPressed(final CCKeyEvent theEvent) {
+	switch(theEvent.keyCode()) {
+		
+	}
+}</template></templates>

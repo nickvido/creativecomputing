@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<ui>
+	<CCControlPresetTab numberofpresets="1" label="app" selectedpreset="0">
+		<uielements>
+			<CCUIPresetControl label="presets">
+				<uielements/>
+			</CCUIPresetControl>
+			<CCUIComponent label="app">
+				<uielements>
+					<CCUISlider label="tension">
+						<preset value="0.8399999"/>
+					</CCUISlider>
+					<CCUISlider label="variation">
+						<preset value="3.666667"/>
+					</CCUISlider>
+					<CCUISlider label="length">
+						<preset value="0.11333334"/>
+					</CCUISlider>
+					<CCUISlider label="speed">
+						<preset value="0.04"/>
+					</CCUISlider>
+					<CCUISlider label="alpha">
+						<preset value="0.36"/>
+					</CCUISlider>
+					<CCUISlider label="amount">
+						<preset value="0.0"/>
+					</CCUISlider>
+					<CCUISlider label="amount blend">
+						<preset value="0.8"/>
+					</CCUISlider>
+					<CCUISlider label="interpolation">
+						<preset value="0.02"/>
+					</CCUISlider>
+					<CCUISlider label="thickness">
+						<preset value="0.59999996"/>
+					</CCUISlider>
+					<CCUIButton label="draw source spline">
+						<preset value="false"/>
+					</CCUIButton>
+					<CCUIButton label="close">
+						<preset value="false"/>
+					</CCUIButton>
+				</uielements>
+			</CCUIComponent>
+		</uielements>
+		<presetnames>
+			<presetname name="Preset:0"/>
+		</presetnames>
+	</CCControlPresetTab>
+	<globalsettings label="global" numberofpresets="0" selectedpreset="0">
+		<presetnames/>
+	</globalsettings>
+</ui>

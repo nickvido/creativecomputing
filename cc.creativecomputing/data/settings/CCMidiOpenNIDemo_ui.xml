@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<ui>
+	<CCControlPresetTab numberofpresets="1" label="controls" selectedpreset="0">
+		<uielements>
+			<CCUIPresetControl label="presets">
+				<uielements/>
+			</CCUIPresetControl>
+			<CCUIComponent label="x axis">
+				<uielements>
+					<CCUISlider label="axis to controller">
+						<preset value="2"/>
+					</CCUISlider>
+					<CCUISlider label="axis mode">
+						<preset value="2"/>
+					</CCUISlider>
+					<CCUIButton label="invert">
+						<preset value="true"/>
+					</CCUIButton>
+					<CCUISlider label="min">
+						<preset value="0"/>
+					</CCUISlider>
+					<CCUISlider label="max">
+						<preset value="127"/>
+					</CCUISlider>
+					<CCUIButton label="active">
+						<preset value="true"/>
+					</CCUIButton>
+				</uielements>
+			</CCUIComponent>
+			<CCUIComponent label="y axis">
+				<uielements>
+					<CCUISlider label="axis to controller">
+						<preset value="1"/>
+					</CCUISlider>
+					<CCUISlider label="axis mode">
+						<preset value="2"/>
+					</CCUISlider>
+					<CCUIButton label="invert">
+						<preset value="true"/>
+					</CCUIButton>
+					<CCUISlider label="min">
+						<preset value="33"/>
+					</CCUISlider>
+					<CCUISlider label="max">
+						<preset value="75"/>
+					</CCUISlider>
+					<CCUIButton label="active">
+						<preset value="true"/>
+					</CCUIButton>
+				</uielements>
+			</CCUIComponent>
+			<CCUIComponent label="z axis">
+				<uielements>
+					<CCUISlider label="axis to controller">
+						<preset value="3"/>
+					</CCUISlider>
+					<CCUISlider label="axis mode">
+						<preset value="2"/>
+					</CCUISlider>
+					<CCUIButton label="invert">
+						<preset value="false"/>
+					</CCUIButton>
+					<CCUISlider label="min">
+						<preset value="0"/>
+					</CCUISlider>
+					<CCUISlider label="max">
+						<preset value="127"/>
+					</CCUISlider>
+					<CCUIButton label="active">
+						<preset value="true"/>
+					</CCUIButton>
+				</uielements>
+			</CCUIComponent>
+			<CCUIComponent label="left">
+				<uielements/>
+			</CCUIComponent>
+			<CCUIComponent label="x axis">
+				<uielements>
+					<CCUISlider label="axis to controller">
+						<preset value="2"/>
+					</CCUISlider>
+					<CCUISlider label="axis mode">
+						<preset value="0"/>
+					</CCUISlider>
+					<CCUIButton label="invert">
+						<preset value="false"/>
+					</CCUIButton>
+					<CCUISlider label="min">
+						<preset value="0"/>
+					</CCUISlider>
+					<CCUISlider label="max">
+						<preset value="127"/>
+					</CCUISlider>
+					<CCUIButton label="active">
+						<preset value="true"/>
+					</CCUIButton>
+				</uielements>
+			</CCUIComponent>
+			<CCUIComponent label="y axis">
+				<uielements>
+					<CCUISlider label="axis to controller">
+						<preset value="1"/>
+					</CCUISlider>
+					<CCUISlider label="axis mode">
+						<preset value="2"/>
+					</CCUISlider>
+					<CCUIButton label="invert">
+						<preset value="true"/>
+					</CCUIButton>
+					<CCUISlider label="min">
+						<preset value="33"/>
+					</CCUISlider>
+					<CCUISlider label="max">
+						<preset value="75"/>
+					</CCUISlider>
+					<CCUIButton label="active">
+						<preset value="true"/>
+					</CCUIButton>
+				</uielements>
+			</CCUIComponent>
+			<CCUIComponent label="z axis">
+				<uielements>
+					<CCUISlider label="axis to controller">
+						<preset value="3"/>
+					</CCUISlider>
+					<CCUISlider label="axis mode">
+						<preset value="2"/>
+					</CCUISlider>
+					<CCUIButton label="invert">
+						<preset value="false"/>
+					</CCUIButton>
+					<CCUISlider label="min">
+						<preset value="0"/>
+					</CCUISlider>
+					<CCUISlider label="max">
+						<preset value="127"/>
+					</CCUISlider>
+					<CCUIButton label="active">
+						<preset value="true"/>
+					</CCUIButton>
+				</uielements>
+			</CCUIComponent>
+			<CCUIComponent label="right">
+				<uielements/>
+			</CCUIComponent>
+		</uielements>
+		<presetnames>
+			<presetname name="Preset:0"/>
+		</presetnames>
+	</CCControlPresetTab>
+	<globalsettings label="global" numberofpresets="0" selectedpreset="0">
+		<presetnames/>
+	</globalsettings>
+</ui>

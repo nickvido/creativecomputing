@@ -1,0 +1,36 @@
+[Sat Nov 26 17:12:42 CET 2011] [CCLog Line:177:initialize] [INFO] logging to file: log/noname-2011-11-26_17-12-40.txt
+[Sat Nov 26 17:12:42 CET 2011] [CCOpenNIUserGenerator$NewUserObserver Line:62:update] [INFO] onNewUser - userId: 1
+[Sat Nov 26 17:12:42 CET 2011] [CCOpenNIUserGenerator$NewUserObserver Line:63:update] [INFO]   start pose detection
+[Sat Nov 26 17:12:47 CET 2011] [CCOpenNIUserGenerator$PoseDetectedObserver Line:145:update] [INFO] onStartPose - userId: 1, pose: Psi
+[Sat Nov 26 17:12:47 CET 2011] [CCOpenNIUserGenerator$PoseDetectedObserver Line:146:update] [INFO]  stop pose detection
+[Sat Nov 26 17:12:47 CET 2011] [CCOpenNIUserGenerator$CalibrationProgressObserver Line:97:update] [INFO] onUpdateCalibration - userId: 1, status: ARM
+[Sat Nov 26 17:12:47 CET 2011] [CCOpenNIUserGenerator$CalibrationProgressObserver Line:97:update] [INFO] onUpdateCalibration - userId: 1, status: ARM
+[Sat Nov 26 17:12:47 CET 2011] [CCOpenNIUserGenerator$CalibrationProgressObserver Line:97:update] [INFO] onUpdateCalibration - userId: 1, status: ARM
+[Sat Nov 26 17:12:47 CET 2011] [CCOpenNIUserGenerator$CalibrationStartObserver Line:89:update] [INFO] onStartCalibration - userId: 1
+[Sat Nov 26 17:12:47 CET 2011] [CCOpenNIUserGenerator$CalibrationProgressObserver Line:97:update] [INFO] onUpdateCalibration - userId: 1, status: OK
+[Sat Nov 26 17:12:47 CET 2011] [CCOpenNIUserGenerator$CalibrationProgressObserver Line:97:update] [INFO] onUpdateCalibration - userId: 1, status: ARM
+[Sat Nov 26 17:12:47 CET 2011] [CCOpenNIUserGenerator$CalibrationProgressObserver Line:97:update] [INFO] onUpdateCalibration - userId: 1, status: OK
+[Sat Nov 26 17:12:47 CET 2011] [CCOpenNIUserGenerator$CalibrationProgressObserver Line:97:update] [INFO] onUpdateCalibration - userId: 1, status: OK
+[Sat Nov 26 17:12:47 CET 2011] [CCOpenNIUserGenerator$CalibrationProgressObserver Line:97:update] [INFO] onUpdateCalibration - userId: 1, status: OK
+[Sat Nov 26 17:12:47 CET 2011] [CCOpenNIUserGenerator$CalibrationProgressObserver Line:97:update] [INFO] onUpdateCalibration - userId: 1, status: ARM
+[Sat Nov 26 17:12:47 CET 2011] [CCOpenNIUserGenerator$CalibrationProgressObserver Line:97:update] [INFO] onUpdateCalibration - userId: 1, status: OK
+[Sat Nov 26 17:12:47 CET 2011] [CCOpenNIUserGenerator$CalibrationProgressObserver Line:97:update] [INFO] onUpdateCalibration - userId: 1, status: OK
+[Sat Nov 26 17:12:47 CET 2011] [CCOpenNIUserGenerator$CalibrationProgressObserver Line:97:update] [INFO] onUpdateCalibration - userId: 1, status: ARM
+[Sat Nov 26 17:12:47 CET 2011] [CCOpenNIUserGenerator$CalibrationProgressObserver Line:97:update] [INFO] onUpdateCalibration - userId: 1, status: OK
+[Sat Nov 26 17:12:47 CET 2011] [CCOpenNIUserGenerator$CalibrationProgressObserver Line:97:update] [INFO] onUpdateCalibration - userId: 1, status: OK
+[Sat Nov 26 17:12:48 CET 2011] [CCOpenNIUserGenerator$CalibrationProgressObserver Line:97:update] [INFO] onUpdateCalibration - userId: 1, status: ARM
+[Sat Nov 26 17:12:48 CET 2011] [CCOpenNIUserGenerator$CalibrationProgressObserver Line:97:update] [INFO] onUpdateCalibration - userId: 1, status: OK
+[Sat Nov 26 17:12:48 CET 2011] [CCOpenNIUserGenerator$CalibrationProgressObserver Line:97:update] [INFO] onUpdateCalibration - userId: 1, status: OK
+[Sat Nov 26 17:12:48 CET 2011] [CCOpenNIUserGenerator$CalibrationProgressObserver Line:97:update] [INFO] onUpdateCalibration - userId: 1, status: OK
+[Sat Nov 26 17:12:48 CET 2011] [CCOpenNIUserGenerator$CalibrationProgressObserver Line:97:update] [INFO] onUpdateCalibration - userId: 1, status: OK
+[Sat Nov 26 17:12:49 CET 2011] [CCOpenNIUserGenerator$CalibrationProgressObserver Line:97:update] [INFO] onUpdateCalibration - userId: 1, status: OK
+[Sat Nov 26 17:12:49 CET 2011] [CCOpenNIUserGenerator$CalibrationProgressObserver Line:97:update] [INFO] onUpdateCalibration - userId: 1, status: OK
+[Sat Nov 26 17:12:49 CET 2011] [CCOpenNIUserGenerator$CalibrationProgressObserver Line:97:update] [INFO] onUpdateCalibration - userId: 1, status: OK
+[Sat Nov 26 17:12:49 CET 2011] [CCOpenNIUserGenerator$CalibrationProgressObserver Line:97:update] [INFO] onUpdateCalibration - userId: 1, status: OK
+[Sat Nov 26 17:12:49 CET 2011] [CCOpenNIUserGenerator$CalibrationProgressObserver Line:97:update] [INFO] onUpdateCalibration - userId: 1, status: OK
+[Sat Nov 26 17:12:49 CET 2011] [CCOpenNIUserGenerator$CalibrationProgressObserver Line:97:update] [INFO] onUpdateCalibration - userId: 1, status: OK
+[Sat Nov 26 17:12:49 CET 2011] [CCOpenNIUserGenerator$CalibrationProgressObserver Line:97:update] [INFO] onUpdateCalibration - userId: 1, status: OK
+[Sat Nov 26 17:12:49 CET 2011] [CCOpenNIUserGenerator$CalibrationProgressObserver Line:97:update] [INFO] onUpdateCalibration - userId: 1, status: OK
+[Sat Nov 26 17:12:49 CET 2011] [CCOpenNIUserGenerator$CalibrationProgressObserver Line:97:update] [INFO] onUpdateCalibration - userId: 1, status: OK
+[Sat Nov 26 17:12:50 CET 2011] [CCOpenNIUserGenerator$CalibrationCompleteObserver Line:106:update] [INFO] onEndCalibration - userId: 1, successfull: true
+[Sat Nov 26 17:12:50 CET 2011] [CCOpenNIUserGenerator$CalibrationCompleteObserver Line:109:update] [INFO]   User calibrated !!!

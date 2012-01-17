@@ -1,0 +1,286 @@
+[Tue May 03 15:40:14 CEST 2011] [CCLog Line:177:initialize] [INFO] logging to file: log/Christian-Riekoffs-MacBook-Pro.local-2011-05-03_15-40-14.txt
+[Tue May 03 15:40:14 CEST 2011] [CCTextureUtil Line:377:toTextureData] [INFO] DEFAULT
+[Tue May 03 15:40:14 CEST 2011] [CCTextureUtil Line:398:toTextureData] [INFO] CCAppCapabilities.GL_EXT_abgr:true
+[Tue May 03 15:40:14 CEST 2011] [CCTextureUtil Line:399:toTextureData] [INFO] CCAppCapabilities.GL_VERSION_1_2:true
+[Tue May 03 15:40:14 CEST 2011] [CCTextureUtil Line:377:toTextureData] [INFO] DEFAULT
+[Tue May 03 15:40:14 CEST 2011] [CCTextureUtil Line:398:toTextureData] [INFO] CCAppCapabilities.GL_EXT_abgr:true
+[Tue May 03 15:40:14 CEST 2011] [CCTextureUtil Line:399:toTextureData] [INFO] CCAppCapabilities.GL_VERSION_1_2:true
+[Tue May 03 15:40:14 CEST 2011] [CCLogExceptionHandler:handle] [SEVERE] java.lang.Error: Unresolved compilation problem: 
+	The method addListener(CCText.CCTextListener) in the type CCText is not applicable for the arguments (CCUITextDecorator)
+
+	at cc.creativecomputing.newui.decorator.CCUITextDecorator.setup(CCUITextDecorator.java:87)
+	at cc.creativecomputing.newui.widget.CCUIWidget.setup(CCUIWidget.java:120)
+	at cc.creativecomputing.newui.CCUI.createWidget(CCUI.java:231)
+	at cc.creativecomputing.newui.CCUI.createWidget(CCUI.java:222)
+	at cc.creativecomputing.demo.ui.CCUILoadWidgetsDemo.setup(CCUILoadWidgetsDemo.java:48)
+	at cc.creativecomputing.CCApp.display(CCApp.java:566)
+	at com.sun.opengl.impl.GLDrawableHelper.display(GLDrawableHelper.java:78)
+	at javax.media.opengl.GLCanvas$DisplayAction.run(GLCanvas.java:435)
+	at com.sun.opengl.impl.GLDrawableHelper.invokeGL(GLDrawableHelper.java:194)
+	at javax.media.opengl.GLCanvas.maybeDoSingleThreadedWorkaround(GLCanvas.java:412)
+	at javax.media.opengl.GLCanvas.display(GLCanvas.java:244)
+	at javax.media.opengl.GLCanvas.paint(GLCanvas.java:277)
+	at sun.awt.RepaintArea.paintComponent(RepaintArea.java:276)
+	at sun.awt.RepaintArea.paint(RepaintArea.java:241)
+	at apple.awt.ComponentModel.handleEvent(ComponentModel.java:263)
+	at java.awt.Component.dispatchEventImpl(Component.java:4790)
+	at java.awt.Component.dispatchEvent(Component.java:4544)
+	at java.awt.EventQueue.dispatchEvent(EventQueue.java:635)
+	at java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:296)
+	at java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:211)
+	at java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:201)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:196)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:188)
+	at java.awt.EventDispatchThread.run(EventDispatchThread.java:122)
+
+[Tue May 03 15:40:14 CEST 2011] [CCTextureUtil Line:377:toTextureData] [INFO] DEFAULT
+[Tue May 03 15:40:14 CEST 2011] [CCTextureUtil Line:398:toTextureData] [INFO] CCAppCapabilities.GL_EXT_abgr:true
+[Tue May 03 15:40:14 CEST 2011] [CCTextureUtil Line:399:toTextureData] [INFO] CCAppCapabilities.GL_VERSION_1_2:true
+[Tue May 03 15:40:14 CEST 2011] [CCTextureUtil Line:377:toTextureData] [INFO] DEFAULT
+[Tue May 03 15:40:14 CEST 2011] [CCTextureUtil Line:398:toTextureData] [INFO] CCAppCapabilities.GL_EXT_abgr:true
+[Tue May 03 15:40:14 CEST 2011] [CCTextureUtil Line:399:toTextureData] [INFO] CCAppCapabilities.GL_VERSION_1_2:true
+[Tue May 03 15:40:14 CEST 2011] [CCTextureUtil Line:377:toTextureData] [INFO] DEFAULT
+[Tue May 03 15:40:14 CEST 2011] [CCTextureUtil Line:398:toTextureData] [INFO] CCAppCapabilities.GL_EXT_abgr:true
+[Tue May 03 15:40:14 CEST 2011] [CCTextureUtil Line:399:toTextureData] [INFO] CCAppCapabilities.GL_VERSION_1_2:true
+[Tue May 03 15:40:15 CEST 2011] [CCTextureUtil Line:377:toTextureData] [INFO] DEFAULT
+[Tue May 03 15:40:15 CEST 2011] [CCTextureUtil Line:398:toTextureData] [INFO] CCAppCapabilities.GL_EXT_abgr:true
+[Tue May 03 15:40:15 CEST 2011] [CCTextureUtil Line:399:toTextureData] [INFO] CCAppCapabilities.GL_VERSION_1_2:true
+[Tue May 03 15:40:15 CEST 2011] [CCTextureUtil Line:377:toTextureData] [INFO] DEFAULT
+[Tue May 03 15:40:15 CEST 2011] [CCTextureUtil Line:398:toTextureData] [INFO] CCAppCapabilities.GL_EXT_abgr:true
+[Tue May 03 15:40:15 CEST 2011] [CCTextureUtil Line:399:toTextureData] [INFO] CCAppCapabilities.GL_VERSION_1_2:true
+[Tue May 03 15:40:15 CEST 2011] [CCTextureUtil Line:377:toTextureData] [INFO] DEFAULT
+[Tue May 03 15:40:15 CEST 2011] [CCTextureUtil Line:398:toTextureData] [INFO] CCAppCapabilities.GL_EXT_abgr:true
+[Tue May 03 15:40:15 CEST 2011] [CCTextureUtil Line:399:toTextureData] [INFO] CCAppCapabilities.GL_VERSION_1_2:true
+[Tue May 03 15:40:15 CEST 2011] [CCTextureUtil Line:377:toTextureData] [INFO] DEFAULT
+[Tue May 03 15:40:15 CEST 2011] [CCTextureUtil Line:398:toTextureData] [INFO] CCAppCapabilities.GL_EXT_abgr:true
+[Tue May 03 15:40:15 CEST 2011] [CCTextureUtil Line:399:toTextureData] [INFO] CCAppCapabilities.GL_VERSION_1_2:true
+[Tue May 03 15:40:15 CEST 2011] [CCTextureUtil Line:377:toTextureData] [INFO] DEFAULT
+[Tue May 03 15:40:15 CEST 2011] [CCTextureUtil Line:398:toTextureData] [INFO] CCAppCapabilities.GL_EXT_abgr:true
+[Tue May 03 15:40:15 CEST 2011] [CCTextureUtil Line:399:toTextureData] [INFO] CCAppCapabilities.GL_VERSION_1_2:true
+[Tue May 03 15:40:15 CEST 2011] [CCTextureUtil Line:377:toTextureData] [INFO] DEFAULT
+[Tue May 03 15:40:15 CEST 2011] [CCTextureUtil Line:398:toTextureData] [INFO] CCAppCapabilities.GL_EXT_abgr:true
+[Tue May 03 15:40:15 CEST 2011] [CCTextureUtil Line:399:toTextureData] [INFO] CCAppCapabilities.GL_VERSION_1_2:true
+[Tue May 03 15:40:15 CEST 2011] [CCTextureUtil Line:377:toTextureData] [INFO] DEFAULT
+[Tue May 03 15:40:15 CEST 2011] [CCTextureUtil Line:398:toTextureData] [INFO] CCAppCapabilities.GL_EXT_abgr:true
+[Tue May 03 15:40:15 CEST 2011] [CCTextureUtil Line:399:toTextureData] [INFO] CCAppCapabilities.GL_VERSION_1_2:true
+[Tue May 03 15:40:15 CEST 2011] [CCTextureUtil Line:377:toTextureData] [INFO] DEFAULT
+[Tue May 03 15:40:15 CEST 2011] [CCTextureUtil Line:398:toTextureData] [INFO] CCAppCapabilities.GL_EXT_abgr:true
+[Tue May 03 15:40:15 CEST 2011] [CCTextureUtil Line:399:toTextureData] [INFO] CCAppCapabilities.GL_VERSION_1_2:true
+[Tue May 03 15:40:15 CEST 2011] [CCTextureUtil Line:377:toTextureData] [INFO] DEFAULT
+[Tue May 03 15:40:15 CEST 2011] [CCTextureUtil Line:398:toTextureData] [INFO] CCAppCapabilities.GL_EXT_abgr:true
+[Tue May 03 15:40:15 CEST 2011] [CCTextureUtil Line:399:toTextureData] [INFO] CCAppCapabilities.GL_VERSION_1_2:true
+[Tue May 03 15:40:15 CEST 2011] [CCTextureUtil Line:377:toTextureData] [INFO] DEFAULT
+[Tue May 03 15:40:15 CEST 2011] [CCTextureUtil Line:398:toTextureData] [INFO] CCAppCapabilities.GL_EXT_abgr:true
+[Tue May 03 15:40:15 CEST 2011] [CCTextureUtil Line:399:toTextureData] [INFO] CCAppCapabilities.GL_VERSION_1_2:true
+[Tue May 03 15:40:15 CEST 2011] [CCTextureUtil Line:377:toTextureData] [INFO] DEFAULT
+[Tue May 03 15:40:15 CEST 2011] [CCTextureUtil Line:398:toTextureData] [INFO] CCAppCapabilities.GL_EXT_abgr:true
+[Tue May 03 15:40:15 CEST 2011] [CCTextureUtil Line:399:toTextureData] [INFO] CCAppCapabilities.GL_VERSION_1_2:true
+[Tue May 03 15:40:15 CEST 2011] [CCTextureUtil Line:377:toTextureData] [INFO] DEFAULT
+[Tue May 03 15:40:15 CEST 2011] [CCTextureUtil Line:398:toTextureData] [INFO] CCAppCapabilities.GL_EXT_abgr:true
+[Tue May 03 15:40:15 CEST 2011] [CCTextureUtil Line:399:toTextureData] [INFO] CCAppCapabilities.GL_VERSION_1_2:true
+[Tue May 03 15:40:15 CEST 2011] [CCTextureUtil Line:377:toTextureData] [INFO] DEFAULT
+[Tue May 03 15:40:15 CEST 2011] [CCTextureUtil Line:398:toTextureData] [INFO] CCAppCapabilities.GL_EXT_abgr:true
+[Tue May 03 15:40:15 CEST 2011] [CCTextureUtil Line:399:toTextureData] [INFO] CCAppCapabilities.GL_VERSION_1_2:true
+[Tue May 03 15:40:15 CEST 2011] [CCTextureUtil Line:377:toTextureData] [INFO] DEFAULT
+[Tue May 03 15:40:15 CEST 2011] [CCTextureUtil Line:398:toTextureData] [INFO] CCAppCapabilities.GL_EXT_abgr:true
+[Tue May 03 15:40:15 CEST 2011] [CCTextureUtil Line:399:toTextureData] [INFO] CCAppCapabilities.GL_VERSION_1_2:true
+[Tue May 03 15:40:15 CEST 2011] [CCTextureUtil Line:377:toTextureData] [INFO] DEFAULT
+[Tue May 03 15:40:15 CEST 2011] [CCTextureUtil Line:398:toTextureData] [INFO] CCAppCapabilities.GL_EXT_abgr:true
+[Tue May 03 15:40:15 CEST 2011] [CCTextureUtil Line:399:toTextureData] [INFO] CCAppCapabilities.GL_VERSION_1_2:true
+[Tue May 03 15:40:15 CEST 2011] [CCTextureUtil Line:377:toTextureData] [INFO] DEFAULT
+[Tue May 03 15:40:15 CEST 2011] [CCTextureUtil Line:398:toTextureData] [INFO] CCAppCapabilities.GL_EXT_abgr:true
+[Tue May 03 15:40:15 CEST 2011] [CCTextureUtil Line:399:toTextureData] [INFO] CCAppCapabilities.GL_VERSION_1_2:true
+[Tue May 03 15:40:15 CEST 2011] [CCTextureUtil Line:377:toTextureData] [INFO] DEFAULT
+[Tue May 03 15:40:15 CEST 2011] [CCTextureUtil Line:398:toTextureData] [INFO] CCAppCapabilities.GL_EXT_abgr:true
+[Tue May 03 15:40:15 CEST 2011] [CCTextureUtil Line:399:toTextureData] [INFO] CCAppCapabilities.GL_VERSION_1_2:true
+[Tue May 03 15:40:15 CEST 2011] [CCTextureUtil Line:377:toTextureData] [INFO] DEFAULT
+[Tue May 03 15:40:15 CEST 2011] [CCTextureUtil Line:398:toTextureData] [INFO] CCAppCapabilities.GL_EXT_abgr:true
+[Tue May 03 15:40:15 CEST 2011] [CCTextureUtil Line:399:toTextureData] [INFO] CCAppCapabilities.GL_VERSION_1_2:true
+[Tue May 03 15:40:15 CEST 2011] [CCTextureUtil Line:377:toTextureData] [INFO] DEFAULT
+[Tue May 03 15:40:15 CEST 2011] [CCTextureUtil Line:398:toTextureData] [INFO] CCAppCapabilities.GL_EXT_abgr:true
+[Tue May 03 15:40:15 CEST 2011] [CCTextureUtil Line:399:toTextureData] [INFO] CCAppCapabilities.GL_VERSION_1_2:true
+[Tue May 03 15:40:15 CEST 2011] [CCTextureUtil Line:377:toTextureData] [INFO] DEFAULT
+[Tue May 03 15:40:15 CEST 2011] [CCTextureUtil Line:398:toTextureData] [INFO] CCAppCapabilities.GL_EXT_abgr:true
+[Tue May 03 15:40:15 CEST 2011] [CCTextureUtil Line:399:toTextureData] [INFO] CCAppCapabilities.GL_VERSION_1_2:true
+[Tue May 03 15:40:15 CEST 2011] [CCTextureUtil Line:377:toTextureData] [INFO] DEFAULT
+[Tue May 03 15:40:15 CEST 2011] [CCTextureUtil Line:398:toTextureData] [INFO] CCAppCapabilities.GL_EXT_abgr:true
+[Tue May 03 15:40:15 CEST 2011] [CCTextureUtil Line:399:toTextureData] [INFO] CCAppCapabilities.GL_VERSION_1_2:true
+[Tue May 03 15:40:15 CEST 2011] [CCTextureUtil Line:377:toTextureData] [INFO] DEFAULT
+[Tue May 03 15:40:15 CEST 2011] [CCTextureUtil Line:398:toTextureData] [INFO] CCAppCapabilities.GL_EXT_abgr:true
+[Tue May 03 15:40:15 CEST 2011] [CCTextureUtil Line:399:toTextureData] [INFO] CCAppCapabilities.GL_VERSION_1_2:true
+[Tue May 03 15:40:15 CEST 2011] [CCTextureUtil Line:377:toTextureData] [INFO] DEFAULT
+[Tue May 03 15:40:15 CEST 2011] [CCTextureUtil Line:398:toTextureData] [INFO] CCAppCapabilities.GL_EXT_abgr:true
+[Tue May 03 15:40:15 CEST 2011] [CCTextureUtil Line:399:toTextureData] [INFO] CCAppCapabilities.GL_VERSION_1_2:true
+[Tue May 03 15:40:15 CEST 2011] [CCTextureUtil Line:377:toTextureData] [INFO] DEFAULT
+[Tue May 03 15:40:15 CEST 2011] [CCTextureUtil Line:398:toTextureData] [INFO] CCAppCapabilities.GL_EXT_abgr:true
+[Tue May 03 15:40:15 CEST 2011] [CCTextureUtil Line:399:toTextureData] [INFO] CCAppCapabilities.GL_VERSION_1_2:true
+[Tue May 03 15:40:15 CEST 2011] [CCTextureUtil Line:377:toTextureData] [INFO] DEFAULT
+[Tue May 03 15:40:15 CEST 2011] [CCTextureUtil Line:398:toTextureData] [INFO] CCAppCapabilities.GL_EXT_abgr:true
+[Tue May 03 15:40:15 CEST 2011] [CCTextureUtil Line:399:toTextureData] [INFO] CCAppCapabilities.GL_VERSION_1_2:true
+[Tue May 03 15:40:15 CEST 2011] [CCTextureUtil Line:377:toTextureData] [INFO] DEFAULT
+[Tue May 03 15:40:15 CEST 2011] [CCTextureUtil Line:398:toTextureData] [INFO] CCAppCapabilities.GL_EXT_abgr:true
+[Tue May 03 15:40:15 CEST 2011] [CCTextureUtil Line:399:toTextureData] [INFO] CCAppCapabilities.GL_VERSION_1_2:true
+[Tue May 03 15:40:15 CEST 2011] [CCTextureUtil Line:377:toTextureData] [INFO] DEFAULT
+[Tue May 03 15:40:15 CEST 2011] [CCTextureUtil Line:398:toTextureData] [INFO] CCAppCapabilities.GL_EXT_abgr:true
+[Tue May 03 15:40:15 CEST 2011] [CCTextureUtil Line:399:toTextureData] [INFO] CCAppCapabilities.GL_VERSION_1_2:true
+[Tue May 03 15:40:15 CEST 2011] [CCTextureUtil Line:377:toTextureData] [INFO] DEFAULT
+[Tue May 03 15:40:15 CEST 2011] [CCTextureUtil Line:398:toTextureData] [INFO] CCAppCapabilities.GL_EXT_abgr:true
+[Tue May 03 15:40:15 CEST 2011] [CCTextureUtil Line:399:toTextureData] [INFO] CCAppCapabilities.GL_VERSION_1_2:true
+[Tue May 03 15:40:15 CEST 2011] [CCTextureUtil Line:377:toTextureData] [INFO] DEFAULT
+[Tue May 03 15:40:15 CEST 2011] [CCTextureUtil Line:398:toTextureData] [INFO] CCAppCapabilities.GL_EXT_abgr:true
+[Tue May 03 15:40:15 CEST 2011] [CCTextureUtil Line:399:toTextureData] [INFO] CCAppCapabilities.GL_VERSION_1_2:true
+[Tue May 03 15:40:15 CEST 2011] [CCTextureUtil Line:377:toTextureData] [INFO] DEFAULT
+[Tue May 03 15:40:15 CEST 2011] [CCTextureUtil Line:398:toTextureData] [INFO] CCAppCapabilities.GL_EXT_abgr:true
+[Tue May 03 15:40:15 CEST 2011] [CCTextureUtil Line:399:toTextureData] [INFO] CCAppCapabilities.GL_VERSION_1_2:true
+[Tue May 03 15:40:15 CEST 2011] [CCTextureUtil Line:377:toTextureData] [INFO] DEFAULT
+[Tue May 03 15:40:15 CEST 2011] [CCTextureUtil Line:398:toTextureData] [INFO] CCAppCapabilities.GL_EXT_abgr:true
+[Tue May 03 15:40:15 CEST 2011] [CCTextureUtil Line:399:toTextureData] [INFO] CCAppCapabilities.GL_VERSION_1_2:true
+[Tue May 03 15:40:15 CEST 2011] [CCTextureUtil Line:377:toTextureData] [INFO] DEFAULT
+[Tue May 03 15:40:15 CEST 2011] [CCTextureUtil Line:398:toTextureData] [INFO] CCAppCapabilities.GL_EXT_abgr:true
+[Tue May 03 15:40:15 CEST 2011] [CCTextureUtil Line:399:toTextureData] [INFO] CCAppCapabilities.GL_VERSION_1_2:true
+[Tue May 03 15:40:15 CEST 2011] [CCTextureUtil Line:377:toTextureData] [INFO] DEFAULT
+[Tue May 03 15:40:15 CEST 2011] [CCTextureUtil Line:398:toTextureData] [INFO] CCAppCapabilities.GL_EXT_abgr:true
+[Tue May 03 15:40:15 CEST 2011] [CCTextureUtil Line:399:toTextureData] [INFO] CCAppCapabilities.GL_VERSION_1_2:true
+[Tue May 03 15:40:16 CEST 2011] [CCTextureUtil Line:377:toTextureData] [INFO] DEFAULT
+[Tue May 03 15:40:16 CEST 2011] [CCTextureUtil Line:398:toTextureData] [INFO] CCAppCapabilities.GL_EXT_abgr:true
+[Tue May 03 15:40:16 CEST 2011] [CCTextureUtil Line:399:toTextureData] [INFO] CCAppCapabilities.GL_VERSION_1_2:true
+[Tue May 03 15:40:16 CEST 2011] [CCTextureUtil Line:377:toTextureData] [INFO] DEFAULT
+[Tue May 03 15:40:16 CEST 2011] [CCTextureUtil Line:398:toTextureData] [INFO] CCAppCapabilities.GL_EXT_abgr:true
+[Tue May 03 15:40:16 CEST 2011] [CCTextureUtil Line:399:toTextureData] [INFO] CCAppCapabilities.GL_VERSION_1_2:true
+[Tue May 03 15:40:16 CEST 2011] [CCTextureUtil Line:377:toTextureData] [INFO] DEFAULT
+[Tue May 03 15:40:16 CEST 2011] [CCTextureUtil Line:398:toTextureData] [INFO] CCAppCapabilities.GL_EXT_abgr:true
+[Tue May 03 15:40:16 CEST 2011] [CCTextureUtil Line:399:toTextureData] [INFO] CCAppCapabilities.GL_VERSION_1_2:true
+[Tue May 03 15:40:16 CEST 2011] [CCTextureUtil Line:377:toTextureData] [INFO] DEFAULT
+[Tue May 03 15:40:16 CEST 2011] [CCTextureUtil Line:398:toTextureData] [INFO] CCAppCapabilities.GL_EXT_abgr:true
+[Tue May 03 15:40:16 CEST 2011] [CCTextureUtil Line:399:toTextureData] [INFO] CCAppCapabilities.GL_VERSION_1_2:true
+[Tue May 03 15:40:16 CEST 2011] [CCTextureUtil Line:377:toTextureData] [INFO] DEFAULT
+[Tue May 03 15:40:16 CEST 2011] [CCTextureUtil Line:398:toTextureData] [INFO] CCAppCapabilities.GL_EXT_abgr:true
+[Tue May 03 15:40:16 CEST 2011] [CCTextureUtil Line:399:toTextureData] [INFO] CCAppCapabilities.GL_VERSION_1_2:true
+[Tue May 03 15:40:16 CEST 2011] [CCTextureUtil Line:377:toTextureData] [INFO] DEFAULT
+[Tue May 03 15:40:16 CEST 2011] [CCTextureUtil Line:398:toTextureData] [INFO] CCAppCapabilities.GL_EXT_abgr:true
+[Tue May 03 15:40:16 CEST 2011] [CCTextureUtil Line:399:toTextureData] [INFO] CCAppCapabilities.GL_VERSION_1_2:true
+[Tue May 03 15:40:16 CEST 2011] [CCTextureUtil Line:377:toTextureData] [INFO] DEFAULT
+[Tue May 03 15:40:16 CEST 2011] [CCTextureUtil Line:398:toTextureData] [INFO] CCAppCapabilities.GL_EXT_abgr:true
+[Tue May 03 15:40:16 CEST 2011] [CCTextureUtil Line:399:toTextureData] [INFO] CCAppCapabilities.GL_VERSION_1_2:true
+[Tue May 03 15:40:16 CEST 2011] [CCTextureUtil Line:377:toTextureData] [INFO] DEFAULT
+[Tue May 03 15:40:16 CEST 2011] [CCTextureUtil Line:398:toTextureData] [INFO] CCAppCapabilities.GL_EXT_abgr:true
+[Tue May 03 15:40:16 CEST 2011] [CCTextureUtil Line:399:toTextureData] [INFO] CCAppCapabilities.GL_VERSION_1_2:true
+[Tue May 03 15:40:16 CEST 2011] [CCTextureUtil Line:377:toTextureData] [INFO] DEFAULT
+[Tue May 03 15:40:16 CEST 2011] [CCTextureUtil Line:398:toTextureData] [INFO] CCAppCapabilities.GL_EXT_abgr:true
+[Tue May 03 15:40:16 CEST 2011] [CCTextureUtil Line:399:toTextureData] [INFO] CCAppCapabilities.GL_VERSION_1_2:true
+[Tue May 03 15:40:16 CEST 2011] [CCTextureUtil Line:377:toTextureData] [INFO] DEFAULT
+[Tue May 03 15:40:16 CEST 2011] [CCTextureUtil Line:398:toTextureData] [INFO] CCAppCapabilities.GL_EXT_abgr:true
+[Tue May 03 15:40:16 CEST 2011] [CCTextureUtil Line:399:toTextureData] [INFO] CCAppCapabilities.GL_VERSION_1_2:true
+[Tue May 03 15:40:16 CEST 2011] [CCTextureUtil Line:377:toTextureData] [INFO] DEFAULT
+[Tue May 03 15:40:16 CEST 2011] [CCTextureUtil Line:398:toTextureData] [INFO] CCAppCapabilities.GL_EXT_abgr:true
+[Tue May 03 15:40:16 CEST 2011] [CCTextureUtil Line:399:toTextureData] [INFO] CCAppCapabilities.GL_VERSION_1_2:true
+[Tue May 03 15:40:16 CEST 2011] [CCTextureUtil Line:377:toTextureData] [INFO] DEFAULT
+[Tue May 03 15:40:16 CEST 2011] [CCTextureUtil Line:398:toTextureData] [INFO] CCAppCapabilities.GL_EXT_abgr:true
+[Tue May 03 15:40:16 CEST 2011] [CCTextureUtil Line:399:toTextureData] [INFO] CCAppCapabilities.GL_VERSION_1_2:true
+[Tue May 03 15:40:16 CEST 2011] [CCTextureUtil Line:377:toTextureData] [INFO] DEFAULT
+[Tue May 03 15:40:16 CEST 2011] [CCTextureUtil Line:398:toTextureData] [INFO] CCAppCapabilities.GL_EXT_abgr:true
+[Tue May 03 15:40:16 CEST 2011] [CCTextureUtil Line:399:toTextureData] [INFO] CCAppCapabilities.GL_VERSION_1_2:true
+[Tue May 03 15:40:16 CEST 2011] [CCTextureUtil Line:377:toTextureData] [INFO] DEFAULT
+[Tue May 03 15:40:16 CEST 2011] [CCTextureUtil Line:398:toTextureData] [INFO] CCAppCapabilities.GL_EXT_abgr:true
+[Tue May 03 15:40:16 CEST 2011] [CCTextureUtil Line:399:toTextureData] [INFO] CCAppCapabilities.GL_VERSION_1_2:true
+[Tue May 03 15:40:16 CEST 2011] [CCTextureUtil Line:377:toTextureData] [INFO] DEFAULT
+[Tue May 03 15:40:16 CEST 2011] [CCTextureUtil Line:398:toTextureData] [INFO] CCAppCapabilities.GL_EXT_abgr:true
+[Tue May 03 15:40:16 CEST 2011] [CCTextureUtil Line:399:toTextureData] [INFO] CCAppCapabilities.GL_VERSION_1_2:true
+[Tue May 03 15:40:16 CEST 2011] [CCTextureUtil Line:377:toTextureData] [INFO] DEFAULT
+[Tue May 03 15:40:16 CEST 2011] [CCTextureUtil Line:398:toTextureData] [INFO] CCAppCapabilities.GL_EXT_abgr:true
+[Tue May 03 15:40:16 CEST 2011] [CCTextureUtil Line:399:toTextureData] [INFO] CCAppCapabilities.GL_VERSION_1_2:true
+[Tue May 03 15:40:16 CEST 2011] [CCTextureUtil Line:377:toTextureData] [INFO] DEFAULT
+[Tue May 03 15:40:16 CEST 2011] [CCTextureUtil Line:398:toTextureData] [INFO] CCAppCapabilities.GL_EXT_abgr:true
+[Tue May 03 15:40:16 CEST 2011] [CCTextureUtil Line:399:toTextureData] [INFO] CCAppCapabilities.GL_VERSION_1_2:true
+[Tue May 03 15:40:16 CEST 2011] [CCTextureUtil Line:377:toTextureData] [INFO] DEFAULT
+[Tue May 03 15:40:16 CEST 2011] [CCTextureUtil Line:398:toTextureData] [INFO] CCAppCapabilities.GL_EXT_abgr:true
+[Tue May 03 15:40:16 CEST 2011] [CCTextureUtil Line:399:toTextureData] [INFO] CCAppCapabilities.GL_VERSION_1_2:true
+[Tue May 03 15:40:16 CEST 2011] [CCTextureUtil Line:377:toTextureData] [INFO] DEFAULT
+[Tue May 03 15:40:16 CEST 2011] [CCTextureUtil Line:398:toTextureData] [INFO] CCAppCapabilities.GL_EXT_abgr:true
+[Tue May 03 15:40:16 CEST 2011] [CCTextureUtil Line:399:toTextureData] [INFO] CCAppCapabilities.GL_VERSION_1_2:true
+[Tue May 03 15:40:16 CEST 2011] [CCTextureUtil Line:377:toTextureData] [INFO] DEFAULT
+[Tue May 03 15:40:16 CEST 2011] [CCTextureUtil Line:398:toTextureData] [INFO] CCAppCapabilities.GL_EXT_abgr:true
+[Tue May 03 15:40:16 CEST 2011] [CCTextureUtil Line:399:toTextureData] [INFO] CCAppCapabilities.GL_VERSION_1_2:true
+[Tue May 03 15:40:16 CEST 2011] [CCTextureUtil Line:377:toTextureData] [INFO] DEFAULT
+[Tue May 03 15:40:16 CEST 2011] [CCTextureUtil Line:398:toTextureData] [INFO] CCAppCapabilities.GL_EXT_abgr:true
+[Tue May 03 15:40:16 CEST 2011] [CCTextureUtil Line:399:toTextureData] [INFO] CCAppCapabilities.GL_VERSION_1_2:true
+[Tue May 03 15:40:16 CEST 2011] [CCTextureUtil Line:377:toTextureData] [INFO] DEFAULT
+[Tue May 03 15:40:16 CEST 2011] [CCTextureUtil Line:398:toTextureData] [INFO] CCAppCapabilities.GL_EXT_abgr:true
+[Tue May 03 15:40:16 CEST 2011] [CCTextureUtil Line:399:toTextureData] [INFO] CCAppCapabilities.GL_VERSION_1_2:true
+[Tue May 03 15:40:16 CEST 2011] [CCTextureUtil Line:377:toTextureData] [INFO] DEFAULT
+[Tue May 03 15:40:16 CEST 2011] [CCTextureUtil Line:398:toTextureData] [INFO] CCAppCapabilities.GL_EXT_abgr:true
+[Tue May 03 15:40:16 CEST 2011] [CCTextureUtil Line:399:toTextureData] [INFO] CCAppCapabilities.GL_VERSION_1_2:true
+[Tue May 03 15:40:16 CEST 2011] [CCTextureUtil Line:377:toTextureData] [INFO] DEFAULT
+[Tue May 03 15:40:16 CEST 2011] [CCTextureUtil Line:398:toTextureData] [INFO] CCAppCapabilities.GL_EXT_abgr:true
+[Tue May 03 15:40:16 CEST 2011] [CCTextureUtil Line:399:toTextureData] [INFO] CCAppCapabilities.GL_VERSION_1_2:true
+[Tue May 03 15:40:16 CEST 2011] [CCTextureUtil Line:377:toTextureData] [INFO] DEFAULT
+[Tue May 03 15:40:16 CEST 2011] [CCTextureUtil Line:398:toTextureData] [INFO] CCAppCapabilities.GL_EXT_abgr:true
+[Tue May 03 15:40:16 CEST 2011] [CCTextureUtil Line:399:toTextureData] [INFO] CCAppCapabilities.GL_VERSION_1_2:true
+[Tue May 03 15:40:16 CEST 2011] [CCApp:display] [WARNING] javax.media.opengl.GLException: glGetError() returned the following error codes after a call to glGenTextures(): GL_STACK_OVERFLOW 
+java.lang.RuntimeException: javax.media.opengl.GLException: glGetError() returned the following error codes after a call to glGenTextures(): GL_STACK_OVERFLOW 
+	at cc.creativecomputing.graphics.font.CCTextureMapFont.createChars(CCTextureMapFont.java:141)
+	at cc.creativecomputing.graphics.font.CCFont.setFont(CCFont.java:134)
+	at cc.creativecomputing.graphics.font.CCFont.<init>(CCFont.java:85)
+	at cc.creativecomputing.graphics.font.CCTextureMapFont.<init>(CCTextureMapFont.java:25)
+	at cc.creativecomputing.graphics.font.CCFontIO.createTextureMapFont(CCFontIO.java:245)
+	at cc.creativecomputing.graphics.font.CCFontIO.createTextureMapFont(CCFontIO.java:257)
+	at cc.creativecomputing.newui.CCUI.loadFonts(CCUI.java:114)
+	at cc.creativecomputing.newui.CCUI.loadUI(CCUI.java:204)
+	at cc.creativecomputing.demo.ui.CCUILoadWidgetsDemo.setup(CCUILoadWidgetsDemo.java:47)
+	at cc.creativecomputing.CCApp.display(CCApp.java:566)
+	at com.sun.opengl.impl.GLDrawableHelper.display(GLDrawableHelper.java:78)
+	at javax.media.opengl.GLCanvas$DisplayAction.run(GLCanvas.java:435)
+	at com.sun.opengl.impl.GLDrawableHelper.invokeGL(GLDrawableHelper.java:194)
+	at javax.media.opengl.GLCanvas$DisplayOnEventDispatchThreadAction.run(GLCanvas.java:452)
+	at java.awt.event.InvocationEvent.dispatch(InvocationEvent.java:199)
+	at java.awt.EventQueue.dispatchEvent(EventQueue.java:633)
+	at java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:296)
+	at java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:211)
+	at java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:201)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:196)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:188)
+	at java.awt.EventDispatchThread.run(EventDispatchThread.java:122)
+Caused by: javax.media.opengl.GLException: glGetError() returned the following error codes after a call to glGenTextures(): GL_STACK_OVERFLOW 
+	at javax.media.opengl.DebugGL.checkGLGetError(DebugGL.java:12715)
+	at javax.media.opengl.DebugGL.glGenTextures(DebugGL.java:2709)
+	at cc.creativecomputing.graphics.texture.CCTexture.createTextureIds(CCTexture.java:466)
+	at cc.creativecomputing.graphics.texture.CCTexture.<init>(CCTexture.java:284)
+	at cc.creativecomputing.graphics.texture.CCTexture.<init>(CCTexture.java:303)
+	at cc.creativecomputing.graphics.texture.CCTexture2D.<init>(CCTexture2D.java:49)
+	at cc.creativecomputing.graphics.texture.CCTexture2D.<init>(CCTexture2D.java:84)
+	at cc.creativecomputing.graphics.font.CCTextureMapFont.createChars(CCTextureMapFont.java:136)
+	... 21 more
+[Tue May 03 15:40:16 CEST 2011] [CCApp:display] [WARNING] javax.media.opengl.GLException: glGetError() returned the following error codes after a call to glGenTextures(): GL_STACK_OVERFLOW 
+java.lang.RuntimeException: javax.media.opengl.GLException: glGetError() returned the following error codes after a call to glGenTextures(): GL_STACK_OVERFLOW 
+	at cc.creativecomputing.graphics.font.CCTextureMapFont.createChars(CCTextureMapFont.java:141)
+	at cc.creativecomputing.graphics.font.CCFont.setFont(CCFont.java:134)
+	at cc.creativecomputing.graphics.font.CCFont.<init>(CCFont.java:85)
+	at cc.creativecomputing.graphics.font.CCTextureMapFont.<init>(CCTextureMapFont.java:25)
+	at cc.creativecomputing.graphics.font.CCFontIO.createTextureMapFont(CCFontIO.java:245)
+	at cc.creativecomputing.graphics.font.CCFontIO.createTextureMapFont(CCFontIO.java:257)
+	at cc.creativecomputing.newui.CCUI.loadFonts(CCUI.java:114)
+	at cc.creativecomputing.newui.CCUI.loadUI(CCUI.java:204)
+	at cc.creativecomputing.demo.ui.CCUILoadWidgetsDemo.setup(CCUILoadWidgetsDemo.java:47)
+	at cc.creativecomputing.CCApp.display(CCApp.java:566)
+	at com.sun.opengl.impl.GLDrawableHelper.display(GLDrawableHelper.java:78)
+	at javax.media.opengl.GLCanvas$DisplayAction.run(GLCanvas.java:435)
+	at com.sun.opengl.impl.GLDrawableHelper.invokeGL(GLDrawableHelper.java:194)
+	at javax.media.opengl.GLCanvas$DisplayOnEventDispatchThreadAction.run(GLCanvas.java:452)
+	at java.awt.event.InvocationEvent.dispatch(InvocationEvent.java:199)
+	at java.awt.EventQueue.dispatchEvent(EventQueue.java:633)
+	at java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:296)
+	at java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:211)
+	at java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:201)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:196)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:188)
+	at java.awt.EventDispatchThread.run(EventDispatchThread.java:122)
+Caused by: javax.media.opengl.GLException: glGetError() returned the following error codes after a call to glGenTextures(): GL_STACK_OVERFLOW 
+	at javax.media.opengl.DebugGL.checkGLGetError(DebugGL.java:12715)
+	at javax.media.opengl.DebugGL.glGenTextures(DebugGL.java:2709)
+	at cc.creativecomputing.graphics.texture.CCTexture.createTextureIds(CCTexture.java:466)
+	at cc.creativecomputing.graphics.texture.CCTexture.<init>(CCTexture.java:284)
+	at cc.creativecomputing.graphics.texture.CCTexture.<init>(CCTexture.java:303)
+	at cc.creativecomputing.graphics.texture.CCTexture2D.<init>(CCTexture2D.java:49)
+	at cc.creativecomputing.graphics.texture.CCTexture2D.<init>(CCTexture2D.java:84)
+	at cc.creativecomputing.graphics.font.CCTextureMapFont.createChars(CCTextureMapFont.java:136)
+	... 21 more

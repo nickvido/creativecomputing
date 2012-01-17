@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<ui>
+	<CCControlPresetTab numberofpresets="1" label="app" selectedpreset="0">
+		<uielements>
+			<CCUIPresetControl label="presets">
+				<uielements/>
+			</CCUIPresetControl>
+			<CCUIComponent label="app">
+				<uielements>
+					<CCUISlider label="bias x">
+						<preset value="-0.6533333"/>
+					</CCUISlider>
+					<CCUISlider label="bias y">
+						<preset value="0.120000005"/>
+					</CCUISlider>
+					<CCUISlider label="scale x">
+						<preset value="2.98"/>
+					</CCUISlider>
+					<CCUISlider label="scale y">
+						<preset value="2.98"/>
+					</CCUISlider>
+					<CCUISlider label="amplitude">
+						<preset value="1.0239999"/>
+					</CCUISlider>
+				</uielements>
+			</CCUIComponent>
+		</uielements>
+		<presetnames>
+			<presetname name="Preset:0"/>
+		</presetnames>
+	</CCControlPresetTab>
+	<globalsettings label="global" numberofpresets="0" selectedpreset="0">
+		<presetnames/>
+	</globalsettings>
+</ui>

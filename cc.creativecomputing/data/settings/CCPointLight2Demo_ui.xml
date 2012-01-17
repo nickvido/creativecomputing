@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<ui>
+	<globalsettings label="global" numberofpresets="0" selectedpreset="0">
+		<presetnames/>
+	</globalsettings>
+	<CCControlPresetTab numberofpresets="1" label="light" selectedpreset="0">
+		<uielements>
+			<CCUIPresetControl label="presets">
+				<uielements/>
+			</CCUIPresetControl>
+			<CCUIComponent label="light 1">
+				<uielements>
+					<CCUISlider label="specular power">
+						<preset value="0.0"/>
+					</CCUISlider>
+					<CCUISlider label="specular intensity">
+						<preset value="0.0"/>
+					</CCUISlider>
+					<CCUISlider label="red">
+						<preset value="0.0"/>
+					</CCUISlider>
+					<CCUISlider label="green">
+						<preset value="0.0"/>
+					</CCUISlider>
+					<CCUISlider label="blue">
+						<preset value="0.0"/>
+					</CCUISlider>
+					<CCUISlider label="y">
+						<preset value="-1000.0"/>
+					</CCUISlider>
+					<CCUISlider label="x">
+						<preset value="-1000.0"/>
+					</CCUISlider>
+					<CCUISlider label="z">
+						<preset value="-1000.0"/>
+					</CCUISlider>
+					<CCUISlider label="radius">
+						<preset value="0.0"/>
+					</CCUISlider>
+					<CCUISlider label="intensity">
+						<preset value="0.0"/>
+					</CCUISlider>
+				</uielements>
+			</CCUIComponent>
+			<CCUIComponent label="light 2">
+				<uielements>
+					<CCUISlider label="specular power">
+						<preset value="0.0"/>
+					</CCUISlider>
+					<CCUISlider label="specular intensity">
+						<preset value="0.0"/>
+					</CCUISlider>
+					<CCUISlider label="red">
+						<preset value="0.0"/>
+					</CCUISlider>
+					<CCUISlider label="green">
+						<preset value="0.0"/>
+					</CCUISlider>
+					<CCUISlider label="blue">
+						<preset value="0.0"/>
+					</CCUISlider>
+					<CCUISlider label="y">
+						<preset value="-1000.0"/>
+					</CCUISlider>
+					<CCUISlider label="x">
+						<preset value="-1000.0"/>
+					</CCUISlider>
+					<CCUISlider label="z">
+						<preset value="-1000.0"/>
+					</CCUISlider>
+					<CCUISlider label="radius">
+						<preset value="0.0"/>
+					</CCUISlider>
+					<CCUISlider label="intensity">
+						<preset value="0.0"/>
+					</CCUISlider>
+				</uielements>
+			</CCUIComponent>
+			<CCUIComponent label="light 3">
+				<uielements>
+					<CCUISlider label="z">
+						<preset value="-294.66663"/>
+					</CCUISlider>
+					<CCUISlider label="radius">
+						<preset value="155.2"/>
+					</CCUISlider>
+				</uielements>
+			</CCUIComponent>
+		</uielements>
+		<presetnames>
+			<presetname name="Preset:0"/>
+		</presetnames>
+	</CCControlPresetTab>
+</ui>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<ui>
+  <CCControlPresetTab numberofpresets="1" label="settings" selectedpreset="0">
+    <uielements>
+      <CCUIPresetControl label="presets">
+        <uielements/>
+      </CCUIPresetControl>
+      <CCUIComponent label="edgeblender">
+        <uielements>
+          <CCUISlider label="range">
+            <preset value="101.33333"/>
+          </CCUISlider>
+          <CCUISlider label="power">
+            <preset value="1.882"/>
+          </CCUISlider>
+          <CCUISlider label="break">
+            <preset value="0.52"/>
+          </CCUISlider>
+          <CCUISlider label="red gamma">
+            <preset value="2.0133333"/>
+          </CCUISlider>
+          <CCUISlider label="green gamma">
+            <preset value="2.0133333"/>
+          </CCUISlider>
+          <CCUISlider label="blue gamma">
+            <preset value="2.0133333"/>
+          </CCUISlider>
+        </uielements>
+      </CCUIComponent>
+    </uielements>
+    <presetnames>
+      <presetname name="Preset:0"/>
+    </presetnames>
+  </CCControlPresetTab>
+  <globalsettings label="global" numberofpresets="0" selectedpreset="0">
+    <presetnames/>
+  </globalsettings>
+</ui>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<ui>
+	<CCControlPresetTab numberofpresets="1" label="app" selectedpreset="0">
+		<uielements>
+			<CCUIPresetControl label="presets">
+				<uielements/>
+			</CCUIPresetControl>
+			<CCUIComponent label="app">
+				<uielements>
+					<CCUISlider label="length scale">
+						<preset value="0.6066667"/>
+					</CCUISlider>
+					<CCUISlider label="min speed">
+						<preset value="0.0"/>
+					</CCUISlider>
+					<CCUISlider label="max speed">
+						<preset value="121.333336"/>
+					</CCUISlider>
+					<CCUISlider label="speed variation">
+						<preset value="1.0"/>
+					</CCUISlider>
+					<CCUISlider label="speed on length">
+						<preset value="0.44666666"/>
+					</CCUISlider>
+					<CCUISlider label="noise scale">
+						<preset value="0.8933333"/>
+					</CCUISlider>
+					<CCUISlider label="lines">
+						<preset value="0.864"/>
+					</CCUISlider>
+					<CCUISlider label="alpha">
+						<preset value="0.43333334"/>
+					</CCUISlider>
+					<CCUISlider label="alpha pow">
+						<preset value="2.0666666"/>
+					</CCUISlider>
+				</uielements>
+			</CCUIComponent>
+		</uielements>
+		<presetnames>
+			<presetname name="Preset:0"/>
+		</presetnames>
+	</CCControlPresetTab>
+	<globalsettings label="global" numberofpresets="0" selectedpreset="0">
+		<presetnames/>
+	</globalsettings>
+</ui>

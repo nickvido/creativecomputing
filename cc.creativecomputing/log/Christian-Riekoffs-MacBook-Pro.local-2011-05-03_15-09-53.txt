@@ -1,0 +1,7 @@
+[Tue May 03 15:09:53 CEST 2011] [CCLog Line:177:initialize] [INFO] logging to file: log/Christian-Riekoffs-MacBook-Pro.local-2011-05-03_15-09-53.txt
+[Tue May 03 15:09:53 CEST 2011] [CCTextureUtil Line:377:toTextureData] [INFO] DEFAULT
+[Tue May 03 15:09:53 CEST 2011] [CCTextureUtil Line:398:toTextureData] [INFO] CCAppCapabilities.GL_EXT_abgr:true
+[Tue May 03 15:09:53 CEST 2011] [CCTextureUtil Line:399:toTextureData] [INFO] CCAppCapabilities.GL_VERSION_1_2:true
+[Tue May 03 15:09:53 CEST 2011] [CCTextureUtil Line:377:toTextureData] [INFO] DEFAULT
+[Tue May 03 15:09:53 CEST 2011] [CCTextureUtil Line:398:toTextureData] [INFO] CCAppCapabilities.GL_EXT_abgr:true
+[Tue May 03 15:09:53 CEST 2011] [CCTextureUtil Line:399:toTextureData] [INFO] CCAppCapabilities.GL_VERSION_1_2:true

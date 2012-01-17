@@ -1,0 +1,20 @@
+03.05.2011 01:15:57 cc.creativecomputing.CCApp display
+WARNUNG: null
+java.lang.NullPointerException
+	at cc.creativecomputing.graphics.texture.CCTexture.data(CCTexture.java:350)
+	at cc.creativecomputing.demo.io.CCClipboardImageDataDemo.keyPressed(CCClipboardImageDataDemo.java:55)
+	at cc.creativecomputing.CCAbstractApp.handleKeyEvent(CCAbstractApp.java:544)
+	at cc.creativecomputing.CCAbstractApp.dequeueKeyEvents(CCAbstractApp.java:530)
+	at cc.creativecomputing.CCApp.display(CCApp.java:590)
+	at com.sun.opengl.impl.GLDrawableHelper.display(GLDrawableHelper.java:78)
+	at javax.media.opengl.GLCanvas$DisplayAction.run(GLCanvas.java:435)
+	at com.sun.opengl.impl.GLDrawableHelper.invokeGL(GLDrawableHelper.java:194)
+	at javax.media.opengl.GLCanvas$DisplayOnEventDispatchThreadAction.run(GLCanvas.java:452)
+	at java.awt.event.InvocationEvent.dispatch(InvocationEvent.java:199)
+	at java.awt.EventQueue.dispatchEvent(EventQueue.java:633)
+	at java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:296)
+	at java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:211)
+	at java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:201)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:196)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:188)
+	at java.awt.EventDispatchThread.run(EventDispatchThread.java:122)
