@@ -190,7 +190,7 @@ public class CCQuicktimeMovie extends CCMovieData{
 	 * @param theStart contains the starting time of the movie segment to load.
 	 * @param theDuration specifies the length of the segment to load.
 	 */
-	public void loadIntoRam(final CCQuicktimeRamMode theMode,int theStart, long theDuration) {
+	public void loadIntoRam(final CCQuicktimeRamMode theMode,int theStart, float theDuration) {
     	try {
     		switch(theMode){
     		case KEEP_IN_RAM:
@@ -198,7 +198,7 @@ public class CCQuicktimeMovie extends CCMovieData{
     		case FLUSH_FROM_RAM:
     		case LOOK_BACKWARD_TRACK_EDITS:
     		case LOOK_FORWARD_TRACK_EDITS:
-    			_myMovie.loadIntoRam(theStart, (int)theDuration, theMode.ID);
+    			_myMovie.loadIntoRam(theStart, (int)theDuration * 1000, theMode.ID);
     		}
 		} catch (Exception e) {
 			CCLog.error("ERROR @ loadIntoRam. " + e);
@@ -293,10 +293,11 @@ public class CCQuicktimeMovie extends CCMovieData{
 	 * Handle exit of the main application
 	 */
 	public void post() {
+		System.out.println("POST:" + time() + ":" + duration());
 		if (!_myIsLoaded)
 			return;
 		try {
-			if(time() > duration() - 40){
+			if(time() >= duration()){
 				if (_myDoRepeat) {
 					time(0);
 				} else{
@@ -326,9 +327,9 @@ public class CCQuicktimeMovie extends CCMovieData{
 		System.gc();
 	}
 
-	public long duration() {
+	public float duration() {
 		try {
-			return _myMovie.getDuration();
+			return _myMovie.getDuration() / (float)_myMovie.getTimeScale();
 		} catch (StdQTException e) {
 			throw new CCTextureException("Could not get duration.",e);
 		}
@@ -420,9 +421,7 @@ public class CCQuicktimeMovie extends CCMovieData{
 		}
 	}
 
-	/* (non-Javadoc)
-	 * @see cc.creativecomputing.texture_new.video.CCMovie#time()
-	 */
+	@Override
 	public float time() {
 		try {
 			return _myMovie.getTime() / (float)_myMovie.getTimeScale();

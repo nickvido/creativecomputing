@@ -40,10 +40,10 @@ public interface CCMovie{
 	public void goToBeginning();
 	
 	/**
-	 * Returns the length of the movie in milliseconds
-	 * @return
+	 * Returns the length of the movie in seconds
+	 * @return length of the movie in seconds
 	 */
-	public long duration();
+	public float duration();
 
 	/**
 	 * Volume values range from -1.0 to 1.0. Negative values play no sound 

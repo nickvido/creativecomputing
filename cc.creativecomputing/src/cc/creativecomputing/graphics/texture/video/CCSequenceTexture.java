@@ -150,8 +150,8 @@ public class CCSequenceTexture extends CCTexture2D implements CCMovie, CCUpdateL
 	/* (non-Javadoc)
 	 * @see cc.creativecomputing.texture_new.video.CCMovie#duration()
 	 */
-	public long duration() {
-		return CCMath.floor(_myDuration * 1000);
+	public float duration() {
+		return _myDuration;
 	}
 
 	/* (non-Javadoc)

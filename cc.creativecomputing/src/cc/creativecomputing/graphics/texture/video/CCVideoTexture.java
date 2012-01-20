@@ -31,7 +31,7 @@ public class CCVideoTexture<VideoType extends CCVideoData> extends CCTexture2D i
 	private VideoType _myMovie;
 	
 	public CCVideoTexture(VideoType theData, CCTextureTarget theTarget, final CCTextureAttributes theAttributes) {
-		super(theTarget, theAttributes, 1);
+		super(theTarget, theAttributes, 1,800,200);
 		video(theData);
 	}
 	
