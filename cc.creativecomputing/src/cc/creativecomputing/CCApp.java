@@ -272,7 +272,7 @@ public class CCApp extends CCAbstractApp
 	/**
 	 * Get UI Object
 	 */
-	public CCControlUI getUI() {
+	public CCControlUI ui() {
 		return _myUI;
 	}
 	
