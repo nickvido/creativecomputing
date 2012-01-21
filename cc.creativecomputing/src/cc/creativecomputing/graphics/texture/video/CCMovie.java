@@ -94,7 +94,14 @@ public interface CCMovie{
 	public void start(boolean restart);
 	
 	/**
-	 * Stops playback of the movie
+	 * Pauses a movie during playback. If a movie is started again with play(), it will continue from where it was
+	 * paused.
+	 */
+	public void pause();
+
+	/**
+	 * Stops a movie from continuing. The playback returns to the beginning so when a movie is played, it will begin
+	 * from the beginning.
 	 */
 	public void stop();
 }

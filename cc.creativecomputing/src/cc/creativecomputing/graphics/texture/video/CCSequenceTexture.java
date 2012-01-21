@@ -228,16 +228,17 @@ public class CCSequenceTexture extends CCTexture2D implements CCMovie, CCUpdateL
 		_myIsRunning = true;
 	}
 
-	/* (non-Javadoc)
-	 * @see cc.creativecomputing.texture_new.video.CCMovie#stop()
-	 */
+	@Override
 	public void stop() {
+		pause();
+		goToBeginning();
+	}
+	
+	@Override
+	public void pause() {
 		_myIsRunning = false;
 	}
 
-	/* (non-Javadoc)
-	 * @see cc.creativecomputing.texture_new.video.CCMovie#time()
-	 */
 	@Override
 	public float time() {
 		return _myTime;

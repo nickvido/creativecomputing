@@ -416,6 +416,20 @@ public class CCQuicktimeMovie extends CCMovieData{
 		super.stop();
 		try {
 			_myMovie.stop();
+			goToBeginning();
+		} catch (StdQTException e) {
+			throw new CCTextureException("Could not stop movie.",e);
+		}
+	}
+	
+	/* (non-Javadoc)
+	 * @see cc.creativecomputing.graphics.texture.video.CCMovie#pause()
+	 */
+	@Override
+	public void pause() {
+		super.stop();
+		try {
+			_myMovie.stop();
 		} catch (StdQTException e) {
 			throw new CCTextureException("Could not stop movie.",e);
 		}
