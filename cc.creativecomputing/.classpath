@@ -34,7 +34,6 @@
 			<attribute name="org.eclipse.jdt.launching.CLASSPATH_ATTR_LIBRARY_PATH_ENTRY" value="cc.creativecomputing/lib/input"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="lib" path="lib/netty/netty-3.2.4.Final.jar" sourcepath="lib/netty/netty-3.2.4.Final-sources.jar"/>
 	<classpathentry kind="lib" path="lib/jogl/gluegen-rt.jar">
 		<attributes>
 			<attribute name="org.eclipse.jdt.launching.CLASSPATH_ATTR_LIBRARY_PATH_ENTRY" value="cc.creativecomputing/lib/jogl"/>
@@ -60,5 +59,11 @@
 			<attribute name="org.eclipse.jdt.launching.CLASSPATH_ATTR_LIBRARY_PATH_ENTRY" value="cc.creativecomputing/lib/jogl"/>
 		</attributes>
 	</classpathentry>
+	<classpathentry kind="lib" path="lib/gstreamer/gstreamer-java.jar">
+		<attributes>
+			<attribute name="org.eclipse.jdt.launching.CLASSPATH_ATTR_LIBRARY_PATH_ENTRY" value="cc.creativecomputing/lib/gstreamer"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="lib/gstreamer/jna.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
