@@ -25,27 +25,26 @@ import cc.creativecomputing.graphics.CCDrawMode;
 import cc.creativecomputing.graphics.texture.CCTextureAttributes;
 import cc.creativecomputing.graphics.texture.CCTexture.CCTextureTarget;
 import cc.creativecomputing.graphics.texture.CCTexture.CCTextureWrap;
+import cc.creativecomputing.graphics.texture.video.CCGStreamerMovie;
 import cc.creativecomputing.graphics.texture.video.CCQuicktimeMovie;
 import cc.creativecomputing.graphics.texture.video.CCVideoTexture;
 import cc.creativecomputing.io.CCIOUtil;
 import cc.creativecomputing.math.CCMath;
 
-public class CCVideoTextureTest extends CCApp {
+public class CCGStreamerDemo extends CCApp {
 	
-	private CCQuicktimeMovie _myData;
+	private CCGStreamerMovie _myData;
 	private CCVideoTexture _myTexture;
 
 	@Override
 	public void setup() {
 		frameRate(20);
 		
-		_myData = new CCQuicktimeMovie(this, CCIOUtil.dataPath("videos/120116_spline2_fine2_1356x136_jpg.mov"));
+//		_myData = new CCGStreamerMovie(this, CCIOUtil.dataPath("videos/120116_spline2_fine2_1356x136_jpg.mov"));
+		_myData = new CCGStreamerMovie(this, CCIOUtil.dataPath("videos/kaki.mov"));
 		_myData.loop();
 		
-		CCTextureAttributes myAttributes = new CCTextureAttributes();
-		myAttributes.generateMipmaps(false);
-		
-		_myTexture = new CCVideoTexture(_myData, CCTextureTarget.TEXTURE_2D, myAttributes);
+		_myTexture = new CCVideoTexture(_myData);
 	}
 	
 	float _myTime = 0;
@@ -77,7 +76,7 @@ public class CCVideoTextureTest extends CCApp {
 	}
 
 	public static void main(String[] args) {
-		CCApplicationManager myManager = new CCApplicationManager(CCVideoTextureTest.class);
+		CCApplicationManager myManager = new CCApplicationManager(CCGStreamerDemo.class);
 		myManager.settings().size(320 * 2, 212 * 2);
 		myManager.settings().antialiasing(8);
 		myManager.start();

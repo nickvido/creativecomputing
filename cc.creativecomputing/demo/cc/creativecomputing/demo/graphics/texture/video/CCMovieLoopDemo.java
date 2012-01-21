@@ -25,59 +25,40 @@ import cc.creativecomputing.graphics.CCDrawMode;
 import cc.creativecomputing.graphics.texture.CCTextureAttributes;
 import cc.creativecomputing.graphics.texture.CCTexture.CCTextureTarget;
 import cc.creativecomputing.graphics.texture.CCTexture.CCTextureWrap;
+import cc.creativecomputing.graphics.texture.video.CCGStreamerMovie;
 import cc.creativecomputing.graphics.texture.video.CCQuicktimeMovie;
 import cc.creativecomputing.graphics.texture.video.CCVideoTexture;
 import cc.creativecomputing.io.CCIOUtil;
 import cc.creativecomputing.math.CCMath;
 
-public class CCVideoTextureTest extends CCApp {
+public class CCMovieLoopDemo extends CCApp {
 	
-	private CCQuicktimeMovie _myData;
+	private CCGStreamerMovie _myMovie;
 	private CCVideoTexture _myTexture;
 
 	@Override
 	public void setup() {
 		frameRate(20);
 		
-		_myData = new CCQuicktimeMovie(this, CCIOUtil.dataPath("videos/120116_spline2_fine2_1356x136_jpg.mov"));
-		_myData.loop();
+//		_myData = new CCGStreamerMovie(this, CCIOUtil.dataPath("videos/120116_spline2_fine2_1356x136_jpg.mov"));
+		_myMovie = new CCGStreamerMovie(this, CCIOUtil.dataPath("videos/station.mov"));
+		_myMovie.loop();
+		_myMovie.time(20);
 		
-		CCTextureAttributes myAttributes = new CCTextureAttributes();
-		myAttributes.generateMipmaps(false);
-		
-		_myTexture = new CCVideoTexture(_myData, CCTextureTarget.TEXTURE_2D, myAttributes);
-	}
-	
-	float _myTime = 0;
-	float _myNoise = 0;
-
-	@Override
-	public void update(final float theDeltaTime) {
-		_myTime += theDeltaTime;
-		_myNoise = CCMath.noise(_myTime * 0.1f);
+		_myTexture = new CCVideoTexture(_myMovie);
+		g.clearColor(1f);
+		g.clear();
 	}
 
 	@Override
 	public void draw() {
-		g.clearColor(1f);
-		g.clear();
-		
+		g.color(255,30);
 //		System.out.println(_myTexture.width() + ":"+_myTexture.height());
-		g.texture(_myTexture);
-		_myTexture.wrap(CCTextureWrap.MIRRORED_REPEAT);
-		g.beginShape(CCDrawMode.QUADS);
-		g.vertex(-width/2, -height/2, -0.5f * _myNoise, -0.5f *_myNoise);
-		g.vertex( width/2, -height/2, 1.5f * _myNoise, -0.5f *_myNoise);
-		g.vertex( width/2,  height/2, 1.5f * _myNoise, 1.5f *_myNoise);
-		g.vertex(-width/2,  height/2, -0.5f * _myNoise, 1.5f *_myNoise);
-		g.endShape();
-		g.noTexture();
-		
-		g.image(_myTexture, -_myTexture.width()/2, -_myTexture.height()/2);
+		g.image(_myTexture,mouseX - width/2, height/2 - mouseY);
 	}
 
 	public static void main(String[] args) {
-		CCApplicationManager myManager = new CCApplicationManager(CCVideoTextureTest.class);
+		CCApplicationManager myManager = new CCApplicationManager(CCMovieLoopDemo.class);
 		myManager.settings().size(320 * 2, 212 * 2);
 		myManager.settings().antialiasing(8);
 		myManager.start();
