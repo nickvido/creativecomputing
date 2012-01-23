@@ -46,7 +46,7 @@ public class CCMovieFramesDemo extends CCApp {
 		_myData = new CCGStreamerMovie(this, CCIOUtil.dataPath("videos/station.mov"));
 		_myTexture = new CCVideoTexture(_myData);
 		
-		_myData.start();
+		_myData.play();
 		_myData.goToBeginning();
 		_myData.pause();
 	}

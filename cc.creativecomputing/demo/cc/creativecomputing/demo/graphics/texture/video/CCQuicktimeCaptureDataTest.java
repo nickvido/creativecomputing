@@ -23,19 +23,19 @@ import cc.creativecomputing.CCApp;
 import cc.creativecomputing.CCApplicationManager;
 import cc.creativecomputing.CCApplicationSettings;
 import cc.creativecomputing.graphics.CCColor;
-import cc.creativecomputing.graphics.texture.video.CCQuicktimeCaptureData;
+import cc.creativecomputing.graphics.texture.video.CCQuicktimeCapture;
 
 public class CCQuicktimeCaptureDataTest extends CCApp {
 	
-	private CCQuicktimeCaptureData _myData;
+	private CCQuicktimeCapture _myData;
 
 	@Override
 	public void setup() {
-		for(String myDevice : CCQuicktimeCaptureData.listCaptureDevices()) {
+		for(String myDevice : CCQuicktimeCapture.listCaptureDevices()) {
 			System.out.println(myDevice);
 		}
 		
-		_myData = new CCQuicktimeCaptureData(this, 640, 480, 30);
+		_myData = new CCQuicktimeCapture(this, 640, 480, 30);
 	}
 
 	@Override
