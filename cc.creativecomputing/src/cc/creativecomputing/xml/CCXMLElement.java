@@ -428,6 +428,42 @@ public class CCXMLElement implements Iterable<CCXMLElement>{
 			return theDefaultValue;
 		}
 	}
+
+	/**
+	 * Use longAttribute() to get the value of an attribute as long value. You 
+	 * can only use this method on attributes that are numeric, otherwise you get 
+	 * a InvalidAttributeException. 
+	 * @param key String, the name of the attribute you want the value of
+	 * @return long, the value of the attribute
+	 * @see #attributes()
+	 * @see #attribute(String)
+	 * @see #hasAttribute(String)
+	 * @see #hasAttributes()
+	 * @see #hasAttribute(String)
+	 * @see #countAttributes()
+	 * @see #addAttribute(String, String)
+	 */
+	public long longAttribute(String key){
+		String attributeValue =  _myAttributes.get(key);
+		if (attributeValue == null)
+			throw new CCXMLInvalidAttributeException(_myName, key);
+		try{
+			return Long.parseLong( _myAttributes.get(key));
+		}catch (NumberFormatException e){
+			throw new CCXMLInvalidAttributeException(_myName, key, "long");
+		}
+	}
+	
+	public long longAttribute(String key, final long theDefaultValue){
+		String attributeValue =  _myAttributes.get(key);
+		if (attributeValue == null)
+			return theDefaultValue;
+		try{
+			return Long.parseLong( _myAttributes.get(key));
+		}catch (NumberFormatException e){
+			return theDefaultValue;
+		}
+	}
 	
 	/**
 	 * Use getBooleanAttribute() to get the value of an attribute as boolean value. You 
