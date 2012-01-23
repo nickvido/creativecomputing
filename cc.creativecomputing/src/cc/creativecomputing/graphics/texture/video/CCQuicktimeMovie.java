@@ -293,7 +293,7 @@ public class CCQuicktimeMovie extends CCMovieData{
 	 * Handle exit of the main application
 	 */
 	public void post() {
-		System.out.println("POST:" + time() + ":" + duration());
+
 		if (!_myIsLoaded)
 			return;
 		try {
@@ -302,8 +302,9 @@ public class CCQuicktimeMovie extends CCMovieData{
 					time(0);
 				} else{
 					_myMovie.stop();
-				_myIsRunning = false;
+					_myIsRunning = false;
 				}
+				_myMovieEvents.proxy().onEnd();
 			}
 		} catch (Exception e) {
 			e.printStackTrace();
@@ -394,23 +395,16 @@ public class CCQuicktimeMovie extends CCMovieData{
 		}
 	}
 
-	/* (non-Javadoc)
-	 * @see cc.creativecomputing.texture_new.video.CCMovie#start(boolean)
-	 */
-	public void start(boolean theRestart) {
+	@Override
+	public void play(boolean theRestart) {
+		super.play(theRestart);
 		try {
-			if (theRestart)
-				_myMovie.goToBeginning();
-			_myIsRunning = true;
 			_myMovie.start();
 		} catch (Exception e) {
 			throw new CCTextureException("Could not start movie.",e);
 		}
 	}
 	
-	/* (non-Javadoc)
-	 * @see cc.creativecomputing.graphics.texture.video.CCMovieData#stop()
-	 */
 	@Override
 	public void stop() {
 		super.stop();
@@ -422,12 +416,9 @@ public class CCQuicktimeMovie extends CCMovieData{
 		}
 	}
 	
-	/* (non-Javadoc)
-	 * @see cc.creativecomputing.graphics.texture.video.CCMovie#pause()
-	 */
 	@Override
 	public void pause() {
-		super.stop();
+		super.pause();
 		try {
 			_myMovie.stop();
 		} catch (StdQTException e) {

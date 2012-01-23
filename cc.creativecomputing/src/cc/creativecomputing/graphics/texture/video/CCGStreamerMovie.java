@@ -75,11 +75,12 @@ public class CCGStreamerMovie extends CCMovieData implements CCDisposeListener {
 
 		@Override
 		public void endOfStream(GstObject theArg0) {
-			if (repeat) {
+			if (_myDoRepeat) {
 				goToBeginning();
 			} else {
-				playing = false;
+				_myIsRunning = false;
 			}
+			_myMovieEvents.proxy().onEnd();
 		}
 
 	}
@@ -98,10 +99,6 @@ public class CCGStreamerMovie extends CCMovieData implements CCDisposeListener {
 	private String filename;
 
 	private boolean _myIsDataUpdated = false;
-
-	private boolean playing = false;
-	private boolean paused = false;
-	private boolean repeat = false;
 
 	private float fps;
 	private float rate;
@@ -326,7 +323,7 @@ public class CCGStreamerMovie extends CCMovieData implements CCDisposeListener {
 
 	@Override
 	public void volume(final float theVolume) {
-		if (playing) {
+		if (_myIsRunning) {
 			gplayer.setVolume(theVolume);
 		}
 	}
@@ -354,7 +351,7 @@ public class CCGStreamerMovie extends CCMovieData implements CCDisposeListener {
 	}
 
 	public void frame(int theFrame) {
-		start();
+		play();
 
 		float srcFramerate = sourceFrameRate();
 
@@ -380,28 +377,17 @@ public class CCGStreamerMovie extends CCMovieData implements CCDisposeListener {
 	}
 
 	@Override
-	public void start(boolean theRestart) {
-		if (theRestart)
-			goToBeginning();
-		playing = true;
-		paused = false;
+	public void play(boolean theDoRestart) {
+		super.play(theDoRestart);
 		gplayer.play();
 	}
 
 	/**
-	 * ( begin auto-generated from Movie_loop.xml )
-	 * 
 	 * Plays a movie continuously, restarting it when it is over.
-	 * 
-	 * ( end auto-generated )
-	 * 
-	 * @webref movie
-	 * @usage web_application
 	 */
 	public void loop() {
-
-		repeat = true;
-		start();
+		_myDoRepeat = true;
+		play();
 	}
 
 	/**
@@ -409,9 +395,7 @@ public class CCGStreamerMovie extends CCMovieData implements CCDisposeListener {
 	 * paused.
 	 */
 	public void pause() {
-
-		playing = false;
-		paused = true;
+		super.pause();
 		gplayer.pause();
 	}
 
@@ -420,12 +404,7 @@ public class CCGStreamerMovie extends CCMovieData implements CCDisposeListener {
 	 * from the beginning.
 	 */
 	public void stop() {
-
-		if (playing) {
-			goToBeginning();
-			playing = false;
-		}
-		paused = false;
+		super.stop();
 		gplayer.stop();
 	}
 

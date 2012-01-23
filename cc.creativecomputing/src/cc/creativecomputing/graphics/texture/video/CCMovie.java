@@ -85,13 +85,13 @@ public interface CCMovie{
 	 * from its last position.
 	 * @param restart
 	 */
-	public void start();
+	public void play();
 
 	/**
 	 * 
 	 * 
 	 */
-	public void start(boolean restart);
+	public void play(boolean restart);
 	
 	/**
 	 * Pauses a movie during playback. If a movie is started again with play(), it will continue from where it was

@@ -20,6 +20,7 @@
 package cc.creativecomputing.graphics.texture.video;
 
 import cc.creativecomputing.CCAbstractApp;
+import cc.creativecomputing.events.CCListenerManager;
 import cc.creativecomputing.events.CCPostListener;
 import cc.creativecomputing.events.CCUpdateListener;
 
@@ -41,6 +42,10 @@ public abstract class CCMovieData extends CCVideoData implements CCMovie, CCUpda
 	 * indicates if the movie is running
 	 */
 	protected boolean _myIsRunning = false;
+	
+	protected boolean _myIsPaused = false;
+	
+	protected CCListenerManager<CCMovieListener> _myMovieEvents = CCListenerManager.create(CCMovieListener.class);
 
 	/**
 	 * Creates a new instance, without setting any parameters.
@@ -49,22 +54,10 @@ public abstract class CCMovieData extends CCVideoData implements CCMovie, CCUpda
 	public CCMovieData(final CCAbstractApp theApp) {
 		super(theApp);
 	}
-
-//	public CCVideoTextureData(
-//		int theWidth, int theHeight, int theBorder, 
-//		CCPixelInternalFormat theInternalFormat, CCPixelFormat thePixelFormat, CCPixelType thePixelType,
-//		boolean theIsDataCompressed, boolean theMustFlipVertically, Buffer theBuffer, Flusher theFlusher
-//	) {
-//		super(theWidth, theHeight, theBorder, theInternalFormat, thePixelFormat, thePixelType, theIsDataCompressed, theMustFlipVertically, theBuffer, theFlusher);
-//	}
-//
-//	public CCVideoTextureData(
-//		int theWidth, int theHeight, int theBorder, 
-//		CCPixelInternalFormat theInternalFormat, CCPixelFormat thePixelFormat, CCPixelType thePixelType,
-//		boolean theIsDataCompressed, boolean theMustFlipVertically, Buffer[] theMipmapData, Flusher theFlusher
-//	) {
-//		super(theWidth, theHeight, theBorder, theInternalFormat, thePixelFormat, thePixelType, theIsDataCompressed, theMustFlipVertically, theMipmapData, theFlusher);
-//	}
+	
+	public CCListenerManager<CCMovieListener> events(){
+		return _myMovieEvents;
+	}
 
 	/* (non-Javadoc)
 	 * @see cc.creativecomputing.texture_new.video.CCMovie#isRunning()
@@ -79,7 +72,7 @@ public abstract class CCMovieData extends CCVideoData implements CCMovie, CCUpda
 	public void loop() {
 		_myDoRepeat = true;
 		try {
-			start();
+			play();
 			_myIsRunning = true;
 		} catch (Exception e) {
 			e.printStackTrace();
@@ -98,21 +91,38 @@ public abstract class CCMovieData extends CCVideoData implements CCMovie, CCUpda
 	 * @see cc.creativecomputing.texture_new.video.CCMovie#progress()
 	 */
 	public float progress() {
-		return time() / (float) duration();
+		return time() / duration();
 	}
 
-	/* (non-Javadoc)
-	 * @see cc.creativecomputing.texture_new.video.CCMovie#start()
-	 */
-	public void start() {
-		start(false);
+	@Override
+	public void play() {
+		play(false);
+	}
+	
+	@Override
+	public void play(boolean theDoRestart) {
+		_myIsRunning = true;
+		_myIsPaused = false;
+
+		if (theDoRestart)
+			goToBeginning();
+		_myMovieEvents.proxy().onPlay();
 	}
 
-	/* (non-Javadoc)
-	 * @see cc.creativecomputing.texture_new.video.CCMovie#stop()
-	 */
+	@Override
 	public void stop() {
+		if (_myIsRunning) {
+			goToBeginning();
+			_myIsRunning = false;
+		}
+		_myIsPaused = false;
+		_myMovieEvents.proxy().onStop();
+	}
+	
+	public void pause() {
 		_myIsRunning = false;
+		_myIsPaused = true;
+		_myMovieEvents.proxy().onPause();
 	}
 
 	/* (non-Javadoc)

@@ -174,7 +174,7 @@ public class CCSequenceTexture extends CCTexture2D implements CCMovie, CCUpdateL
 	public void loop() {
 		_myIsLooping = true;
 		try {
-			start();
+			play();
 			_myIsRunning = true;
 		} catch (Exception e) {
 			e.printStackTrace();
@@ -213,14 +213,14 @@ public class CCSequenceTexture extends CCTexture2D implements CCMovie, CCUpdateL
 	/* (non-Javadoc)
 	 * @see cc.creativecomputing.texture_new.video.CCMovie#start()
 	 */
-	public void start() {
-		start(false);
+	public void play() {
+		play(false);
 	}
 
 	/* (non-Javadoc)
 	 * @see cc.creativecomputing.texture_new.video.CCMovie#start(boolean)
 	 */
-	public void start(boolean theRestart) {
+	public void play(boolean theRestart) {
 		if(theRestart) {
 			_myTextureID = 0;
 			_myTime = 0;
